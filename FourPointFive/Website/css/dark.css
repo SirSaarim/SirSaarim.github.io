@@ -235,11 +235,11 @@ p {
 }
 
 .portfolio-nav .port-next .nav-title {
-    color: #fff;
+    color: #fde980 !important;
 }
     
 .portfolio-nav .port-next .next-title {
-    color: #fff;
+     color: #ffd600 !important;
 }
 
 .portfolio-single.type-2 .subtitle {

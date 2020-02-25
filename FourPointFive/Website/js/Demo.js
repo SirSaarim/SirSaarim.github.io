@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.demo .reset', function (e) {
         e.preventDefault();
-        $('#color').attr('href', 'css/colors/red.css');
+        $('#color').attr('href', 'css/colors/default.css');
         $('html').removeClass('boxed');
         $('body').removeAttr('style');
         $.removeCookie('color', { path: '/' });
@@ -57,13 +57,14 @@ $(document).ready(function () {
         '<i class="fa fa-cog fa-spin"></i>' +
         '</a>' +
         '<h5>SELECT A COLOR</h5>' +
-        '<a href="#" class="color" data-color="red.css" style="background-color:#ea0026"></a>' +
+        '<a href="#" class="color" data-color="default.css" style="background-color:gold"></a>' +
         '<a href="#" class="color" data-color="green.css" style="background-color:#52bf00"></a>' +
-        '<a href="#" class="color" data-color="yellow.css" style="background-color:#ffb100"></a>' +
-        '<a href="#" class="color" data-color="orange.css" style="background-color:#ff5a14"></a>' +
+        //'<a href="#" class="color" data-color="yellow.css" style="background-color:#ffb100"></a>' +
+        //'<a href="#" class="color" data-color="orange.css" style="background-color:#ff5a14"></a>' +
         '<a href="#" class="color" data-color="turquoise.css" style="background-color:#00b4d9"></a>' +
-        '<a href="#" class="color" data-color="pink.css" style="background-color:#fb1bc1"></a>' +
-        '<a href="#" class="color" data-color="purple.css" style="background-color:#BF55EC"></a>' +
+        //'<a href="#" class="color" data-color="pink.css" style="background-color:#fb1bc1"></a>' +
+        '<a href="#" class="color" data-color="red.css" style="background-color:#ff0000"></a>' +
+        //'<a href="#" class="color" data-color="purple.css" style="background-color:#BF55EC"></a>' +
         '<hr />' +
         '<a href="#" class="reset btn btn-sm btn-info p-l-30 p-r-30">Reset</a>' +
         '</div>';

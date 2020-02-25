@@ -31,10 +31,12 @@ Join Membership-
 
 	
 INTERNET CONTENT-
-- Send dont touch my phone pic (NARIM Home Screen.jpg)
-- Write over picture....
-- how to format html inSublime
-
+- Write over picture.... ###4.5membership
+- fix latest tweets OR fb
+- fix contact us email not sending...
+- increase size of anything mouse hovers on. 
+- download my eyes picture as logo-white.png
+- get usmanJee picture
 
 
 
