@@ -19,6 +19,27 @@
 
 /*------------------------ 1 Body and Core Css ------------------------*/
 
+
+
+
+#nameOnMembership {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 35px;
+    margin: 18px 0;
+    color: #fff7de;
+}
+
+
+
+#centerit {
+    text-align:center;
+    color: #fff7de;
+}
+
 #unreleasedCoverTxt {
     color:#fff7de;
     font-size: 31px;
@@ -29,17 +50,7 @@
 }
 
 
-font-size: 15px;
 
-text-align: center;
-
-line-height: 57px;
-
-letter-spacing: -0.33px;
-
-font-weight: 500;
-
-font-style: normal;
 
 
 #coverNumber {
@@ -102,6 +113,15 @@ font-style: normal;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Centered text */
+/*.namePosition {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
 
 
 .fab {
@@ -188,6 +208,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 170px;
     font-weight: 500;
+    background-color: black;
 }
 
 .full-open header {
@@ -1730,6 +1751,11 @@ textarea.form-message {
     }
 
 
+    #nameOnMembership {
+        font-size: 18px;
+        top: 18%;
+    }
+
     .titlebar {
         padding: 74px 0;
         height: 210px;
@@ -1881,6 +1907,11 @@ textarea.form-message {
         font-size: 50px !important;
     }
 
+    #nameOnMembership {
+        font-size: 16px;
+        top: 18%;
+    }
+
     .titlebar {
         padding: 74px 0;
         height: 180px;
@@ -1989,6 +2020,10 @@ textarea.form-message {
 
     .titlebar .page-title, .titlebar .page-title span {
         font-size: 30px !important;
+    }
+    #nameOnMembership {
+        font-size: 13px;
+        top: 18%;
     }
 
     .titlebar {
