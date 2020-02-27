@@ -1,5 +1,3 @@
-
-
 Home- Welcome to 4.5's official website
 Covers- a-z covers from database
 Wallpapers- 2 wallpapers
@@ -31,14 +29,17 @@ Join Membership-
 
 	
 INTERNET CONTENT-
-- Write over picture.... ###4.5membership
-- fix latest tweets OR fb
+- Write over picture.... ###4.5membership (html2jpg)
 - fix contact us email not sending...
 - increase size of anything mouse hovers on. 
 - download my eyes picture as logo-white.png
+- find original colors. (tavonline.net/html/gorge2/dark/portfolio/work-1.html)
 - get usmanJee picture
-
-
+- write about section (copy scam ibless yt description, "bigger than life")
+- back to top page. 
+- fix latest tweets OR fb
+- Animation of arrow pointing down for (Scroll down to see your screenshoot)
+- 
 
 
 

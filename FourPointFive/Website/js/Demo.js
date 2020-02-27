@@ -57,7 +57,7 @@ $(document).ready(function () {
         '<i class="fa fa-cog fa-spin"></i>' +
         '</a>' +
         '<h5>SELECT A COLOR</h5>' +
-        '<a href="#" class="color" data-color="default.css" style="background-color:gold"></a>' +
+        '<a href="#" class="color" data-color="default.css" style="background-color:#ffd74f"></a>' +
         '<a href="#" class="color" data-color="green.css" style="background-color:#52bf00"></a>' +
         //'<a href="#" class="color" data-color="yellow.css" style="background-color:#ffb100"></a>' +
         //'<a href="#" class="color" data-color="orange.css" style="background-color:#ff5a14"></a>' +

@@ -20,6 +20,12 @@
 /*------------------------ 1 Body and Core Css ------------------------*/
 
 
+#ssNotifySuccess {
+    visibility:hidden;
+}
+#ssNotify, #but_screenshot {
+    visibility: hidden;
+}
 
 
 #nameOnMembership {
@@ -59,15 +65,28 @@
     font-size: 111% !important;
     line-height: 0px !important;
     text-align: center;
-    color: #ffe48a;
 }
 
 /* Container holding the image and the text */
 .container {
     position: relative;
-    text-align: center;
-    color: white;
+   text-align:center;
+    color: rgba(4, 6, 4, 0.15);
 }
+
+
+
+
+div#paste.img-fluid {
+    text-align: center;
+    background-color:aqua;
+}
+
+canvas#screenshotCanvas {
+    text-align: center;
+    background-color: #fff7de;
+}
+
 
 /* Bottom left text */
 .bottom-left {
@@ -82,6 +101,7 @@
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:white;
 }
 
 
@@ -666,8 +686,8 @@ header {
     }
 
     .cbp-item figure p {
-        font-size: 11px;
-        font-weight: 300;
+        font-size: 20px;
+        font-weight: 500;
         letter-spacing: 1px;
         opacity: 0;
         top: 50%;
@@ -685,6 +705,8 @@ header {
         -webkit-transform: translate(0px, 0px);
         transform: translate(0px, 0px);
         opacity: 1;
+        font-weight: 700;
+        font-size: 23px;
     }
 
 .cbp-item .shine {
@@ -1088,6 +1110,7 @@ header.white .nav-icon span {
         .full-open .full-menu .full-inner nav ul li a:hover {
             transition: all ease 0.3s;
         }
+
 
     .full-open .full-menu .full-inner .full-contact ul li:nth-child(1) {
         transform: translateY(0);
