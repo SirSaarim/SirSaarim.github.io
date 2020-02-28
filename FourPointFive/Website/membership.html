@@ -109,8 +109,6 @@
                     <p id="ssNotifySuccess" style="color: #83c683;">Scroll down to see your screenshoot</p>
                     <br />
                 </div>
-
-                <p>Canvas:</p>
                 <div id="outsideCanvas">
                     <canvas id="myCanvas" width="2000" height="2000"
                             style="border: 1px solid #d3d3d3; width: 100%; height: 100%; margin:0;">
@@ -152,6 +150,7 @@
         </div>
     </footer>
 
+
     <!-- Javascripts -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
@@ -180,78 +179,24 @@
 
 
 
-
-
 </body>
 <!-- Mirrored from tavonline.net/html/gorge2/dark/news.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Feb 2020 11:29:47 GMT -->
 </html>
 <script type='text/javascript'>
-
-    var canvas = document.getElementById('myCanvas');
-    var context = canvas.getContext('2d');
-
-    // draw a blue cloud
-    context.beginPath();
-    context.moveTo(170, 80);
-    context.bezierCurveTo(130, 100, 130, 150, 230, 150);
-    context.bezierCurveTo(250, 180, 320, 180, 340, 150);
-    context.bezierCurveTo(420, 150, 420, 120, 390, 100);
-    context.bezierCurveTo(430, 40, 370, 30, 340, 50);
-    context.bezierCurveTo(320, 5, 250, 20, 250, 50);
-    context.bezierCurveTo(200, 5, 150, 20, 170, 80);
-    context.closePath();
-    context.lineWidth = 5;
-    context.fillStyle = '#8ED6FF';
-    context.fill();
-    context.strokeStyle = '#0000ff';
-    context.stroke();
-
-    download.addEventListener("click", function () {
-        // only jpeg is supported by jsPDF
-        var imgData = canvas.toDataURL("image/jpeg", 1.0);
-        var pdf = new jsPDF();
-
-        pdf.addImage(imgData, 'JPEG', 0, 0);
-        pdf.save("download.pdf");
-    }, false);
-
 
     window.onload = function () {
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var img = document.getElementById("myImage");
         ctx.drawImage(img, 10, 10);
-
-
-
-        //document.getElementById("myCanvas").setAttribute("width", "500px")
-        //document.getElementById("myCanvas").setAttribute("height", "500px")
-
-        //document.getElementById("outsideCanvas").innerHTML = '<canvas id="myCanvas" width="'+"100"+'" height="'+"100"+'" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas >';
     };
 
-
-
-    // Converts canvas to an image
-    function convertCanvasToImage(canvas) {
-        console.log(canvas.innerHTML);
-        console.log("reached func");
-        var image = new Image();
-        //image.src = canvas.toDataURL("images/new.png");
-        var dataURL = canvas.toDataURL();
-        console.log("sssss" + dataURL);
-        return image;
-    }
-
     function myFunction() {
-        document.getElementById("ssNotifySuccess").style.visibility = "hidden";
-        document.getElementById("ssNotify").style.visibility = "visible";
-        document.getElementById("but_screenshot").style.visibility = "visible";
+        document.getElementById("ssNotifySuccess").style.display = "none";
+        document.getElementById("ssNotify").style.display = "none";
+        document.getElementById("but_screenshot").style.display = "none";
         var person = prompt("Please enter your name", "Sir Saarim");
         if (person != null) {
-            //document.getElementById("nameOnMembership").innerHTML = person;
-
-
             var canvas = document.getElementById("myCanvas");
             var ctx = canvas.getContext("2d");
             ctx.font = "90px Comic Sans MS";
@@ -259,6 +204,9 @@
             ctx.textAlign = "center";
             ctx.fillText(person, canvas.width / 2, 500);
         }
+
+        document.getElementById("addNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + "reloadPage()" + '">' + "RESTART" + '</button>'
+        document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page yourself.';
     }
 
     function screenshot() {
@@ -267,25 +215,7 @@
             document.getElementById("but_screenshot").style.visibility = "hidden";
             document.getElementById("ssNotifySuccess").style.visibility = "visible";
             document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page.';
-            //document.getElementById("paste").appendChild(canvas).setAttribute("id", "screenshotCanvas");
             document.getElementById("paste").appendChild(canvas).setAttribute("id", "screenshotCanvas");
-
-
-
-
-            console.log("aAAAAAAAA");
-            // Get the image
-            console.log("bbbbbbbbbbbbb");
-            //var runFunc = convertCanvasToImage(document.getElementById("screenshotCanvas"));
-            console.log("ccccccccc");
-
-
-
-
-
-
-
-
             document.getElementById("addNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + "reloadPage()" + '">' + "RESTART" + '</button>'
         });
     }
