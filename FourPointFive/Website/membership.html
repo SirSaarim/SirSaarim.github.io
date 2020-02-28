@@ -84,12 +84,6 @@
         <hr class="col-md-6 bottom_60">
 
 
-
-        <button id="save">SAVE</button>
-
-
-
-
         <div class="cont">
             <section class="our-news">
                 <div class="allTopText about-text text-center title">
@@ -99,8 +93,12 @@
                         Click the following button to add your name to the 4.5 membership card.
                         <br>
                         <br>
-                        <button class="site-btn2" id="addNameButton" onclick="myFunction()">ADD NAME</button>
-                        <small id="reloadAlternative"></small>
+
+                        <div id="outerDivaddNameButton">
+                            <button class="site-btn2" id="addNameButton" onclick="myFunction()">ADD NAME</button>
+                        </div>
+                        <small id="reloadAlternative" style="color: white;"></small>
+
                     </p>
                     <p id="ssNotify" color: #fff9d9;">
                         Click the button capture the your custom 4.5 membership card -
@@ -169,9 +167,6 @@
     <script src="js/html2canvas.js"></script>
     <script src="js/html2canvas.min.js"></script>
 
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
 
@@ -205,7 +200,7 @@
             ctx.fillText(person, canvas.width / 2, 500);
         }
 
-        document.getElementById("addNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + "reloadPage()" + '">' + "RESTART" + '</button>'
+        document.getElementById("outerDivaddNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + 'reloadPage()' + '">' + "RESTART" + '</button>';
         document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page yourself.';
     }
 
@@ -216,7 +211,6 @@
             document.getElementById("ssNotifySuccess").style.visibility = "visible";
             document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page.';
             document.getElementById("paste").appendChild(canvas).setAttribute("id", "screenshotCanvas");
-            document.getElementById("addNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + "reloadPage()" + '">' + "RESTART" + '</button>'
         });
     }
 
