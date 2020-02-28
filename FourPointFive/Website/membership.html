@@ -22,11 +22,13 @@
 
     <!-- Google Web fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+
     <!-- Font icons -->
     <link rel="stylesheet" href="icon-fonts/fontawesome-5.0.6/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="icon-fonts/flaticon/flaticon.css" />
 </head>
 <body>
+
     <!-- PRELOADER -->
     <div class="preloader">
         <div class="loader">
@@ -83,8 +85,7 @@
 
 
 
-        <!--unused-->
-        <img id="capturedImage" src="" alt="">
+        <button id="save">SAVE</button>
 
 
 
@@ -94,7 +95,7 @@
                 <div class="allTopText about-text text-center title">
                     <h4 style="color: #fff9d9 !important; font-style: normal; font-size: larger; font-size: 1.2rem !important; letter-spacing: 0;">Create a custom 4.5 membership card!</h4>
                     <p color: #fff9d9; color: #fff;">
-               
+
                         Click the following button to add your name to the 4.5 membership card.
                         <br>
                         <br>
@@ -108,34 +109,21 @@
                     <p id="ssNotifySuccess" style="color: #83c683;">Scroll down to see your screenshoot</p>
                     <br />
                 </div>
-                <div class="row">
-                    <!-- a news -->
-                    <a href="#" class="col-md-12 col-sm-6 news bottom_60 bottom_60" style="text-align:center;">
-                        <article class="news-box">
-                            <figure>
-                                <div class="container" id="capture">
-                                    <img src="images/MembershipCard.jpg" alt="4.5-Membership-Card">
-                                    <h2 id="nameOnMembership"></h2>
-                                </div>
-                            </figure>
-                        </article>
-                    </a>
 
-                    <!-- a news -->
-                    <a href="#" class="col-md-12 col-sm-6 news bottom_60 bottom_60" style="text-align:center;">
-                        <article class="news-box">
-                            <figure>
-                                <div class="container" id="paste">
-                                </div>
-                            </figure>
-                        </article>
-                    </a>
+                <p>Canvas:</p>
+                <div id="outsideCanvas">
+                    <canvas id="myCanvas" width="2000" height="2000"
+                            style="border: 1px solid #d3d3d3; width: 100%; height: 100%; margin:0;">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
                 </div>
+
+                <img id="myImage" width="1" height="1"
+                     src="images/MembershipCard.jpg" alt="The Scream" style="visibility:hidden;">
+
             </section>
         </div> <!-- cont end -->
     </div> <!-- wrapper end -->
-
-
     <!-- footer start-->
     <footer>
         <div class="cont">
@@ -164,7 +152,6 @@
         </div>
     </footer>
 
-
     <!-- Javascripts -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
@@ -179,8 +166,20 @@
     <script src="js/jquery.cookie-1.4.1.min.js"></script>
     <script src="js/Demo.js"></script>
     <link rel="stylesheet" href="css/Demo.min.css" />
+
     <script src="js/html2canvas.js"></script>
     <script src="js/html2canvas.min.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+
+
+
+
+
 
 
 </body>
@@ -188,13 +187,77 @@
 </html>
 <script type='text/javascript'>
 
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    // draw a blue cloud
+    context.beginPath();
+    context.moveTo(170, 80);
+    context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+    context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+    context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+    context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+    context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+    context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+    context.closePath();
+    context.lineWidth = 5;
+    context.fillStyle = '#8ED6FF';
+    context.fill();
+    context.strokeStyle = '#0000ff';
+    context.stroke();
+
+    download.addEventListener("click", function () {
+        // only jpeg is supported by jsPDF
+        var imgData = canvas.toDataURL("image/jpeg", 1.0);
+        var pdf = new jsPDF();
+
+        pdf.addImage(imgData, 'JPEG', 0, 0);
+        pdf.save("download.pdf");
+    }, false);
+
+
+    window.onload = function () {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("myImage");
+        ctx.drawImage(img, 10, 10);
+
+
+
+        //document.getElementById("myCanvas").setAttribute("width", "500px")
+        //document.getElementById("myCanvas").setAttribute("height", "500px")
+
+        //document.getElementById("outsideCanvas").innerHTML = '<canvas id="myCanvas" width="'+"100"+'" height="'+"100"+'" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas >';
+    };
+
+
+
+    // Converts canvas to an image
+    function convertCanvasToImage(canvas) {
+        console.log(canvas.innerHTML);
+        console.log("reached func");
+        var image = new Image();
+        //image.src = canvas.toDataURL("images/new.png");
+        var dataURL = canvas.toDataURL();
+        console.log("sssss" + dataURL);
+        return image;
+    }
+
     function myFunction() {
         document.getElementById("ssNotifySuccess").style.visibility = "hidden";
         document.getElementById("ssNotify").style.visibility = "visible";
         document.getElementById("but_screenshot").style.visibility = "visible";
         var person = prompt("Please enter your name", "Sir Saarim");
         if (person != null) {
-            document.getElementById("nameOnMembership").innerHTML = person;
+            //document.getElementById("nameOnMembership").innerHTML = person;
+
+
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "90px Comic Sans MS";
+            ctx.fillStyle = "#ffd74f";
+            ctx.textAlign = "center";
+            ctx.fillText(person, canvas.width / 2, 500);
         }
     }
 
@@ -203,13 +266,36 @@
             document.getElementById("ssNotify").style.visibility = "hidden";
             document.getElementById("but_screenshot").style.visibility = "hidden";
             document.getElementById("ssNotifySuccess").style.visibility = "visible";
-            document.getElementById("reloadAlternative").innerHTML ='<br />or just reload the page.';
-
+            document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page.';
+            //document.getElementById("paste").appendChild(canvas).setAttribute("id", "screenshotCanvas");
             document.getElementById("paste").appendChild(canvas).setAttribute("id", "screenshotCanvas");
+
+
+
+
+            console.log("aAAAAAAAA");
+            // Get the image
+            console.log("bbbbbbbbbbbbb");
+            //var runFunc = convertCanvasToImage(document.getElementById("screenshotCanvas"));
+            console.log("ccccccccc");
+
+
+
+
+
+
+
 
             document.getElementById("addNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + "reloadPage()" + '">' + "RESTART" + '</button>'
         });
     }
+
+
+
+
+
+
+
 
     function reloadPage() {
         location.reload(false);
@@ -217,3 +303,29 @@
 
 
 </script>
+
+
+<!--<div class="row">
+ 
+    <a href="#" class="col-md-12 col-sm-6 news bottom_60 bottom_60" style="text-align:center;">
+        <article class="news-box">
+            <figure>
+                <div class="container" id="capture">
+                    <img id="myImage" src="images/MembershipCard.jpg" alt="4.5-Membership-Card" width="900" height="900">
+                    <h2 id="nameOnMembership"></h2>
+                </div>
+            </figure>
+        </article>
+    </a>
+
+    
+    <a href="#" class="col-md-12 col-sm-6 news bottom_60 bottom_60" style="text-align:center;">
+        <article class="news-box">
+            <figure>
+                <div class="container" id="paste">
+                    <canvas id="myCanvas" width="900" height="900"></canvas>
+                </div>
+            </figure>
+        </article>
+    </a>
+</div>-->

@@ -28,18 +28,19 @@ Join Membership-
 
 
 	
-INTERNET CONTENT-
-- Write over picture.... ###4.5membership (html2jpg)
-- fix contact us email not sending...
-- increase size of anything mouse hovers on. 
-- download my eyes picture as logo-white.png
-- find original colors. (tavonline.net/html/gorge2/dark/portfolio/work-1.html)
-- get usmanJee picture
-- write about section (copy scam ibless yt description, "bigger than life")
-- back to top page. 
-- fix latest tweets OR fb
-- Animation of arrow pointing down for (Scroll down to see your screenshoot)
-- 
+INTERNET CONTENT -
+
+	- Write over picture.... ###4.5membership (html2jpg)
+	- fix contact us email not sending...
+	- increase size of anything mouse hovers on. 
+	- download my eyes picture as logo-white.png
+	- find original colors. (tavonline.net/html/gorge2/dark/portfolio/work-1.html)
+	- get usmanJee picture
+	- write about section (copy scam ibless yt description, "bigger than life")
+	- back to top page. 
+	- fix latest tweets OR fb
+	- Animation of arrow pointing down for (Scroll down to see your screenshoot)
+	- 
 
 
 
@@ -48,6 +49,7 @@ Name- Muhammad Saarim Bin Shahid
 Nickname- Sir
 DOB- 18 November 1999
 Residence- Adelaide, Australia
+Desc - Saarim is an absolute rockstar. 
 Social media- 
 	Facebook: https://www.facebook.com/sir.saarim
 	Instagram: https://www.instagram.com/sir.saarim/
@@ -58,16 +60,20 @@ Name- Muhammad Shaaf Bin Shahid
 Nickname- Shaafy
 DOB- 28.6.?
 Residence- Adelaide, Australia
+Desc -
 Social media- 
 	Facebook: https://www.facebook.com/shaafshahid
 	Instagram: https://www.instagram.com/shaaf96/
 	Snapchat: https://www.snapchat.com/add/shaaf96/?fbclid=IwAR3nBy4PWAT0JOldaGFrHE2Rdf9v8DC8rO5yyuq2TSOtu4lwTLisnu2rmqo
 	Twitter:
+	
+
 
 Name- Muhammad Nabeel Akhtar 
 Nickname- Billi
 DOB- 29 August 1998
 Residence- Faislabad, Pakistan
+Desc - The decent kid from
 Social media- 
 	Facebook: https://www.facebook.com/muhammadnabeel.akhtar
 	Instagram: https://www.instagram.com/nabeel.billi/
@@ -81,6 +87,7 @@ Name- Muhammad Adeel Akhtar
 Nickname- Addy
 DOB- 05 October 1994
 Residence- Faislabad, Pakistan
+Desc -
 Social media- 
 	Facebook: https://www.facebook.com/muhammad.a.akhtar.7
 	Instagram: https://www.instagram.com/m.adeel.akhtar/
@@ -91,6 +98,7 @@ Name- Muhammad Sharjeel Akhtar
 Nickname- MSA
 DOB- 26 January 2002
 Residence- Faislabad, Pakistan
+Desc -
 Social media- 
 	Facebook: https://www.facebook.com/profile.php?id=100007310357963
 	Instagram: https://www.instagram.com/sharjeel_akther/
@@ -102,6 +110,7 @@ Name- Usman Jee
 Nickname- Murshad
 DOB- ?.?.?
 Residence- Faislabad, Pakistan
+Desc -
 Social media- 
 	Facebook: https://www.facebook.com/usmanjee22
 	Instagram: https://www.instagram.com/nooty_jutt/
