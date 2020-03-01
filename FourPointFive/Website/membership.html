@@ -86,7 +86,7 @@
 
         <div class="cont">
             <section class="our-news">
-                <div class="allTopText about-text text-center title">
+                <div class="allTopText about-text text-center title" id="allTopTextID">
                     <h4 style="color: #fff9d9 !important; font-style: normal; font-size: larger; font-size: 1.2rem !important; letter-spacing: 0;">Create a custom 4.5 membership card!</h4>
                     <p color: #fff9d9; color: #fff;">
 
@@ -98,24 +98,38 @@
                             <button class="site-btn2" id="addNameButton" onclick="myFunction()">ADD NAME</button>
                         </div>
                         <small id="reloadAlternative" style="color: white;"></small>
-
                     </p>
-                    <p id="ssNotify" color: #fff9d9;">
-                        Click the button capture the your custom 4.5 membership card -
-                        <input type='button' id='but_screenshot' value='Take Screenshot' onclick='screenshot();'>
-                    </p>
-                    <p id="ssNotifySuccess" style="color: #83c683;">Scroll down to see your screenshoot</p>
-                    <br />
+                    <p id="cancelText" style="color: #ffafaf;"></p>
+                    <p id="viewMsg" style="color: #83c683;">Now scroll down and press VIEW MEMBERSHIP button</p>
                 </div>
                 <div id="outsideCanvas">
-                    <canvas id="myCanvas" width="2000" height="2000"
-                            style="border: 1px solid #d3d3d3; width: 100%; height: 100%; margin:0;">
+
+                    <canvas id="myCanvas" width="2000" height="2000" style="border: 1px solid #d3d3d3; width: 100%; height: 100%; margin:0;">
                         Your browser does not support the HTML5 canvas tag.
                     </canvas>
+                    <div class="text-center">
+                        <br />
+                        <button class="site-btn2" id="viewMemButton" onclick="myFunction()">VIEW MEMBERSHIP</button>
+                    </div>
+                   
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+
+                        <!-- Modal Content (The Image) -->
+                        <canvas class="modal-content" id="img01" width="2000" height="2000"></canvas>
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
                 </div>
 
                 <img id="myImage" width="1" height="1"
                      src="images/MembershipCard.jpg" alt="The Scream" style="visibility:hidden;">
+
+
 
             </section>
         </div> <!-- cont end -->
@@ -183,13 +197,12 @@
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var img = document.getElementById("myImage");
-        ctx.drawImage(img, 10, 10);
+        ctx.drawImage(img, 0, 0);
+        document.getElementById("viewMsg").style.display = "none";
+        document.getElementById("viewMemButton").style.visibility = "hidden";
     };
 
     function myFunction() {
-        document.getElementById("ssNotifySuccess").style.display = "none";
-        document.getElementById("ssNotify").style.display = "none";
-        document.getElementById("but_screenshot").style.display = "none";
         var person = prompt("Please enter your name", "Sir Saarim");
         if (person != null) {
             var canvas = document.getElementById("myCanvas");
@@ -199,20 +212,35 @@
             ctx.textAlign = "center";
             ctx.fillText(person, canvas.width / 2, 500);
         }
+        var txt = document.getElementById("cancelText")
+        if (person == null || person == "") {
+            txt.innerHTML = "Please enter your name to proceed!"
+        } else {
+            txt.innerHTML = "Success!"
+            txt.style.color = "#83c683";
+            document.getElementById("outerDivaddNameButton").style.visibility = "hidden"
+            document.getElementById("viewMsg").style.display = "block";
+            document.getElementById("viewMemButton").style.visibility = "visible";
+        }
+   
 
-        document.getElementById("outerDivaddNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + 'reloadPage()' + '">' + "RESTART" + '</button>';
-        document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page yourself.';
+        var canvas = document.getElementById("myCanvas");
+        var canvas2 = document.getElementById("img01");
+        //grab the context from your destination canvas
+        var destCtx = canvas2.getContext('2d');
+        //call its drawImage() function passing it the source canvas directly
+        //context.drawImage(img, sx, sy, swidth, sheight, x, y, width, height);
+        destCtx.drawImage(canvas, 0, 0, 2000, 2000);
     }
 
-    function screenshot() {
-        html2canvas(document.querySelector("#capture")).then(canvas => {
-            document.getElementById("ssNotify").style.visibility = "hidden";
-            document.getElementById("but_screenshot").style.visibility = "hidden";
-            document.getElementById("ssNotifySuccess").style.visibility = "visible";
-            document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page.';
-            document.getElementById("paste").appendChild(canvas).setAttribute("id", "screenshotCanvas");
-        });
-    }
+
+
+
+
+
+
+
+
 
 
 
@@ -230,7 +258,7 @@
 
 
 <!--<div class="row">
- 
+
     <a href="#" class="col-md-12 col-sm-6 news bottom_60 bottom_60" style="text-align:center;">
         <article class="news-box">
             <figure>
@@ -242,7 +270,7 @@
         </article>
     </a>
 
-    
+
     <a href="#" class="col-md-12 col-sm-6 news bottom_60 bottom_60" style="text-align:center;">
         <article class="news-box">
             <figure>
@@ -253,3 +281,131 @@
         </article>
     </a>
 </div>-->
+
+
+<style>
+    /* Style the Image Used to Trigger the Modal */
+    #myCanvas {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        #myCanvas:hover {
+            opacity: 0.7;
+        }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation - Zoom in the Modal */
+    .modal-content, #caption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+</style>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myCanvas");
+    var button = document.getElementById("viewMemButton")// ADDED CODE
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    button.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        var currentdate = new Date();
+        var datetime = currentdate.getDate() + "/"
+            + (currentdate.getMonth() + 1) + "/"
+            + currentdate.getFullYear() + " @ "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds();
+        captionText.innerHTML = "4.5 membership card officially created on  " + datetime;
+
+
+        document.getElementById("allTopTextID").style.visibility = "hidden";
+        document.getElementById("outerDivaddNameButton").style.visibility = "visible";
+        document.getElementById("outerDivaddNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + 'reloadPage()' + '">' + "RESTART" + '</button>';
+        document.getElementById("reloadAlternative").style.visibility = "visible";
+        document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page yourself.';
+       
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>

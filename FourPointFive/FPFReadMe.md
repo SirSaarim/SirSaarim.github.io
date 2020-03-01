@@ -58,7 +58,7 @@ Social media-
 
 Name- Muhammad Shaaf Bin Shahid 
 Nickname- Shaafy
-DOB- 28.6.?
+DOB- 28 June 1995
 Residence- Adelaide, Australia
 Desc -
 Social media- 
