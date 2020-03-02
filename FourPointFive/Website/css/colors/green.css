@@ -7,6 +7,16 @@
     color: #52bf00;
 }
 
+/*next portfolio text*/
+.portfolio-nav .port-next .nav-title {
+    color: #84ff27 !important;
+}
+
+.portfolio-nav .port-next .next-title {
+    color: #3c8d00 !important;
+}
+/*------- ENDS*/
+
 .home .home-content .hero-title span {
 }
 
