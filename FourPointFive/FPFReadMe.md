@@ -1,3 +1,17 @@
+Cool websites: http://imrankhanworld.com/
+https://themeforest.net/item/watson-vcard-resume-cv-portfolio-template/22526409
+
+
+
+Achievements:
+	150+ Covers
+	
+
+
+
+
+
+
 Home- Welcome to 4.5's official website
 Covers- a-z covers from database
 Wallpapers- 2 wallpapers
