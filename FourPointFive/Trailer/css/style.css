@@ -48,7 +48,7 @@ body{
 
 .preloader-main .preloader {
   background: url(../img/logo.png) no-repeat center center;
-  background-size: 22px 22px;
+  background-size: 50px 50px;
 }
 
 .spinner {
@@ -64,7 +64,7 @@ body{
 
 .hello{
   color: #000;
-  font-size: 200px;
+  font-size: 180px;
   font-family: 'Gilroy';
   font-weight: 900;
   letter-spacing: -5px;
@@ -75,7 +75,7 @@ body{
 }
 
 .hello span{
-  color: #75B734;
+  color: #FFC53B;
 }
 
 .hero .logo{
@@ -230,8 +230,8 @@ body{
   opacity: 0;
 }
 
-.darkagain{
-  background: #5f21b1;
+.darkagain {
+    background: #005b47;
 }
 
 
@@ -267,7 +267,7 @@ body{
 }
 
 .works .works-list li a:hover{
-  color: #75B734;
+  color: #FFC53B;
 }
 
 
@@ -436,7 +436,7 @@ footer .logo {
 }
 
 .hello {
-  font-size: 170px;
+  font-size: 140px;
 }
   
 }
