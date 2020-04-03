@@ -126,7 +126,7 @@
                             <ul class="social">
                                 <li><a href="https://www.facebook.com/groups/4.5gang" target="_blank"><i class="fab fa-facebook"></i></a></li>
                                 <!--<li><a href="https://www.behance.net/tavonline"><i class="fab fa-behance" target="_blank"></i></a></li>
-                        <li><a href="https://www.dribbble.com/tavonline"><i class="fab fa-dribbble" target="_blank"></i></a></li>-->
+                                <li><a href="https://www.dribbble.com/tavonline"><i class="fab fa-dribbble" target="_blank"></i></a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -159,3 +159,37 @@
         font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     }
 </style>
+
+<!--Customer Chat Plugin for Your Website-->
+<!--Messenger chat -->
+<script>
+    var div = document.createElement('div');
+    div.className = 'fb-customerchat';
+    div.setAttribute('page_id', '111755957113044');
+    div.setAttribute('ref', '');
+    document.body.appendChild(div);
+    window.fbMessengerPlugins = window.fbMessengerPlugins || {
+        init: function () {
+            FB.init({
+                appId: '1678638095724206',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.3'
+            });
+        }, callable: []
+    };
+    window.fbAsyncInit = window.fbAsyncInit || function () {
+        window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+        window.fbMessengerPlugins.init();
+    };
+    setTimeout(function () {
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 0);
+</script>
