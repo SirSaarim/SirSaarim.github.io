@@ -680,7 +680,7 @@ header {
 
     .cbp-item figure figcaption, .cbp-item figure:after {
         position: absolute;
-        top: 0;
+        top: -50px;
         bottom: 0;
         left: 0;
         right: 0;
