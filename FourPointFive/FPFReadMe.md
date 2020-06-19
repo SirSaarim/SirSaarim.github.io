@@ -44,9 +44,6 @@ Join Membership-
 	
 INTERNET CONTENT -
 
-	- increase size of anything mouse hovers on. 
-	- download my eyes picture as logo-white.png
-	- find original colors. (tavonline.net/html/gorge2/dark/portfolio/work-1.html)
 	- get usmanJee picture
 	- write about section (copy scam ibless yt description, "bigger than life")
 	- back to top page. 
