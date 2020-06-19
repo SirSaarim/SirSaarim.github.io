@@ -44,8 +44,6 @@ Join Membership-
 	
 INTERNET CONTENT -
 
-	- Write over picture.... ###4.5membership (html2jpg)
-	- fix contact us email not sending...
 	- increase size of anything mouse hovers on. 
 	- download my eyes picture as logo-white.png
 	- find original colors. (tavonline.net/html/gorge2/dark/portfolio/work-1.html)
