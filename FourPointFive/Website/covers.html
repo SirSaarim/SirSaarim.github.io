@@ -64,7 +64,7 @@
             <nav class="col-md-8">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <!--<li><a href="covers.html">Covers</a></li>-->
+                    <li><a href="covers.html">Covers</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="membership.html">Get Membership</a></li>
                     <li><a href="wallpapers.html">Wallpapers</a></li>
@@ -93,11 +93,125 @@
     <div class="wrapper" id="top">
         <section class="titlebar">
             <h1 class="page-title"><span>Covers</span></h1>
-            <div id="particles-js"></div>
+            <!--<div id="particles-js"></div>-->
         </section>
         <hr class="col-md-6 bottom_60">
         <div class="cont" style="text-align: center;">
             <section class="our-news">
+
+                <!-- Images used to open the lightbox -->
+                <h3 id="unreleasedCoverTxt" style="font-size: 15px; text-align: center;line-height: 57px;letter-spacing: -0.33px;font-weight: 500;font-style: normal;">Click on the cover to download it in BEST Quality.</h3>
+                <div class="row" id="covers" style="font-size: 25px !important;">
+                    <article class="news-box col-md-4 col-sm-6 news bottom_60">
+                        <figure>
+                            <img src="images/covers/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            <small id="coverNumber">1</small>
+                        </figure>
+                    </article>
+                    <!--<article class="news-box col-md-4 col-sm-6 news bottom_60">
+                        <figure>
+                            <img src="images/covers/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </figure>
+                    </article>
+                    <article class="news-box col-md-4 col-sm-6 news bottom_60">
+                        <figure>
+                            <img src="images/covers/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </figure>
+                    </article>
+                    <article class="news-box col-md-4 col-sm-6 news bottom_60">
+                        <figure>
+                            <img src="images/covers/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        </figure>
+                    </article>-->
+                </div>
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div id="coversSlides">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/covers/1.jpg" style="width:100%">
+                            </div>
+                            <!--<div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/covers/2.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/covers/3.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="images/covers/4.jpg" style="width:100%">
+                            </div>-->
+
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="" onclick="currentSlide(1)" alt="1">
+                            </div>
+                            <!--<div class="column">
+                                <img class="demo" src="" onclick="currentSlide(2)" alt="2">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="" onclick="currentSlide(3)" alt="3">
+                            </div>
+                            <div class="column">
+                                <img class="demo" src="" onclick="currentSlide(4)" alt="4">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <h3 id="unreleasedCoverTxt" style="font-size: 15px; text-align: center;line-height: 57px;letter-spacing: -0.33px;font-weight: 500;font-style: normal;">Click on the cover to download it in BEST Quality.</h3>
                 <div class="row" id="covers" style="font-size: 25px !important;">
                     <!-- a news -->
@@ -107,9 +221,7 @@
                         </a>
                         <small id="coverNumber">1</small>
                     </article>
-
                 </div>
-
             </section>
         </div> <!-- cont end -->
     </div> <!-- wrapper end -->
@@ -147,8 +259,8 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
     <script src="js/typed.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+    <!--<script src="js/particles.js"></script>-->
+    <!--<script src="js/app.js"></script>-->
     <script src="js/jquery.hover3d.js"></script>
     <script src="twitter-api/tweetie.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -163,10 +275,203 @@
 
 <script type="text/javascript">
     window.onload = function () {
+        //for (var i = 2; i < 201; i++) {
+        //    document.getElementById('covers').innerHTML += '<article class="news-box col-md-4 col-sm-6 news bottom_60"><a href="images/covers/' + i + '.jpg" download="4.5Cover"><figure><img id="unreleasedCoverTxt" src="images/covers/' + i + '.jpg" alt="' + i + ' cover has not been released yet!"></figure></a><small id="coverNumber">' + i + '</small></article>';
+        //}
+
         for (var i = 2; i < 201; i++) {
-            document.getElementById('covers').innerHTML += '<article class="news-box col-md-4 col-sm-6 news bottom_60"><a href="images/covers/' + i + '.jpg" download="4.5Cover"><figure><img id="unreleasedCoverTxt" src="images/covers/' + i + '.jpg" alt="' + i + ' cover has not been released yet!"></figure></a><small id="coverNumber">' + i + '</small></article>';
+            document.getElementById('covers').innerHTML += '<article class="news-box col-md-4 col-sm-6 news bottom_60"><figure><img src="images/covers/' + i + '.jpg" onclick="openModal();currentSlide(' + i + ')" class="hover-shadow">           <small id="coverNumber">'+i+'</small></figure></article>';
+            document.getElementById('coversSlides').innerHTML += ' <div class="mySlides"><div class="numbertext">' + i + ' / 4</div> <img src="images/covers/' + i + '.jpg" style="width:100%"> </div>   <div class="column">   <img class="demo" src="" onclick="currentSlide(' + i + ')" alt="' + i + '">   </div>';
         }
+
     }
 
 
+
+
+
+
+
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+
+
+
+
+
+
 </script>
+<style>
+    /*img {
+        transition: transform 0.25s ease;
+    }
+
+        img:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }*/
+    .row > .column {
+        padding: 0 8px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Create four equal columns that floats next to eachother */
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #ffe277;
+        position: absolute;
+        top: 80px;
+        right: 120px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* Hide the slides by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Caption text */
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    img.demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s;
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>

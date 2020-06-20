@@ -58,7 +58,7 @@
                     <li><a href="index.html">Home</a></li>
                     <!--<li><a href="covers.html">Covers</a></li>-->
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="membership.html">Get Membership</a></li>
+                    <li><a id="membership" href="#home">Get Membership</a></li>
                     <li><a href="wallpapers.html">Wallpapers</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -82,12 +82,12 @@
         </div>
     </div>
     <!-- SITE CONTENT -->
-    <div class="wrapper">
-        <section class="home" id="home">
+    <div class="wrapper" id="home">
+        <section class="home">
             <!--Moving particles-->
             <!--<div id="particles-js"></div>-->
             <div class="home-content">
-                <h1 class="hero-title">Welcome to<br><span>FOUR POINT FIVE</span></h1>
+                <h1 class="hero-title" id="tits">Welcome to<br><span>FOUR POINT FIVE</span></h1>
                 <!-- style="font-size: 120px" -->
                 <p class="top_45">We are a team!<br>We love<span class="element" data-text1=" chicken tikka." data-text2=" cute girls." data-text3=" being shareef." data-loop="true" data-backdelay="1500"></span></p>
                 <div class="social">
@@ -107,6 +107,8 @@
 
 
         </section>
+        <p>EID MUBARAK</p>
+        <p id="demo">Click me.</p>
         <div class="cont">
             <section id="portfolio" class="portfolio">
                 <div class="portfolio-filter row">
@@ -191,22 +193,22 @@
 
                     <!-- load more button -->
                     <!--  <div id="port-loadMore" class="cbp-l-loadMore-button top_120 bottom_90">
-                         <a href="port.html" class="cbp-l-loadMore-link site-btn" rel="nofollow">
-                             <span class="cbp-l-loadMore-defaultText">Load More (<span class="cbp-l-loadMore-loadItems">2</span>)</span>
-                             <span class="cbp-l-loadMore-loadingText">Loading...</span>
-                             <span class="cbp-l-loadMore-noMoreLoading">No More Works</span>
-                         </a>
-                     </div> -->
+                     <a href="port.html" class="cbp-l-loadMore-link site-btn" rel="nofollow">
+                         <span class="cbp-l-loadMore-defaultText">Load More (<span class="cbp-l-loadMore-loadItems">2</span>)</span>
+                         <span class="cbp-l-loadMore-loadingText">Loading...</span>
+                         <span class="cbp-l-loadMore-noMoreLoading">No More Works</span>
+                     </a>
+                 </div> -->
             </section>
             <hr class="top_90 bottom_90 col-md-8" style="margin-top:200px">
             <!--<section class="widget-twitter top_60">
-                <div class="widget-title">
-                    <h2 class="classic-title">Latest Tweets</h2>
-                </div>
-                <a class="twitter-timeline" href="https://twitter.com/sirsaarim" data-tweet-limit="3" data-width="399" data-theme="dark"></a>
-                <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <a href="https://twitter.com/sirsaarim" target="_blank" class="twitter-account">@sir.saarim</a>
-            </section>-->
+            <div class="widget-title">
+                <h2 class="classic-title">Latest Tweets</h2>
+            </div>
+            <a class="twitter-timeline" href="https://twitter.com/sirsaarim" data-tweet-limit="3" data-width="399" data-theme="dark"></a>
+            <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/sirsaarim" target="_blank" class="twitter-account">@sir.saarim</a>
+        </section>-->
         </div> <!-- cont end -->
     </div> <!-- wrapper end -->
     <!-- BACK TO TOP -->
@@ -241,10 +243,11 @@
     </footer>
     <!-- Javascripts -->
     <script src="js/jquery-2.1.4.min.js"></script>
+    <!--<script src="js/jquery-3.5.1.min.js"></script>-->
     <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
     <script src="js/typed.js"></script>
     <!--<script src="js/particles.js"></script>-->
-    <script src="js/app.js"></script>
+    <!--<script src="js/app.js"></script>-->
     <script src="js/jquery.hover3d.js"></script>
     <!--<script src="twitter-api/tweetie.js"></script>-->
     <script src="js/main.js"></script>
@@ -293,7 +296,19 @@
         }(document, 'script', 'facebook-jssdk'));
     }, 0);
 </script>
+<script>
+    //var title = document.getElementByClass("hero-title");
+    //title.innerHTML="sssssssssss"
 
+    document.getElementById("membership").onclick = function () { myFunction() };
+    function myFunction() {
+        document.getElementById("tits").innerHTML = "Membership";
+        window.location.hash = "home";
+        
+    }
+
+
+</script>
 
 
 
