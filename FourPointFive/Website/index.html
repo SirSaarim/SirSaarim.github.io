@@ -302,12 +302,13 @@
 
     document.getElementById("membership").onclick = function () { myFunction() };
     function myFunction() {
-        document.getElementById("tits").innerHTML = "Membership";
-        window.location.hash = "home";
-        
+        //using "replace" removes the current page from browser history
+        window.location.href = 'membership.html'
     }
 
+    
 
+ 
 </script>
 
 
