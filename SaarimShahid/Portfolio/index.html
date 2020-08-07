@@ -150,7 +150,7 @@
             <div class="row">
                 <!-- Profile Image -->
                 <div class="col-md-4 profile">
-                    <img src="images/profile.jpg" alt="">
+                    <img id="myImage" src="images/profile.jpg" alt="">
                 </div>
                 <!-- About Information -->
                 <div class="col-md-8 about-info top_30">
@@ -170,7 +170,8 @@
                         <!--<li><span>Skype : </span>Rgiggs87</li>-->
                         <!--<li><span>Address : </span>107 Santa Monica Boulevard Los Angeles, California</li>-->
                     </ul>
-                    <!--<button class="giggs_button top_15">DOWNLOAD CV</button>-->
+                    <button id="myButton" class="giggs_button top_15" onclick="changePicture(this.innerText)">Digital Art Version</button>
+
                 </div>
             </div>
         </div>
@@ -614,3 +615,21 @@
 </body>
 
 </html>
+<script>
+    function changePicture(buttonText)
+    {
+        console.log(buttonText);
+        if (buttonText=="Digital Art Version") {
+            document.getElementById('myImage').src = 'images/dp.png'
+
+            document.getElementById('myButton').innerText = 'Revert'
+
+        }
+        else {
+            document.getElementById('myImage').src = 'images/profile.jpg'
+            document.getElementById('myButton').innerText = 'Digital Art Version'
+        }
+     
+
+    }
+</script>
