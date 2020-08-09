@@ -5,12 +5,12 @@ Official Trailer: https://sirsaarim.github.io/FourPointFive/Trailer
 
 
 Pages of our official website
-	Home
+	Home:
 		Home of 4.5. View info about all our elite members 
-	Covers
+	Covers:
 		Only for family fans 
 		Private link: https://sirsaarim.github.io/FourPointFive/Website/covers
-	About Us
+	About Us:
 		Learn about us and our story of 4.5 
 	Get Membership: 
 		Get the official our membership
@@ -37,5 +37,8 @@ Add social link to facebook page and group
 Caption for each member
 Shaaf DOB year
 fix About "U"s text
+add usman jee all info
+remove "Click on the cover to download it in BEST Quality." text from cover page
+fix cover page individual pics slideshow
 
 	
