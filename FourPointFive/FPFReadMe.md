@@ -4,9 +4,9 @@ Official Website: https://sirsaarim.github.io/FourPointFive/Website
 Official Trailer: https://sirsaarim.github.io/FourPointFive/Trailer 
 
 
-Pages of the Official Website
+Pages of our official website
 	Home
-		Homepage of our website. View info about all our elite members 
+		Home of 4.5. View info about all our elite members 
 	Covers
 		Only for family fans 
 		Private link: https://sirsaarim.github.io/FourPointFive/Website/covers
