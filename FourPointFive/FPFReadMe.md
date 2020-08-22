@@ -1,7 +1,10 @@
 FOUR POINT FIVE PUBLIC WEBSITE
 
 Official Website: https://sirsaarim.github.io/FourPointFive/Website
-Official Trailer: https://sirsaarim.github.io/FourPointFive/Trailer 
+Official Trailer: https://sirsaarim.github.io/FourPointFive/Trailer
+
+Click on 4.5 logo from anywhere to go back to home!
+
 
 
 Pages of our official website
@@ -46,7 +49,6 @@ fix cover page individual pics slideshow
 
 
 Saarim has the kind of face that stops you in your tracks. I guess he must get used to that, the sudden pause in a person's natural expression when they look his way followed by overcompensating with a nonchalant gaze and a weak smile. Of course the blush that accompanied, it is a dead give-away. It didn't help that he is so modest with it, it made the girls fall for him all the more. Despite all the opportunity that came his way he stays on the Halal side. He is handsome alright, but inside he is beautiful.
-
 https://www.descriptionari.com/quotes/a-handsome-man/
 
 
