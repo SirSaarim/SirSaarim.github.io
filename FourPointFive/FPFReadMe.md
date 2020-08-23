@@ -36,20 +36,12 @@ Follow the following steps:
 
 
 Left to do:
-Add social link to facebook page and group
-Caption for each member
-Shaaf DOB year
-fix About "U"s text
-add usman jee all info
 remove "Click on the cover to download it in BEST Quality." text from cover page
 fix cover page individual pics slideshow
+fix about us page slideshow of svg
+add usman jee snapchat (optional)
 
 
-
-
-
-Saarim has the kind of face that stops you in your tracks. I guess he must get used to that, the sudden pause in a person's natural expression when they look his way followed by overcompensating with a nonchalant gaze and a weak smile. Of course the blush that accompanied, it is a dead give-away. It didn't help that he is so modest with it, it made the girls fall for him all the more. Despite all the opportunity that came his way he stays on the Halal side. He is handsome alright, but inside he is beautiful.
-https://www.descriptionari.com/quotes/a-handsome-man/
 
 
 
