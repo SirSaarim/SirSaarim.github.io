@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title> UTSirSaarim </title>
+    <title> UT SirSaarim </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body id="bady" onload="pageLoaded()">
-    <div>
+<body>
+    <div id="myPage">
         <h2> TEXT GENERATOR </h2>
         <hr>
         <button id="button1" class="btn btn-light" autofocus onclick="forward()"> UNLIMITED TEXT GENERATOR </button>
@@ -45,32 +46,24 @@
         img {
             width: 100%;
         }
-        p {
-            color: aliceblue;
-        } 
     </style>
     <script>
-        function pageLoaded() {
-            document.getElementById("buttonBack").style.visibility = "hidden";
-        }
-
 
 
         function forward() {
+
             var i;
             var repeat;
             var text;
-
             text = prompt("Text to repeat: ");
             repeat = prompt("How many times you want to repeat the text");
             repeat = parseInt(repeat);
-
             for (i = 1; i <= repeat; i++) {
-                document.write(i);
+                document.write('<p style="margin:0 0 0 0;color:white;background:black;">' + i);
                 document.write(". ");
-                document.write(text);
-                document.write("<BR>")
+                document.write(text + "</p>");
             }
+
         }
 
         function backwards() {
