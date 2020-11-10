@@ -118,12 +118,12 @@
                         <ul class="nav-menu nav-scroll">
                             <li><a href="#home" class="selected">HOME</a></li>
                             <li><a href="#about">ABOUT</a></li>
-                            <!--<li><a href="#skills">SKILLS</a></li>
-                            <li><a href="#resume">RESUME</a></li>-->
+                            <!--<li><a href="#skills">SKILLS</a></li>-->
+                            <!--<li><a href="#resume">RESUME</a></li>-->
                             <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <!--<li><a href="#price">PRICE</a></li>
-                            <li><a href="#blog">BLOG</a></li>
-                            <li><a href="#contact">CONTACT</a></li>-->
+                            <!--<li><a href="#price">PRICE</a></li>-->
+                            <!--<li><a href="#blog">BLOG</a></li>-->
+                            <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -211,7 +211,9 @@
                     <div class="portfolio_filter">
                         <ul>
                             <li class="select-cat" data-filter="*">All</li>
-                            <li data-filter=".computerScience">Programming</li>
+
+                            <li data-filter=".computerScience" id="programming"> Programming </li>
+
                             <li data-filter=".informationTechnology">Information Technology</li>
                             <li data-filter=".informationSystem">Information System</li>
                             <li data-filter=".designing">Designing</li>
@@ -235,7 +237,7 @@
                                 </div>
                             </a>
                         </div>
-                       
+
                         <!-- Item -->
                         <div class="single_item link computerScience col-md-4 col-sm-6">
                             <a href="artificialIntelligence.html" class="link">
@@ -476,7 +478,7 @@
                                 </div>
                             </a>
                         </div>
-                   
+
 
 
 
@@ -497,22 +499,26 @@
                 <div class="center-title">
                     <h1>GET IN TOUCH</h1>
                     <p>
-                        Contact me preferably via email.
+                        Feel free to ontact me using the links below (preferably via email).
                     </p>
                 </div>
                 <div class="col-md-12">
                     <div class="row">
                         <!-- contact-informations -->
                         <div class="col-md-offset-2 col-md-8 contact-information top_45">
-                            <div class="col-md-4 contact-info text-center">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <p>+61 470 227 380</p>
-                            </div>
-                            <div class="col-md-4 contact-info text-center">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <p>Lightview, Adelaide 5085</p>
-                            </div>
-                            <a href="mailto:sirsaarim@gmail.com">
+                            <a href="tel:+61470227380" target="_blank">
+                                <div class="col-md-4 contact-info text-center">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <p>+61 470 227 380</p>
+                                </div>
+                            </a>
+                            <a href="https://goo.gl/maps/qNe7z1wHrFvirv8bA" target="_blank">
+                                <div class="col-md-4 contact-info text-center">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Lightview, Adelaide 5085</p>
+                                </div>
+                            </a>
+                            <a href="mailto:sirsaarim@gmail.com" target="_blank">
                                 <div class="col-md-4 contact-info text-center">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <!--shamy103@mymail.unisa.edu.au-->
@@ -619,10 +625,9 @@
 
 </html>
 <script>
-    function changePicture(buttonText)
-    {
+    function changePicture(buttonText) {
         console.log(buttonText);
-        if (buttonText=="Digital Art Version") {
+        if (buttonText == "Digital Art Version") {
             document.getElementById('myImage').src = 'images/dp.png'
 
             document.getElementById('myButton').innerText = 'Revert'
@@ -632,7 +637,35 @@
             document.getElementById('myImage').src = 'images/profile.jpg'
             document.getElementById('myButton').innerText = 'Digital Art Version'
         }
-     
+
 
     }
+</script>
+<style>
+    .dark .contact-info i:hover {
+        background-color: red;
+    }
+
+    .contact-info p:hover {
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+</style>
+<script>
+
+
+    //function codeAddress() {
+    //    alert("The URL of this page is: " + window.location.href);
+    //    console.log(window.location.href)
+    //    $('#programming')[0].click();
+    //    $('#programming').trigger('click');
+    //    //window.location.href = "programming"
+    //    console.log(window.location.href)
+
+       
+         
+      
+
+    //}
+    //window.onload = codeAddress();
 </script>
