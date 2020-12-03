@@ -39,7 +39,7 @@ Follow the following steps:
 ** Left to do:
 remove Click on the cover to download it in BEST Quality. text from cover page
 fix cover page individual pics slideshow
-fix about us page slideshow of svg
+favi.ico index.html
 add usman jee snapchat (optional)
 
 
