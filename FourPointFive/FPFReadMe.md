@@ -1,18 +1,15 @@
 FOUR POINT FIVE PUBLIC WEBSITE
-
-Official Website: https://sirsaarim.github.io/FourPointFive/Website
-Official Trailer: https://sirsaarim.github.io/FourPointFive/Trailer
-
 Click on 4.5 logo from anywhere to go back to home!
 
+Official Website: https://sirsaarim.github.io/FourPointFive/Website
+
+Official Trailer: https://sirsaarim.github.io/FourPointFive/Trailer
 
 
 Pages of our official website
+
 	Home:
 		Home of 4.5. View info about all our elite members 
-	Covers:
-		Only for family fans 
-		Private link: https://sirsaarim.github.io/FourPointFive/Website/covers
 	About Us:
 		Learn about us and our story of 4.5 
 	Get Membership: 
@@ -21,6 +18,10 @@ Pages of our official website
 		Download our Wallpapers  
 	Contact: 
 		Contact us whenever you are feeling lonely 
+	Covers:
+		Only for family fans 
+		Private link: https://sirsaarim.github.io/FourPointFive/Website/covers
+
 
 
 
@@ -35,14 +36,10 @@ Follow the following steps:
 
 
 
-Left to do:
-remove "Click on the cover to download it in BEST Quality." text from cover page
+** Left to do:
+remove Click on the cover to download it in BEST Quality. text from cover page
 fix cover page individual pics slideshow
 fix about us page slideshow of svg
 add usman jee snapchat (optional)
 
 
-
-
-
-	

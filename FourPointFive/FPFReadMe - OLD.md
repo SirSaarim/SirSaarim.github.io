@@ -45,7 +45,7 @@ Join Membership-
 INTERNET CONTENT -
 
 	- get usmanJee picture
-	- write about section (copy scam ibless yt description, "bigger than life")
+	- write about section (copy scam ibless yt description, bigger than life)
 	- back to top page. 
 	- fix latest tweets OR fb
 	- Animation of arrow pointing down for (Scroll down to see your screenshoot)
