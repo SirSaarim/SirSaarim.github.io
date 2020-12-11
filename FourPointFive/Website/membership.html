@@ -45,7 +45,6 @@
             <div class="loader-inner"></div>
         </div>
     </div>-->
-
     <!-- Favicon -->
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
@@ -79,13 +78,14 @@
                     <li class="title">Get in Touch</li>
                     <li>fourpointfive4.5@gmail.com</li>
                     <li>
-                        <div class="social">
-                            <a href="https://www.facebook.com/groups/4.5gang/" target="_blank"><i class="fab fa-facebook"></i>  </a>
+                        <div class="social" id="social">
+                            <a href="https://www.facebook.com/FourPointFiveOfficial/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/groups/4.5gang/" target="_blank"><i class="fa fa-users"></i></a>
                             <!-- DON'T CHANGE -->
                             <!--       <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a>
-                                  <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
-                                  <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
-                                  <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
+    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
+    <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
+    <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
                         </div>
                     </li>
                 </ul>
@@ -163,12 +163,13 @@
                 </div>
                 <div class="col-md-4 d-sm-none d-md-block">
                     <div class="social">
-                        <a href="https://www.facebook.com/groups/4.5gang/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/FourPointFiveOfficial/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/groups/4.5gang/" target="_blank"><i class="fa fa-users"></i></a>
                         <!-- DON'T CHANGE -->
                         <!--   <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a>
-              <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
-              <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
-              <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
+    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
+    <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
+    <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 d-none d-sm-block getintouch">
@@ -241,7 +242,7 @@
             document.getElementById("viewMsg").style.display = "block";
             document.getElementById("viewMemButton").style.visibility = "visible";
         }
-   
+
 
         var canvas = document.getElementById("myCanvas");
         var canvas2 = document.getElementById("img01");
@@ -251,7 +252,7 @@
         //context.drawImage(img, sx, sy, swidth, sheight, x, y, width, height);
         destCtx.drawImage(canvas, 0, 0, 2000, 2000);
     }
-    
+
 
     function reloadPage() {
         location.reload(false);
@@ -375,7 +376,7 @@
         document.getElementById("outerDivaddNameButton").innerHTML = '<button class="site-btn2" id="addNameButton" onclick="' + 'reloadPage()' + '">' + "RESTART" + '</button>';
         document.getElementById("reloadAlternative").style.visibility = "visible";
         document.getElementById("reloadAlternative").innerHTML = '<br />or just reload the page yourself.';
-       
+
     }
 
     // Get the <span> element that closes the modal

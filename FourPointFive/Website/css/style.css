@@ -19,6 +19,8 @@
 
 /*------------------------ 1 Body and Core Css ------------------------*/
 
+
+
 .backtop {
     cursor: pointer;
     position: fixed;
@@ -572,7 +574,7 @@ header {
         .home .home-content .social a {
             display: block;
             color: #000;
-            font-size: 13px;
+            font-size: 30px;
             margin-top: 10px;
             float: left;
             margin-right: 15px;
@@ -1104,7 +1106,7 @@ header.white .nav-icon span {
             }
 
                 .full-menu .full-inner .full-contact ul li .social a {
-                    font-size: 13px;
+                    font-size: 30px;
                     color: #4f535f;
                     text-decoration: none;
                     margin-right: 10px;
@@ -1285,7 +1287,7 @@ footer {
         footer .social a {
             background: #fff;
             color: #191919;
-            font-size: 12px;
+            font-size: 30px;
             padding: 6px 9px;
             display: inline-block;
             border-radius: 50px;
