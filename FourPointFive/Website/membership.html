@@ -117,7 +117,7 @@
                         <small id="reloadAlternative" style="color: white;"></small>
                     </p>
                     <p id="cancelText" style="color: #ffafaf;"></p>
-                    <p id="viewMsg" style="color: #83c683;">Now scroll down and press VIEW MEMBERSHIP button</p>
+                    <p id="viewMsg" style="color: #83c683;"></p>
                 </div>
                 <div id="outsideCanvas">
 
@@ -239,6 +239,7 @@
             txt.innerHTML = "Success!"
             txt.style.color = "#83c683";
             document.getElementById("outerDivaddNameButton").style.visibility = "hidden"
+            document.getElementById("viewMsg").innerText = "Now scroll down and press VIEW MEMBERSHIP button"
             document.getElementById("viewMsg").style.display = "block";
             document.getElementById("viewMemButton").style.visibility = "visible";
         }
