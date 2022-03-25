@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>testing station (1)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6d0941c1-edb0-40da-8bcd-2a7b8d7cb450" class="page sans"><header><h1 class="page-title">testing station (1)</h1></header><div class="page-body"><div id="5f39bbd0-fc7c-458e-b3ea-84d758a1ef06" class="column-list"><div id="f063a00e-4685-4521-8a42-db779ce15429" style="width:33.33333333333333%" class="column"><h2 id="7d1dd204-4322-4ae2-bb0a-8e0f4f03f311" class="block-color-teal_background">easy</h2><ul id="62ddec68-21e6-4e46-9e72-78618bc2cc64" class="toggle"><li><details open=""><summary>describe the reactivity of N2 and O2 in normal conditions </summary><p id="9b6e1451-a243-4c5a-b154-10eb8fd4b345" class="">both N2 and O2 are unreactive under normal conditions as a large input of energy is required to overcome the strong covalent bonds between the nitrogen and oxygen atoms in these molecules </p></details></li></ul><ul id="11ae00df-7b24-46c8-8b87-43e0494a74b1" class="toggle"><li><details open=""><summary>what are the 1st and 2nd most abundant atmospheric gases?</summary><ul id="4a5f6533-4b49-4e19-893b-07a2cc149bc9" class="bulleted-list"><li style="list-style-type:disc">nitrogen 78% </li></ul><ul id="0fe20e0e-4e72-4699-a0b6-578f5fb42921" class="bulleted-list"><li style="list-style-type:disc">oxygen 21%</li></ul><ul id="76358ed3-395d-4be7-bf60-b3dc9c048a82" class="bulleted-list"><li style="list-style-type:disc">other 1% - argon, carbon dioxide, helium </li></ul></details></li></ul><ul id="55eaf5bc-0089-4612-bb81-25c86fe452ad" class="toggle"><li><details open=""><summary>what are the two main components of photochemical smog </summary><ul id="3ec690da-fe57-4929-96cc-675b667ed208" class="bulleted-list"><li style="list-style-type:disc">ozone &amp; nitrogen dioxide <figure id="4bdef9a0-66d8-4754-9440-e20e39cc5e5d" class="image"><a href="Screen_Shot_2020-12-17_at_4.47.12_pm.png"><img style="width:192px" src="Screen_Shot_2020-12-17_at_4.47.12_pm.png"/></a></figure><p id="5400c8af-2f23-4b1e-bf2c-9235042a240b" class="">
+</p></li></ul></details></li></ul><ul id="36e4635d-6ea7-4868-8649-609348ffcc16" class="toggle"><li><details open=""><summary>explain the chemical properties of nitrogen </summary><ul id="0bd1cad4-470d-4410-b6d7-d128a0ab1969" class="bulleted-list"><li style="list-style-type:disc">exists as a diatomic molecule → N2</li></ul><ul id="a5a5c523-f9fd-445c-ab61-9d5285569a20" class="bulleted-list"><li style="list-style-type:disc">held together by a strong triple covalent bond, <ul id="7032ed03-a845-4796-b6ec-c4b19d64aba0" class="bulleted-list"><li style="list-style-type:circle">a lot of energy needed to overcome this bond</li></ul></li></ul></details></li></ul><ul id="7ed95c5a-1035-426b-a7ec-01b7aeaf212f" class="toggle"><li><details open=""><summary>what are platinum group metals?</summary><ul id="28bf2f52-95bb-431d-9196-95e1fc33dfbc" class="bulleted-list"><li style="list-style-type:disc">platinum </li></ul><ul id="f7c63053-8341-43de-b715-3efbdfc5feb7" class="bulleted-list"><li style="list-style-type:disc">palladium </li></ul><ul id="b08aee0c-bc1e-42cb-b861-35b80953cb37" class="bulleted-list"><li style="list-style-type:disc">rhodium </li></ul></details></li></ul><ul id="bc4a743e-2730-4111-9024-55ac97bbe5e1" class="toggle"><li><details open=""><summary>equation for carbon monoxide - CO</summary><figure id="4a915dfb-ad3e-4a0e-8b83-6d8d21f11be3" class="image"><a href="Screen_Shot_2020-12-18_at_9.36.52_pm.png"><img style="width:1422px" src="Screen_Shot_2020-12-18_at_9.36.52_pm.png"/></a></figure></details></li></ul><ul id="428967dd-6fcd-479b-96ab-5974a56cf827" class="toggle"><li><details open=""><summary>equation for unburnt hydrocarbons </summary><p id="dde51c60-988c-4319-b515-92a1d6c2619f" class="">C8H18 not C2H18 lol mr wilson </p><figure id="1717e0dd-a9be-4417-8693-cba70630324d" class="image"><a href="Screen_Shot_2020-12-18_at_9.37.04_pm.png"><img style="width:1500px" src="Screen_Shot_2020-12-18_at_9.37.04_pm.png"/></a></figure></details></li></ul><ul id="4a0812ca-e540-4207-a934-1e4a7022c81f" class="toggle"><li><details open=""><summary>equation for nitric oxide - NO </summary><figure id="d02ac913-e957-4ffa-b222-7edb933a03a1" class="image"><a href="Screen_Shot_2020-12-18_at_9.37.18_pm.png"><img style="width:1484px" src="Screen_Shot_2020-12-18_at_9.37.18_pm.png"/></a></figure></details></li></ul><p id="4606da35-27ff-4727-899e-2ca93daeaa96" class="">
+</p><p id="a2b95c79-9ded-4e80-ad92-2e23b2b31171" class="">
+</p></div><div id="460a62c3-6eb0-43e1-bded-076fc2626ad3" style="width:33.33333333333334%" class="column"><h2 id="fd6a46a9-24a6-4bb6-971c-4f114979cc45" class="block-color-blue_background">good</h2><ul id="80bddca2-3901-47f0-9944-04bee3194a71" class="toggle"><li><details open=""><summary>what is the composition of earth&#x27;s atmosphere?</summary><figure id="e575b36f-90a6-40e8-ad6e-77803930c8cb" class="image"><a href="Screen_Shot_2020-12-17_at_4.28.00_pm.png"><img style="width:1428px" src="Screen_Shot_2020-12-17_at_4.28.00_pm.png"/></a></figure></details></li></ul><ul id="9b9cee53-466e-4acc-9654-4fd55638fdba" class="toggle"><li><details open=""><summary>4 examples of primary pollutants</summary><ul id="3521e537-ab6f-4794-8b8a-10bf2a683753" class="bulleted-list"><li style="list-style-type:disc">carbon monoxide - CO </li></ul><ul id="97646e8e-8453-481f-8e48-ed47759a774b" class="bulleted-list"><li style="list-style-type:disc">sulfur dioxide - SO2 </li></ul><ul id="feee58af-d122-4add-9093-349595864930" class="bulleted-list"><li style="list-style-type:disc">nitric oxide - NO</li></ul><ul id="8aaf2349-872c-4f5f-a24b-c48d5f95e130" class="bulleted-list"><li style="list-style-type:disc">nitrogen dioxide - NO2</li></ul></details></li></ul><ul id="cf284ac1-9965-421d-a7f8-602e90db2af1" class="toggle"><li><details open=""><summary>causes of photochemical smog </summary><ul id="9247b043-5324-4d43-a25d-57684dead0f2" class="bulleted-list"><li style="list-style-type:disc">primary pollutants - directly emitted into the atmosphere </li></ul><ul id="2842ae74-e64c-4fbc-a619-0f38ca9309bc" class="bulleted-list"><li style="list-style-type:disc">secondary pollutants - formed from the reaction of primary pollutants </li></ul></details></li></ul><ul id="4be037d5-b58c-46d8-969c-088c3d00ab4b" class="toggle"><li><details open=""><summary>where is photochemical smog heavily prevelant?</summary><ul id="4106bf23-11df-445f-a734-cd6c8f1d7467" class="bulleted-list"><li style="list-style-type:disc">densely populated cities with windless, sunny conditions where temperature inversions occur on a regular basis <ul id="6d9e8b0d-739e-4106-932d-c806d49de105" class="bulleted-list"><li style="list-style-type:circle">tokyo, los angeles, beijing </li></ul></li></ul></details></li></ul><ul id="9b6277ae-64ea-425b-ba22-423b484d4fd3" class="toggle"><li><details open=""><summary><mark class="highlight-orange">high energy processes which allow for reactions of N2 with other reactants</mark></summary><ul id="90e8a7da-9326-49c1-9fc7-4a99a2d555c5" class="bulleted-list"><li style="list-style-type:disc">these processes will release sufficient energy to break N2&#x27;s strong triple covalent bond </li></ul><ul id="b2d08599-5637-48e4-b8c5-bfb4a00741df" class="toggle"><li><details open=""><summary><span style="border-bottom:0.05em solid">anthropogenic</span></summary><ul id="974c0274-33f1-4785-865d-f74b7b7b542e" class="bulleted-list"><li style="list-style-type:disc">internal combustion engines</li></ul><ul id="fd8147f6-c9d8-4792-8cf1-04aaecd5656d" class="bulleted-list"><li style="list-style-type:disc">jet engines</li></ul><ul id="8b2f94cb-72ec-46e3-bb0d-b586355a26a3" class="bulleted-list"><li style="list-style-type:disc">industrial furnaces</li></ul><ul id="ec4b5ef6-d8d0-423f-bc46-a58fcd6aa9ff" class="bulleted-list"><li style="list-style-type:disc">mass transportation</li></ul></details></li></ul><ul id="d189b782-6839-4a3e-b51b-4c0c04bc623c" class="toggle"><li><details open=""><summary><span style="border-bottom:0.05em solid">natural </span></summary><ul id="102416c4-dce1-44c9-a970-4c3d008b62b4" class="bulleted-list"><li style="list-style-type:disc">lightning </li></ul><ul id="d7611240-c9f1-4ae3-ba17-f41619f9e007" class="bulleted-list"><li style="list-style-type:disc">volcanic activity </li></ul><ul id="2d1c5d7e-fc34-4cdb-925b-d67c6632ff9f" class="bulleted-list"><li style="list-style-type:disc">bushfires</li></ul></details></li></ul></details></li></ul><ul id="cf534fc5-fbd9-4069-9a48-64eeedac380c" class="toggle"><li><details open=""><summary>describe formation of nitrogen oxides -  NOx</summary><ol type="1" id="52b5b8fe-8030-4f2c-a9ba-cb08bc0a7e17" class="numbered-list" start="1"><li>heat is released during the combustion of fuel (or just in high temperatures), giving oxygen and nitrogen the energy to react <figure id="a6c260cc-4e7e-4346-9c18-284f49ce4a97" class="image"><a href="Screen_Shot_2020-12-17_at_4.30.55_pm.png"><img style="width:432px" src="Screen_Shot_2020-12-17_at_4.30.55_pm.png"/></a></figure></li></ol><ol type="1" id="837d0770-ef4c-4dd2-95ad-ff76a251929f" class="numbered-list" start="2"><li>nitric oxide is further oxidised during combustion to form nitrogen dioxide <figure id="d9858e68-dec8-4d64-a46d-bc844d32f370" class="image"><a href="Screen_Shot_2020-12-17_at_4.31.48_pm.png"><img style="width:920px" src="Screen_Shot_2020-12-17_at_4.31.48_pm.png"/></a></figure></li></ol></details></li></ul><ul id="5aa0596a-acd3-4d86-9698-c82f0f481a1f" class="toggle"><li><details open=""><summary>describe the formation of ozone</summary><ol type="1" id="90bebb08-fb84-407d-a4d8-db82529d9c22" class="numbered-list" start="1"><li>nitrogen dioxide (NO2) undergoes photodissociation in the troposphere in the presence of high energy visible light and ultraviolet radiation (hf) from the sun (sunlight)<figure id="f24d092a-adfe-4234-acad-e160344c4a90" class="image"><a href="Screen_Shot_2020-12-18_at_5.36.40_pm.png"><img style="width:770px" src="Screen_Shot_2020-12-18_at_5.36.40_pm.png"/></a></figure></li></ol><ol type="1" id="d36f9630-243f-414c-84c4-c1736615da48" class="numbered-list" start="2"><li>a highly reactive oxygen atom (called oxygen radical) is formed in the reaction. the oxygen radical further reacts with oxygen gas in the troposphere forming ozone (O3)<figure id="f100b98f-320d-40f7-96a9-7df4abba66cb" class="image"><a href="Screen_Shot_2020-12-18_at_5.36.50_pm.png"><img style="width:626px" src="Screen_Shot_2020-12-18_at_5.36.50_pm.png"/></a></figure></li></ol></details></li></ul><ul id="007eb979-4c6b-4097-92f9-88323a9aed56" class="toggle"><li><details open=""><summary>NOx - visual pollutant </summary><p id="6fb58fdd-6767-4a8b-a30b-96d2d7f44092" class="">produces the brown haze which surrounds cities experiencing photochemical smog </p></details></li></ul><ul id="efa451ac-15fd-4c69-b51c-3e10f38431df" class="toggle"><li><details open=""><summary>O3 - respiratory irritant</summary><ul id="187c510c-bea8-4d4d-8fbe-1d6d591c5143" class="bulleted-list"><li style="list-style-type:disc">damages tissue lining of lungs</li></ul><ul id="5dd34ceb-0f58-4ae9-b6b4-854ab8eec828" class="bulleted-list"><li style="list-style-type:disc">elderly, young and those prone to asthma and bronchitis are more susceptible</li></ul></details></li></ul><ul id="23ef5303-cb47-4ae0-b91b-31df56d07ce0" class="toggle"><li><details open=""><summary>O3 - impacts plant growth </summary><ul id="c48a5443-a5f5-4930-91d2-67f27c7b3719" class="bulleted-list"><li style="list-style-type:disc">limits gas exchange in leaves</li></ul><ul id="e852a9e7-600a-4843-af60-eb75ff02e7fc" class="bulleted-list"><li style="list-style-type:disc">during photosynthesis, ozone &amp; CO2 enter stoma on leaves → stomata end up closing </li></ul><ul id="1e9a7723-23ab-485f-a17a-b3b6a5239458" class="bulleted-list"><li style="list-style-type:disc">it is a strong oxidant therefore affects photosynthesis and other cellular reactions </li></ul><ul id="ff3cc8b6-8721-4c87-871c-a59eaef5a8fe" class="bulleted-list"><li style="list-style-type:disc">increases their susceptibility to disease and extreme weather conditions such as droughts</li></ul></details></li></ul><ul id="10fd3655-da08-4a7d-b643-eeb6e8536f5d" class="toggle"><li><details open=""><summary>O3 - polymers</summary><ul id="27114cfe-bf5c-4711-a5ef-900f55433ed1" class="bulleted-list"><li style="list-style-type:disc">ozone can damage elastomers (elastic polymers) → makes them more brittle and susceptible to cracking under stress</li></ul><ul id="6232dc14-2ce3-4221-8a97-a52b763d4d75" class="bulleted-list"><li style="list-style-type:disc">causes degradation of polymer chains by oxidising and breaking carbon-carbon double bonds C=C</li></ul><ul id="589e0810-b9e4-4d4e-aa9e-3b2b352fd402" class="bulleted-list"><li style="list-style-type:disc">less double carbon bonds → reduced elasticity </li></ul><ul id="1713da09-fe7e-438c-8993-88e802c19f72" class="bulleted-list"><li style="list-style-type:disc">ozone leaves the polymer chains where C=C bonds exist, producing smaller molecules and thus reducing the strength of interactions due to dispersion forces </li></ul><ul id="62309eb1-4617-4a55-b5fd-c32ae0045fd0" class="bulleted-list"><li style="list-style-type:disc">as a strong oxidant, ozone also causes changes in the chemical composition of the polymers, resulting in weaker interactions between polymer chains </li></ul><p id="82d00127-82e2-4fb4-8de0-0e73968d502a" class="block-color-yellow">summary </p><ul id="22197f13-ed02-4cc4-b170-d2ca389a170f" class="block-color-yellow bulleted-list"><li style="list-style-type:disc">makes them more brittle </li></ul><ul id="4115fc6d-7537-4d58-871f-321697d92999" class="block-color-yellow bulleted-list"><li style="list-style-type:disc">reduces their elasticity </li></ul><ul id="d664327b-a9ae-41db-8aa4-cf435c98be6a" class="block-color-yellow bulleted-list"><li style="list-style-type:disc">damages them by breaking C=C bonds</li></ul><ul id="1d5e1390-5387-47dd-a20e-9187245cfac2" class="block-color-yellow bulleted-list"><li style="list-style-type:disc">reduces strength of interactions between polymer chains </li></ul></details></li></ul><ul id="46e79591-278a-4e3a-9b4d-720634a50830" class="toggle"><li><details open=""><summary>what is a catalytic converter?</summary><ul id="58b7bda0-07a3-4624-846b-c74378838e33" class="bulleted-list"><li style="list-style-type:disc">a catalytic converter is a device that is fitted to the exhaust system of a vehicle with the aim of reducing emissions of nitrogen oxides and other <mark class="highlight-teal">primary pollutants</mark> from motor vehicles</li></ul><ul id="fabaa73f-798b-4347-b792-976155c52363" class="bulleted-list"><li style="list-style-type:disc">introduced in vehicles in efforts of reducing the production of photochemical smog</li></ul><ul id="44796b4c-5fdc-4230-bd31-9b95d87416ce" class="bulleted-list"><li style="list-style-type:disc">the purpose is to remove CO, NOx and unburnt hydrocarbons through the use of platinum group metals as a catalyst</li></ul><ul id="f742ac31-bd54-4ff8-a743-2a3279f10a3e" class="bulleted-list"><li style="list-style-type:disc">made up of open porous matrix coated with the platinum group metals</li></ul><ul id="8070a1ee-e0ac-4d27-84d7-5588ae045789" class="bulleted-list"><li style="list-style-type:disc">precursors of photochemical smog - ozone, NOx</li></ul></details></li></ul><ul id="a65d1b77-8143-4fdd-aff5-d33b8de03b29" class="toggle"><li><details open=""><summary>what three pollutants does the three-way catalytic converter process?</summary><ul id="78af57e1-ec88-4407-a567-5b6d7e3c3402" class="bulleted-list"><li style="list-style-type:disc">carbon monoxide</li></ul><ul id="f75685cf-9bf5-422a-912e-08ceb1da47ed" class="bulleted-list"><li style="list-style-type:disc">nitrogen oxide</li></ul><ul id="d4726692-8a02-4465-96c2-20ec4ba8059c" class="bulleted-list"><li style="list-style-type:disc">unburnt hydrocarbons <ul id="17ec72e9-0947-4c82-bbf6-62963a0571cf" class="bulleted-list"><li style="list-style-type:circle">carbon monoxide + unburnt hydrocarbons → products of incomplete combustion</li></ul></li></ul><p id="1d4c673c-edc6-4cc7-a88a-f504d5cf6731" class="">processes these to produce their less harmful by-products</p></details></li></ul><p id="87b72b69-d438-43d8-9a1e-c87ab3ee78a2" class="">
+</p><p id="3a45304e-c1f4-47f0-b387-02e1adce3557" class="">
+</p><p id="3c6f413e-eba8-4bee-b13f-6fe274c24e5d" class="">
+</p><p id="07b91b29-bdae-4342-8f53-e035f7b7805f" class="">
+</p><p id="e5a8e986-5b20-4575-83ab-3556f9d0a12a" class="">
+</p><p id="0964cd0b-25f3-40f6-9c16-d247d0ae65c3" class="">
+</p><p id="a49b66ff-8836-4b93-925f-a3d6e28d84e7" class="">
+</p><p id="4eda01d5-a1fb-410d-9a74-de1f12d8140a" class="">
+</p></div><div id="17b8ff69-c7d3-4b78-b21d-c86c4adf3701" style="width:33.33333333333337%" class="column"><h2 id="cd0bee2f-a8f7-4634-b2b0-eebcb987e46f" class="block-color-orange_background">again</h2><ul id="abe35363-cbff-41db-a4b2-85f8b436fd34" class="toggle"><li><details open=""><summary>describe properties of the troposphere</summary><ul id="29eed547-e6fa-49d2-aae6-0a88051120a9" class="bulleted-list"><li style="list-style-type:disc">amongst all atmospheric layers, the troposphere contains 80% of all gases</li></ul><ul id="922225d8-8f48-4fde-a69f-dd2a9a0d4381" class="bulleted-list"><li style="list-style-type:disc">it is the lowest layer - closest to the earth&#x27;s surface</li></ul><ul id="97ba5eeb-6ce9-46da-8e6f-ec60948dc6e3" class="bulleted-list"><li style="list-style-type:disc">oxygen and nitrogen make up 99% of the gases within this specific layer </li></ul></details></li></ul><ul id="be185725-2e06-4926-9c08-2c464bf61675" class="toggle"><li><details open=""><summary>what is photochemical smog?</summary><ul id="4b4ebfac-0178-4122-b288-67354a91f69d" class="bulleted-list"><li style="list-style-type:disc">photochemical smog is a haze comprised of a mixture of chemicals and airborne pollutants which react with sunlight to produce air pollution in the troposphere </li></ul><ul id="c24786fb-a42a-4300-b43e-2359a296c793" class="bulleted-list"><li style="list-style-type:disc">smog → smoky fog </li></ul></details></li></ul><ul id="de6d5b4e-7a98-405e-857e-e717fd6344cf" class="toggle"><li><details open=""><summary>4 examples of secondary pollutants </summary><ul id="3216b3f2-19d7-4340-840c-402aa1dd48b0" class="bulleted-list"><li style="list-style-type:disc">ozone - O3</li></ul><ul id="ad84d4ef-dc56-46c3-a012-4596c19d0284" class="bulleted-list"><li style="list-style-type:disc">sulfur trioxide - SO3</li></ul><ul id="fd9f9087-3e6b-4bcf-a707-0d5c48ff0861" class="bulleted-list"><li style="list-style-type:disc">sulphuric acid - H2S04</li></ul><ul id="dd0e2ce7-5a37-4555-917a-ad6e8b4b3628" class="bulleted-list"><li style="list-style-type:disc">nitric acid - HNO3</li></ul></details></li></ul><ul id="2609a5fc-0b22-4aec-b1c9-046e75906c92" class="toggle"><li><details open=""><summary>what is temperature inversion?</summary><ul id="47300d52-3ed1-49f3-8969-b7a4c384b51c" class="bulleted-list"><li style="list-style-type:disc">normally, low troposphere has warmer air, this heat naturally rises above where the air is much cooler </li></ul><ul id="a192181e-0f3e-4b91-ae0c-28a7f15ebd0d" class="bulleted-list"><li style="list-style-type:disc">temperature inversion exists when there is warm layer of air which acts a blanket, trapping the cool air below <ul id="f0dc51c7-6b71-462b-aaf3-241a478d3438" class="bulleted-list"><li style="list-style-type:circle">this can be caused by peak traffic hours when a lot of photochemical smog is produced which is then trapped in the lower troposphere due to temperature inversion </li></ul></li></ul><figure id="1738db76-2cc9-47c3-ba16-a9b0f9ebf1bf" class="image"><a href="Screen_Shot_2020-12-17_at_6.14.26_pm.png"><img style="width:1264px" src="Screen_Shot_2020-12-17_at_6.14.26_pm.png"/></a></figure></details></li></ul><ul id="612794dd-f154-4b14-9d8f-9b8e1cc9f42a" class="toggle"><li><details open=""><summary>NOx - eye irritant</summary><p id="c6393fee-550c-4c6a-b074-94607320cab3" class="">react with water / moisture to produce acids that irritate eyes <div class="indented"><figure id="cbe8bb70-91a8-4ffe-a7ef-4abac095e570" class="image"><a href="Screen_Shot_2020-12-18_at_5.40.57_pm.png"><img style="width:828px" src="Screen_Shot_2020-12-18_at_5.40.57_pm.png"/></a></figure></div></p></details></li></ul><ul id="19d27acb-e2cb-4fea-ba92-34d1c3986bec" class="toggle"><li><details open=""><summary>how do catalytic converters reduce the harm of primary pollutants?</summary><ul id="fa3c3e96-15ee-4ada-94c3-d735e357c9df" class="bulleted-list"><li style="list-style-type:disc">use a metal catalyst </li></ul><ul id="ecc24a31-459a-4f0f-9146-be2cb753bbc6" class="bulleted-list"><li style="list-style-type:disc">inside a 3-way catalytic converter, a ceramic honeycomb structure is coated with finely divided platinum, palladium and rhodium. the honeycomb structure increases the surface area of the catalyst which subsequently increases the rate of conversion of primary pollutants into less harmful substances <figure id="b07bc969-0b54-4e74-a1ae-f5b45bd2c0e7" class="image"><a href="Screen_Shot_2020-12-18_at_5.53.45_pm.png"><img style="width:1218px" src="Screen_Shot_2020-12-18_at_5.53.45_pm.png"/></a></figure></li></ul></details></li></ul><ul id="f0443cce-6d04-4e9f-b6e3-e5f15594f412" class="toggle"><li><details open=""><summary>draw diagram of a catalytic convertor </summary><figure id="c1d68730-4d25-435a-9320-a932c0c8fd98" class="image"><a href="Screen_Shot_2020-12-18_at_9.28.12_pm.png"><img style="width:624px" src="Screen_Shot_2020-12-18_at_9.28.12_pm.png"/></a></figure></details></li></ul><p id="31dd5644-1a32-4848-be51-e0fd2ed358a8" class="">
+</p></div></div><hr id="cbe51c81-8df1-4fbc-867f-175ba581f84b"/><h2 id="2abb0129-4504-489c-9f7e-f69af2bad53a" class="block-color-pink_background">queue</h2><ul id="8bee41e9-6012-4c88-8afc-3f38dcbe50e5" class="toggle"><li><details open=""><summary><em><strong>catalytic converters</strong></em></summary></details></li></ul></div></article></body></html>

@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>testing station (1)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="c44f069c-68c7-4715-ba3f-969524067bfb" class="page sans"><header><h1 class="page-title">testing station (1)</h1></header><div class="page-body"><div id="79b4d018-4cf8-4c14-b5f8-59e9c81fc31b" class="column-list"><div id="17ae5932-d862-4585-8a01-75178590af27" style="width:33.33333333333333%" class="column"><h2 id="5aef95ed-e98f-4c08-b34e-235481d6ef01" class="block-color-teal_background">easy</h2><p id="9efc80ac-8d78-46f9-83c1-5457245f822f" class="">
+</p><p id="95f69b68-db1f-408e-af9f-7dcda358afe1" class="">
+</p><p id="2f4bdfe8-6e31-4e0f-85f0-434b007cce79" class="">
+</p><p id="e8332874-3bb6-4eb5-9347-366a11edda83" class="">
+</p><p id="033fde06-e1e5-4a17-8015-0badc2383308" class="">
+</p><p id="1c01c3c9-8a5c-458e-95a2-e23d9ffa3b58" class="">
+</p><p id="52280272-d791-450a-9328-5fd58b7a9f02" class="">
+</p><p id="643905a4-6f06-46cf-88df-95166e120fa6" class="">
+</p><p id="08818089-81bb-44b8-ac68-e6e6e7a3d576" class="">
+</p><p id="72553f61-6c9a-46e2-92f7-9d33b13feb2c" class="">
+</p><p id="eb78688a-2cc9-4bf6-af1f-6d184108b323" class="">
+</p></div><div id="83cdffb7-3288-40ba-bd0a-6cee025f9a1d" style="width:33.33333333333334%" class="column"><h2 id="82982fa3-ede6-45a3-a489-90c57d794730" class="block-color-blue_background">good</h2><ul id="2e5eb4ec-1c96-4e4f-86fe-a0efce98d097" class="toggle"><li><details open=""><summary>what does the troposphere contain?</summary><ul id="2b04e26c-33db-4640-8800-b45be57c5517" class="bulleted-list"><li style="list-style-type:disc">99% nitrogen (N2) and oxygen (O2) gases </li></ul><ul id="3621e8f3-e64c-4876-b2aa-cc3b70029764" class="bulleted-list"><li style="list-style-type:disc">remaining 1% - greenhouse gases (CO2, H2O, CH4)</li></ul></details></li></ul><ul id="b24454a2-7219-416f-9827-a0647bf5e422" class="toggle"><li><details open=""><summary>what is the greenhouse effect?</summary><ol type="1" id="9f833441-4442-41c8-aa61-da7c34c09681" class="numbered-list" start="1"><li>electromagnetic solar radiation in the form of visible light and UV radiation travels toward the earth </li></ol><ol type="1" id="a6aa9757-2a70-48eb-93dc-9d86bb8de38e" class="numbered-list" start="2"><li>atoms and molecules absorb energy in the atmosphere and surface of earth</li></ol><ol type="1" id="0a698a48-c59b-4e88-96e1-ca7551cf574b" class="numbered-list" start="3"><li>short wave radiation is re-radiated off earth&#x27;s surface / atmosphere as long-wave radiation from the heated molecules in the earth&#x27;s atmosphere and surface</li></ol><ol type="1" id="68d1f152-4532-441e-b1d9-f751798b008a" class="numbered-list" start="4"><li>some infrared radiation leaves the earth&#x27;s atmosphere and enters the interplanetary space</li></ol><ol type="1" id="e86953bd-377e-4c19-9716-a73927bd2fac" class="numbered-list" start="5"><li>greenhouse gases in the atmosphere absorb the rest of the radiation and re-radiate it in a random direction due to their bonding structure</li></ol><ol type="1" id="fc4a070e-abda-4f90-989e-13eabca10489" class="numbered-list" start="6"><li>this traps heat closer to the earth&#x27;s surface, which establishes a thermal balance and therefore a stable temperature</li></ol></details></li></ul><ul id="1f023127-9852-4e97-a0b2-359861dc3544" class="toggle"><li><details open=""><summary><mark class="highlight-teal">state the 6 common greenhouse gases</mark></summary><figure id="0708165c-2bfe-4e6f-a762-c6239fcfb6c7" class="image"><a href="Screen_Shot_2020-12-13_at_9.37.09_pm.png"><img style="width:480px" src="Screen_Shot_2020-12-13_at_9.37.09_pm.png"/></a></figure><ul id="1a2fad1d-4bf0-4bbd-8e04-059e8c9b2ff1" class="toggle"><li><details open=""><summary>water vapour H2O</summary><ul id="29aba5a2-fc8c-4f1e-a317-eea944e24294" class="bulleted-list"><li style="list-style-type:disc">most abundant greenhouse gas</li></ul></details></li></ul><ul id="9bbf16b3-e913-44c9-9c4e-2dd439e4cc15" class="toggle"><li><details open=""><summary>methane CH4</summary><ul id="5b3ccf8a-8be3-474b-93fd-1995e4adc9d9" class="bulleted-list"><li style="list-style-type:disc">25x as potent as CO2</li></ul></details></li></ul><ul id="61b93941-10e4-46c7-97b5-e14c9a8f54a2" class="toggle"><li><details open=""><summary>ozone O3</summary><ul id="96289d4b-99f2-4fc5-a7a8-3adb2e119b81" class="bulleted-list"><li style="list-style-type:disc">harmful in the troposphere → air pollutant and major constituent of photochemical smog, damages lung tissues and breaks down polymers </li></ul><ul id="ca3c3bc7-aff8-4b52-89b5-1f3466fa8fc7" class="bulleted-list"><li style="list-style-type:disc">beneficial in the stratosphere → protects life from harmful UV rays</li></ul></details></li></ul><ul id="ee6a5c4d-1987-4bd4-a345-56e9ae35e2cc" class="toggle"><li><details open=""><summary>carbon dioxide CO2</summary><ul id="79fdc955-9e3a-4558-9ae7-ff5f14fe6a8f" class="bulleted-list"><li style="list-style-type:disc">greatest contributer to the <em><strong>enhanced greenhouse effect </strong></em></li></ul></details></li></ul><ul id="ccff4356-577e-4c45-bc29-936ed8882b9d" class="toggle"><li><details open=""><summary>nitrous oxide N2O</summary><ul id="df04fb48-aecd-4fb3-b409-800933f2af16" class="bulleted-list"><li style="list-style-type:disc">constituent of photochemical smog</li></ul></details></li></ul><ul id="401f2d65-e40c-4107-a7cb-6ab034a676ec" class="toggle"><li><details open=""><summary>chloroflurocarbons </summary><ul id="82af446e-5a52-421c-bec2-220464894241" class="bulleted-list"><li style="list-style-type:disc">synthetically produced for aerosols and refrigerants </li></ul><ul id="a5a38258-323e-4827-a52c-57144988f920" class="bulleted-list"><li style="list-style-type:disc">depletes ozone layer </li></ul></details></li></ul><p id="7952ec79-dcf7-4985-8f33-a040d4d93aa3" class="">
+</p></details></li></ul><ul id="fcfa7044-7fd8-4ff5-8ff9-b0b82b66eb05" class="toggle"><li><details open=""><summary>anthropogenic sources of water vapour </summary><ul id="cfc11deb-9cff-424e-90c1-7d53c65bb040" class="bulleted-list"><li style="list-style-type:disc">any process which heats water <ul id="8959b172-d9f1-430f-a398-fc5ddbc468eb" class="bulleted-list"><li style="list-style-type:circle">industrial processes</li></ul><ul id="88c78c5d-309a-40eb-b9de-68862e4275d9" class="bulleted-list"><li style="list-style-type:circle">steamed turbines </li></ul></li></ul></details></li></ul><ul id="d4c56fdb-5da8-4276-8a04-5d6b5abc175c" class="toggle"><li><details open=""><summary>what is the main cause of the enhanced greenhouse effect</summary><p id="2c797b71-6ec9-4c0d-85fb-68ca35355274" class="">increase in the emissions of greenhouse gases from anthropogenic sources have caused these changes in earth&#x27;s energy budget</p></details></li></ul><ul id="2d414b14-815b-4a60-8762-a36f9278af08" class="toggle"><li><details open=""><summary>what is the climate?</summary><ul id="2275fa43-6068-4c4f-879a-486f8ee5153e" class="bulleted-list"><li style="list-style-type:disc">the type of weather patterns that are seen in an ecosystem over a long period of time</li></ul><ul id="35f9bc53-bdd2-4bb2-a693-95191a82c8d5" class="bulleted-list"><li style="list-style-type:disc">described using avg. air temp, avg. annual rainfall, timing of rainfall, light intensity, wind speed and direction</li></ul></details></li></ul><ul id="ccf618ea-a1da-446a-b34a-0c92864b4afa" class="toggle"><li><details open=""><summary>what is earth&#x27;s thermal balance?</summary><ul id="04a52c39-5de1-44f3-be6c-4cf2e6470e4d" class="bulleted-list"><li style="list-style-type:disc">thermal balance - solar energy absorbed by a planet is equal to the heat radiated from that planet into space</li></ul><ul id="f331e71a-35a5-43de-937d-0a4d3f5a5147" class="bulleted-list"><li style="list-style-type:disc">the average temperature of the earth is <strong>32 degrees celcius higher </strong>than it would be in the absence of greenhouse gases</li></ul><ul id="47918c31-7f69-4f7c-990e-0350bfed78ec" class="bulleted-list"><li style="list-style-type:disc">the effect is more strongly influenced by carbon dioxide and water vapour</li></ul><figure id="abf01c4f-105a-48bc-9bf0-88a18ba5ff98" class="image"><a href="Screen_Shot_2020-12-13_at_9.57.18_pm.png"><img style="width:1114px" src="Screen_Shot_2020-12-13_at_9.57.18_pm.png"/></a></figure></details></li></ul><ul id="b534e84e-4ce2-468f-95c7-3dd505959b06" class="toggle"><li><details open=""><summary>what are the global measurements regarding CO2 levels?</summary><ul id="aa5bcea7-e097-4902-a2eb-e3151eceb136" class="bulleted-list"><li style="list-style-type:disc">scientific data shows that CO2 levels in the atmosphere have risen considerably in the past 1000 years</li></ul><ul id="809d6899-a63d-4568-9da3-a44f89b56f5d" class="bulleted-list"><li style="list-style-type:disc">CO2 concentration is currently at its highest in human history with values exceeding 400ppm → in turn increasing the avg. global temp</li></ul></details></li></ul><ul id="17f53126-b707-48cd-a8e2-7d62cab0f52f" class="toggle"><li><details open=""><summary>what is the average increase in global temperature in the past century?</summary><ul id="e586a238-b8cf-4a1f-a09e-de577ed6dc02" class="bulleted-list"><li style="list-style-type:disc">avg. temp risen by 0.8 degrees celcius globally in the past 100 yers</li></ul><ul id="1b634a8d-33fa-4206-8abc-089b4d7d783d" class="bulleted-list"><li style="list-style-type:disc">higher temperatures = more evaporation = more water vapour present = therefore more energy absorbed in the troposphere and reradiated back towards earth</li></ul></details></li></ul><ul id="69646cd6-0bb2-4670-9903-17b2cf461ff8" class="toggle"><li><details open=""><summary>what are the causes of ocean acidification?</summary><p id="97c2dfc4-bc9c-44aa-af2f-d9a788315da8" class="">increased emissions of CO2 from anthropogenic sources </p></details></li></ul><ul id="bf8c2acd-a25f-4003-8471-2513e64a717e" class="toggle"><li><details open=""><summary>describe + write calculations about how CO2 lowers the pH of the oceans</summary><figure id="83f9df9b-af48-4e46-82e0-b885af5496bd" class="image"><a href="Screen_Shot_2020-12-13_at_10.20.51_pm.png"><img style="width:1172px" src="Screen_Shot_2020-12-13_at_10.20.51_pm.png"/></a></figure></details></li></ul><ul id="93946c9c-0bff-4162-8f30-42be9d5bc03e" class="toggle"><li><details open=""><summary>what are weak acids?</summary><p id="f0833d4e-6222-40b8-a1d5-95e0568be0b3" class="">partially ionise in water, only some of the acid molecules ionise to form H+ ions</p></details></li></ul><ul id="f7975088-b58f-422f-9312-5dd78b9cca4a" class="toggle"><li><details open=""><summary>what are strong acids?</summary><p id="add363a9-7e48-405d-9eea-b9d476cb533b" class="">fully ionise in water, 100% of acid molecules ionise to form H+</p></details></li></ul><ul id="e2c78717-1e77-4719-b684-47ef8db9b12a" class="toggle"><li><details open=""><summary>what do lots of hydroxide ions (OH-) indicate?</summary><p id="a44662f6-4360-4bf2-afd5-835ba5f3bdd9" class="">basic </p></details></li></ul><ul id="80a9c0ad-6ba0-4df6-937a-fd9df4eb7774" class="toggle"><li><details open=""><summary>what do lots of hydronium ions (H+) indicate?</summary><p id="69971d10-7065-46f8-bbd7-034aa5d3fa56" class="">acidic</p><p id="b4b06715-76bb-4d74-90fa-759ce3cf0a0d" class="">
+</p></details></li></ul></div><div id="f6159f43-8538-434d-9fd4-523057f0a599" style="width:33.33333333333337%" class="column"><h2 id="cf4b4ec5-e373-4f6e-a67b-bfe3dcba1842" class="block-color-orange_background">again</h2><ul id="d79de9f6-e1cb-4d1e-b0d0-03388bbb2b57" class="toggle"><li><details open=""><summary>what is solar radiation?</summary><ul id="160ee39a-7531-40bd-8e85-ddcc9f73103a" class="bulleted-list"><li style="list-style-type:disc">a portion of electromagnetic radiation given off by the sun</li></ul><ul id="eb877b3b-b271-42f7-adf9-1b8f93ee776c" class="bulleted-list"><li style="list-style-type:disc">consists of infrared radiation, visible light and ultraviolet radiation (UV)</li></ul><ul id="d6156cd2-a70a-4c56-89ad-701c5291cc30" class="bulleted-list"><li style="list-style-type:disc">largely made of visible wavelengths, longer infrared wavelengths, smaller component of shorter UV wavelengths </li></ul></details></li></ul><ul id="fdf369ad-ddae-4c70-a746-b8020e829052" class="toggle"><li><details open=""><summary>how much solar radiation is reflected by the earth&#x27;s surface &amp; atmosphere?</summary><ul id="25f3e7ec-753b-4737-8a5a-aa64cb6c29dd" class="bulleted-list"><li style="list-style-type:disc">30% reflected due to albedo (reflectivity) of the earth&#x27;s surface &amp; atmosphere</li></ul><ul id="4e712103-bd20-452b-a272-d3566027f8eb" class="bulleted-list"><li style="list-style-type:disc">land and sea ice, snow coverage &amp; clouds are highly reflective </li></ul></details></li></ul><ul id="ab4d3dd1-417b-4fb8-873a-769fbe787561" class="toggle"><li><details open=""><summary>how much solar radiation is absorbed by the earth&#x27;s atmosphere?</summary><ul id="163479d8-c16c-4e90-a0aa-2402311ad1f3" class="bulleted-list"><li style="list-style-type:disc">approximately 22% absorbed by the atmosphere</li></ul><ul id="e2077cfe-16f9-47f4-afc6-4ce0da99db99" class="bulleted-list"><li style="list-style-type:disc">a component of UV radiation is absorbed by gases present in the stratosphere, specifically by the ozone molecule</li></ul><ul id="24efa7c0-7ccf-48b2-b859-483b759e2a5e" class="bulleted-list"><li style="list-style-type:disc">ozone molecule : O3 </li></ul></details></li></ul><ul id="56869af6-672c-48ac-be24-685de3c9abb4" class="toggle"><li><details open=""><summary>how much solar radiation is absorbed by the earth&#x27;s surface?</summary><ul id="99cf703c-64d6-4016-a428-fb87ab82b8b4" class="bulleted-list"><li style="list-style-type:disc">48% is absorbed → warms the surface </li></ul></details></li></ul><ul id="d0bf5a1a-cbc6-469b-9cdc-86a7330f1e5e" class="toggle"><li><details open=""><summary>how much solar radiation is reradiated from the earth?</summary><ul id="c6621bbf-9387-45e7-81c7-89faf3e03038" class="bulleted-list"><li style="list-style-type:disc">17% of the 48% is reradiated at lower energies and longer wavelengths</li></ul><ul id="769163f5-018f-4f91-9b8e-b9c4e08d5216" class="bulleted-list"><li style="list-style-type:disc"><strong>longer wavelengths have lower energy than visible light </strong></li></ul><ul id="f9f7cea9-fd61-4f28-a1ea-de612d63e906" class="bulleted-list"><li style="list-style-type:disc">comply with the &#x27;thermal infrared region&#x27; of the electromagnetic spectrum</li></ul></details></li></ul><ul id="c3ad8349-485f-4350-9376-d741bf032a20" class="toggle"><li><details open=""><summary>how much of the thermal radiation passes directly through the atmosphere?</summary><ul id="28a2b953-7c61-4dfe-b6bc-620b6e375617" class="bulleted-list"><li style="list-style-type:disc">12% passes directly through, into space</li></ul></details></li></ul><ul id="3fd3593c-d813-417c-9065-bc811f8c3b2b" class="toggle"><li><details open=""><summary>how much of the thermal radiation is absorbed by greenhouse gasses in the atmosphere?</summary><ul id="3fef4878-3e59-4cd8-a9c8-370430e31eca" class="bulleted-list"><li style="list-style-type:disc">5% is absorbed by molecules on the atmosphere known as greenhouse gasses</li></ul><ul id="0202ac0f-17c5-4981-bf9d-de6ff3155973" class="bulleted-list"><li style="list-style-type:disc">effect - warms the earth&#x27;s surface &amp; the troposphere </li></ul></details></li></ul><ul id="c8ac5060-c2c2-4f90-a591-cb4173b6360a" class="toggle"><li><details open=""><summary>what is the atmosphere?</summary><ul id="682858df-172c-4275-8519-52b39efbf58e" class="bulleted-list"><li style="list-style-type:disc">an atmosphere is a mixture of gases that surround the stars, planets and moons</li></ul><ul id="7c999075-9108-48e4-bec8-52fe888e68ec" class="bulleted-list"><li style="list-style-type:disc"><strong>the earth&#x27;s atmosphere - 78% nitrogen, 21% oxygen, &lt;1% other gases</strong></li></ul><ul id="0f9ac822-7701-495b-86d5-f02986994c69" class="bulleted-list"><li style="list-style-type:disc">atmosphere extends from the surface of earth to the barrier of interplanetary space</li></ul></details></li></ul><ul id="dff0e3b0-7a78-4460-9bc8-a84a8ba66933" class="toggle"><li><details open=""><summary>what are the layers within the atmosphere?</summary><ul id="ebf43fce-5d66-4941-b4ce-16cfb3952e5e" class="bulleted-list"><li style="list-style-type:disc">surface of the earth</li></ul><ul id="cb1cb892-4a27-49f1-8823-95f5769a7942" class="bulleted-list"><li style="list-style-type:disc">then the lowest layer - troposphere (contains 75% of earth&#x27;s gaseous molecules)</li></ul><ul id="a835bb2d-b750-4fbb-b595-9de71a09f575" class="bulleted-list"><li style="list-style-type:disc">stratosphere</li></ul><ul id="ba47a005-ca0b-4fdf-9c71-54f209f3fa15" class="bulleted-list"><li style="list-style-type:disc">mesosphere</li></ul><ul id="0b018bc0-9b59-43e9-8ec5-e052a356614b" class="bulleted-list"><li style="list-style-type:disc">thermosphere</li></ul><ul id="149b54dd-1eca-42b7-b6e4-60d71ba32584" class="bulleted-list"><li style="list-style-type:disc">outermost layer - exosphere, which merges with interplanetary space</li></ul></details></li></ul><ul id="b2389f74-d2a8-4257-ade3-5f5df1978ce0" class="toggle"><li><details open=""><summary>what is the sun?</summary><p id="86ee7e8d-3d9e-4a40-89ff-000d0250463b" class="">the sun is a star that emits all wavelengths of electromagnetic radiation</p></details></li></ul><ul id="2b3d6952-8980-4ac3-a5d7-4919964bfb61" class="toggle"><li><details open=""><summary>what is infrared radiation?</summary><ul id="a5ec4715-260d-4b0b-bff4-adbb5ffa41c2" class="bulleted-list"><li style="list-style-type:disc"><strong>IR is electromagnetic radiation with wavelengths longer than those of visible light</strong></li></ul><ul id="8cf30c90-3c68-4eb6-a83e-6f2a5f021838" class="bulleted-list"><li style="list-style-type:disc">invisible to human eye, though can be felt as heat </li></ul><ul id="911db853-09ee-4b9c-9ded-adc57082c156" class="bulleted-list"><li style="list-style-type:disc">longer wavelength radiation (IR) is of lower energy &amp; usually less harmful </li></ul></details></li></ul><ul id="cfa6ac2c-72e1-45e5-800e-f8e2257ee0d2" class="toggle"><li><details open=""><summary>what are greenhouse gases</summary><ul id="71db02f0-f950-43ac-b70b-56279d7086ca" class="bulleted-list"><li style="list-style-type:disc">molecules in the troposphere of earth that can absorb and emit infrared radiation </li></ul><ul id="2b6a1ca2-3653-4eb7-8aec-6b05583ddb6b" class="bulleted-list"><li style="list-style-type:disc">this absorption &amp; emission is vital in the maintenance of temperature range that supports life on earth</li></ul></details></li></ul><ul id="a9685eaf-da6a-40c1-b424-56a8a1951913" class="toggle"><li><details open=""><summary>natural sources of water vapour </summary><ul id="8358f73c-2535-4113-865e-ee9db625d839" class="bulleted-list"><li style="list-style-type:disc">evaporation of water bodies </li></ul><ul id="407629d5-6892-494d-8e77-00135a3f39f2" class="bulleted-list"><li style="list-style-type:disc">combustion = Fuel + O2 → <strong>H2O</strong> + CO2</li></ul><ul id="06fe8a36-0488-4c21-9459-21e6995f63db" class="bulleted-list"><li style="list-style-type:disc">respiration = C6H12O6 + 6O2 → <strong>6H20</strong> + 6CO2<figure id="95de20a7-5b37-43c2-a4b1-3f65ad3760c5" class="image"><a href="Screen_Shot_2020-12-19_at_1.45.39_pm.png"><img style="width:1314px" src="Screen_Shot_2020-12-19_at_1.45.39_pm.png"/></a></figure></li></ul></details></li></ul><ul id="a7f54085-0e50-425f-a89c-4d3775388149" class="toggle"><li><details open=""><summary>natural sources of carbon dioxide</summary><ul id="a89c3dc6-2723-4385-8325-8ff8093f5bdc" class="bulleted-list"><li style="list-style-type:disc">aerobic respiration = C6H12O6 + 6O2 → 6H20 + <strong>6CO2</strong></li></ul><ul id="76f7e9c1-8550-45f2-9d28-e0d3f8fe9419" class="bulleted-list"><li style="list-style-type:disc">aerobic decomposition of organic matter in soil</li></ul><ul id="683338c8-54bd-4ee9-b154-56445a575cc7" class="bulleted-list"><li style="list-style-type:disc">bushfires (combustion of natural vegetation) = Fuel + O2 →<strong> </strong>H2O + <strong>CO2</strong></li></ul><ul id="9c520846-b405-429d-a314-f01c103704f7" class="bulleted-list"><li style="list-style-type:disc">volcanic activity (combustion) = Fuel + O2 →<strong> </strong>H2O<strong> </strong>+ <strong>CO2</strong><figure id="37c781a0-0938-4ccc-87da-8b56a768e9b1" class="image"><a href="Screen_Shot_2020-12-19_at_1.47.36_pm.png"><img style="width:1312px" src="Screen_Shot_2020-12-19_at_1.47.36_pm.png"/></a></figure></li></ul></details></li></ul><ul id="48dcaf89-d1d4-4f21-b931-33d6b4e38e3b" class="toggle"><li><details open=""><summary>natural sources of methane</summary><ul id="bad6a042-48d7-4451-a416-5594df6e6643" class="bulleted-list"><li style="list-style-type:disc"><strong>anaerobic</strong> decomposition of organic matter </li></ul><ul id="e0238bda-046e-4f98-ac1f-19b517127063" class="bulleted-list"><li style="list-style-type:disc">permafrost - stored within sea ice, therefore it is released when sea ice melts <figure id="1efde40d-40b3-4260-b031-a970e2ae4cf3" class="image"><a href="Screen_Shot_2020-12-19_at_1.52.41_pm.png"><img style="width:1314px" src="Screen_Shot_2020-12-19_at_1.52.41_pm.png"/></a></figure></li></ul></details></li></ul><ul id="038bb4fd-9f98-4cb8-9286-d81b29b9492e" class="toggle"><li><details open=""><summary>natural sources of nitrous oxide</summary><ul id="a68bc672-2ceb-47a0-b169-568f96ee977b" class="bulleted-list"><li style="list-style-type:disc">denitrification (reduction of nitrate ions) in natural vegetation in soil and oceans = NO2- → NO → <strong>N2O</strong> → N2<figure id="e36dc7ee-732b-4f84-acfb-d71b906704e5" class="image"><a href="Screen_Shot_2020-12-19_at_1.52.20_pm.png"><img style="width:1310px" src="Screen_Shot_2020-12-19_at_1.52.20_pm.png"/></a></figure></li></ul></details></li></ul><ul id="008ba908-0c4e-4c38-96b0-4586ea2e853b" class="toggle"><li><details open=""><summary>natural sources of ozone </summary><ul id="9290a5ae-87b8-4cbe-8ebe-29fb252d0a14" class="bulleted-list"><li style="list-style-type:disc">occurs naturally in the stratosphere through interaction between solar UV light &amp; atmospheric O2 = O3<ul id="616251e4-ed5d-4e24-82ff-0321991f6d76" class="bulleted-list"><li style="list-style-type:circle">it is created and destroyed through the absorption of ultraviolet radiation in photochemical (light-absorbing) reactions</li></ul><figure id="e692e3fa-78ef-49f7-b478-395f8f1f9679" class="image"><a href="Screen_Shot_2020-12-19_at_1.52.59_pm.png"><img style="width:1322px" src="Screen_Shot_2020-12-19_at_1.52.59_pm.png"/></a></figure></li></ul></details></li></ul><ul id="6e9d18a0-8fda-4e92-b1d6-6bf4d3270a78" class="toggle"><li><details open=""><summary>anthropogenic sources of carbon dioxide</summary><ul id="2436ea5a-7f44-4a26-85cc-0b2584bc439a" class="bulleted-list"><li style="list-style-type:disc">combustion of fuels in the engines of motor vehicles</li></ul><ul id="6e0f211c-7f96-4d47-927f-1b1e4909905e" class="bulleted-list"><li style="list-style-type:disc">combustion of fuels during electricity generation </li></ul><ul id="79c87945-eead-4840-805c-4fdf400b22af" class="bulleted-list"><li style="list-style-type:disc">burning of fossil fuels </li></ul><ul id="27417bbb-3fc9-4194-8422-961c0f9e4bb8" class="bulleted-list"><li style="list-style-type:disc">deforestation and land-clearing<ul id="d6041dc8-5de6-4e2b-b85f-6c71ad052b27" class="bulleted-list"><li style="list-style-type:circle">less vegetation available to remove CO2 from atmosphere</li></ul><ul id="4261ccb7-5385-4cac-90cb-4f993290498a" class="bulleted-list"><li style="list-style-type:circle">reduced amount of natural sequestration occurring via photosynthesis</li></ul></li></ul></details></li></ul><ul id="4b42acac-1838-4370-935e-8c5f2d710855" class="toggle"><li><details open=""><summary>anthropogenic sources of methane</summary><ul id="dbd0e5a6-bd00-41b3-894d-b09b2fe1ff0f" class="bulleted-list"><li style="list-style-type:disc">mining </li></ul><ul id="0f1bc036-e07f-4f01-8702-83f5045d58f5" class="bulleted-list"><li style="list-style-type:disc">landfill → released from natural anaerobic decay of matter </li></ul><ul id="ac14c112-6f88-4d6f-8acc-a60fd031096d" class="bulleted-list"><li style="list-style-type:disc">agriculture - intensive livestock farming → released by the animals </li></ul><ul id="bf7d655c-090c-4076-a898-efed43c1b350" class="bulleted-list"><li style="list-style-type:disc">during production and use of fuel </li></ul><ul id="07692195-2386-4ab9-beb0-40cd22020f2c" class="bulleted-list"><li style="list-style-type:disc">released in rice farming due to anaerobic conditions generated in rice fields</li></ul></details></li></ul><ul id="8984dd80-b91f-4d1c-abae-120e8c3478ee" class="toggle"><li><details open=""><summary>anthropogenic sources of nitrous oxide </summary><p id="eb4db757-9a87-43a6-86de-5d64b552d743" class="">N2O</p><ul id="4260ebea-e430-403b-b117-c87ab9bce1ad" class="bulleted-list"><li style="list-style-type:disc">from the use of natural and synthetic fertilisers</li></ul><ul id="3b5f5934-b137-4e5c-88e5-8258edb8d5d2" class="bulleted-list"><li style="list-style-type:disc">cultivation of soil in agriculture </li></ul><ul id="9aae5b09-6078-44d6-b86c-2650e456a333" class="bulleted-list"><li style="list-style-type:disc">catalytic convertors produce a little amount of nitrous oxide</li></ul></details></li></ul><ul id="e91ec09f-0712-4741-8f8a-ebf6d468cf0b" class="toggle"><li><details open=""><summary>anthropogenic sources of sulfur hexafluoride </summary><ul id="35b6ece1-b865-4fa9-96e5-1539dc771239" class="bulleted-list"><li style="list-style-type:disc">produced synthetically for use in electrical industry as an electrical insulator</li></ul><ul id="746c9f1a-3e55-4e5c-bfed-529c70bbf1ff" class="bulleted-list"><li style="list-style-type:disc">produced for the industrial casting of magnesium </li></ul></details></li></ul><ul id="90946304-3642-453a-bb09-2208f6e483de" class="toggle"><li><details open=""><summary>anthropogenic sources of hydrofluorocarbons &amp; chlorofluorocarbons</summary><ul id="7edfe187-5ed9-4953-b37d-3bcdcfb4535f" class="bulleted-list"><li style="list-style-type:disc">synthetically produced for aerosols and foams, refrigerants</li></ul><ul id="152118da-1a9c-481b-ac0b-8e53d1a41758" class="bulleted-list"><li style="list-style-type:disc">insulation in electrical cabling<ul id="fee1c2c4-0a0d-4530-8c11-d698c95461a8" class="bulleted-list"><li style="list-style-type:circle">released during production, use and disposal of these items</li></ul></li></ul></details></li></ul><ul id="12a27079-bde0-440d-9308-49d7b6698160" class="toggle"><li><details open=""><summary>what is the enhanced greenhouse effect </summary><ul id="d6ee092e-4724-4f2b-ac03-f3e2afb96a1e" class="bulleted-list"><li style="list-style-type:disc">a larger amount of outgoing infrared radiation is absorbed and reradiated to the surface, creating a thermal imbalance</li></ul><ul id="f348e0dc-0fad-4ca4-845b-e319294610d6" class="bulleted-list"><li style="list-style-type:disc">increases average surface &amp; atmospheric temperatures → global warming </li></ul></details></li></ul><ul id="a1194853-8b1b-47ac-9b7f-bb8a85b578e1" class="toggle"><li><details open=""><summary>what is global warming?</summary><p id="7158c454-daf1-4523-bacf-11a74fc6c6aa" class="">global warming refers to the phenomenon when the average surface temperature and atmospheric temperature increases as a consequence of the thermal imbalance caused by processes such as the enhanced greenhouse effect<div class="indented"><ul id="887c5acc-9919-4842-8378-e10eb5df41fb" class="bulleted-list"><li style="list-style-type:disc">enhanced greenhouse effect → result of human emissions of greenhouse gasses</li></ul><ul id="571b243d-21b4-465e-b8af-91e540d80ec5" class="bulleted-list"><li style="list-style-type:disc">results in large-scale shifts in weather patterns</li></ul></div></p></details></li></ul><ul id="0e1fd1e9-b6aa-438e-b5fe-1bfd4dc5480d" class="toggle"><li><details open=""><summary>what are the 4 causes of global warming?</summary><ol type="1" id="6c53a296-d10b-4d4c-889e-987efe642b47" class="numbered-list" start="1"><li>variation in output of solar radiation </li></ol><ol type="1" id="5a2f4577-8601-4a1b-9e41-76e6525c380b" class="numbered-list" start="2"><li>variation in the angular position of the earth relative to the sun </li></ol><ol type="1" id="5c9dfa2b-989f-49f8-bf72-2708be02ac9f" class="numbered-list" start="3"><li>changes in volcanic activity </li></ol><ol type="1" id="35b51a85-ee03-4071-82ee-8808f84fafef" class="numbered-list" start="4"><li>changes in the concentration of greenhouse gases in the atmosphere</li></ol></details></li></ul><ul id="10cd26f9-306e-4cd2-befd-844896758793" class="toggle"><li><details open=""><summary>what is melting of land &amp; sea ice?</summary><ul id="a0e04499-383f-4470-8c77-cf88ab86e915" class="bulleted-list"><li style="list-style-type:disc">rising global temperatures → ocean warming → polar ice caps &amp; land melt → causes rise in sea levels </li></ul><ul id="53d8cb75-dbd3-4602-b254-ba72a597e7d8" class="bulleted-list"><li style="list-style-type:disc">😢 sea &amp; land ecosystems support hundreds of species of animals → leads to habitat loss → shortage in food supplies → disrupts food chain → risk of extinction </li></ul><ul id="259c2357-1df0-4f38-80b7-fd5145ed8998" class="bulleted-list"><li style="list-style-type:disc">😢 sea &amp; land reflect incoming solar radiation. their melting causes more solar radiation to be absorbed by the surface → further increase in global temp</li></ul></details></li></ul><ul id="4de27f21-c6a6-47c0-85c3-ba210ee08e00" class="toggle"><li><details open=""><summary>what is rising sea levels - ocean warming?</summary><ul id="32bb38ff-73b7-4018-b199-e4e8e2c1cf83" class="bulleted-list"><li style="list-style-type:disc">majority of heat produced by the enhanced greenhouse effect is absorbed by oceans due to the high specific heat capacity of water which allows the absorption of large quantities of energy </li></ul><ul id="b1f05dab-edb9-4e90-b5c3-72af795659fe" class="bulleted-list"><li style="list-style-type:disc">more heat absorbed by ocean → seawater undergoes thermal expansion when heated → volume of seawater in the oceans increases → sea levels rise </li></ul><ul id="bddccae2-f39a-4b70-b721-8a322d775afe" class="bulleted-list"><li style="list-style-type:disc">sea levels further rise as land ice melts &amp; this water also disperses into the oceans </li></ul><ul id="32f9b64d-f4a2-4cf3-9452-b0cc46ab3299" class="bulleted-list"><li style="list-style-type:disc">😢 - coastal areas are densely populated → rising sea levels increase their vulnerability → flooding displaces thousands → costs billions in repairs, relief work and recovery </li></ul><ul id="84bceee9-78bd-4b1f-b2df-d06a371a0bfa" class="bulleted-list"><li style="list-style-type:disc">😢 - can also flood nearby forests → habitat loss → extinction of species </li></ul></details></li></ul><ul id="b3b43c25-90cb-4bb7-92fe-52ca997ab538" class="toggle"><li><details open=""><summary>what is permafrost?</summary><ul id="debfc7ca-e8ce-463b-aae0-9d2ce2eca384" class="bulleted-list"><li style="list-style-type:disc">frozen soil / rock contains methane and melts due to rising temperatures → methane is released → this facilitates the enhanced greenhouse effect → more severe global warming</li></ul></details></li></ul><ul id="d423be81-b8cc-47e6-98b6-b798f1b2c2ce" class="toggle"><li><details open=""><summary>what is coral bleaching?</summary><ul id="645481da-5eae-43f5-88da-b9f332bcf713" class="bulleted-list"><li style="list-style-type:disc">coral have algae living on them, which act as their food source </li></ul><ul id="b23b30cc-1aa4-43ff-af64-27c00eb3b2f2" class="bulleted-list"><li style="list-style-type:disc">when the ocean heats up or gets polluted, the coral become stressed and release the algae → coral turn white and die because they have no food </li></ul><ul id="775ae0a5-60ee-4987-874d-e8c1fd339513" class="bulleted-list"><li style="list-style-type:disc">😢 - fish lose home (the coral) → fish die → disrupts food web </li></ul><ul id="7a32c695-8e00-4456-87dd-37ac9af85e76" class="bulleted-list"><li style="list-style-type:disc">😢 - less fish → less jobs → harms the fishing industry → impacts the economy</li></ul><ul id="5e1eba17-e447-4d90-867c-fbc0b01986f0" class="bulleted-list"><li style="list-style-type:disc">😢 - less fish → facilitates global food shortages</li></ul></details></li></ul><ul id="dd848899-9ccc-4a94-9be6-3bb12a9fbad5" class="toggle"><li><details open=""><summary>what are extreme weather events?</summary><ul id="e456994e-47b3-4799-aba4-93620a33081b" class="bulleted-list"><li style="list-style-type:disc">increase in global temps → decrease in frequency of cold weather &amp; increase in frequency of hot weather → changes in rainfall patterns → leads to extreme weather events such as <strong>droughts, heat waves, floods, storms</strong> </li></ul><ul id="5bb176ee-2612-45f3-98ee-ee9edca15d5d" class="bulleted-list"><li style="list-style-type:disc">😢 - extinction of species who have not adapted to the change + harms the wellbeing of humans </li></ul></details></li></ul><ul id="dd350d13-bf34-45a9-be35-1bd9937c58ff" class="toggle"><li><details open=""><summary>what are declining arctic sea ice, shrinking ice sheets &amp; retreating glaciers?</summary><ul id="b24a66f9-cbd1-4a68-8c9a-bad2c0ecf8d1" class="bulleted-list"><li style="list-style-type:disc">GW causes rise in sea levels and alters the salinity of the water → these changes affect the circulation of global ocean currents which impact weather and hence the climate</li></ul><ul id="9a8aff82-7f6e-451f-840f-a195aa4e3e0c" class="bulleted-list"><li style="list-style-type:disc">less ice → earth&#x27;s reflectivity decreases → increased global temperatures → alters global climate </li></ul></details></li></ul><ul id="cb105c42-9073-4bef-97d4-fa70b89da7c2" class="toggle"><li><details open=""><summary>what is ocean acidification?</summary><ul id="c40c9729-db8b-423d-9f53-add54b2eb0e4" class="bulleted-list"><li style="list-style-type:disc">ocean acidification is the ongoing decrease in the pH of earth&#x27;s oceans, caused by the oceans absorbing higher levels of CO2 from the atmosphere</li></ul><ul id="c327a05c-bd04-410c-9e27-1f16f0b6a369" class="bulleted-list"><li style="list-style-type:disc">larger amount of hydronium ions (H3O+) → decrease in pH → more acidic <ul id="60cc8712-d268-412e-879f-879b1692512c" class="bulleted-list"><li style="list-style-type:circle">hydronium ion concentration of the ocean has increased by 20-30% since the beginning of the industrial revolution </li></ul></li></ul></details></li></ul><ul id="8e5e42fc-b242-4302-8664-bab89eafc26a" class="toggle"><li><details open=""><summary>what are the 3 major consequences of ocean acidification?</summary><ol type="1" id="5c1f7b24-3381-4cf1-a562-d32095fdb5bd" class="numbered-list" start="1"><li>dissolves calcium carbonate shells</li></ol><ol type="1" id="560fd1a8-77da-4624-b08f-3447d22334ec" class="numbered-list" start="2"><li>coral bleaching </li></ol><ol type="1" id="6b624bad-8a32-47df-82a8-6ebdfcafe0c9" class="numbered-list" start="3"><li>death of pH sensitive organisms </li></ol></details></li></ul><ul id="ba5de22c-d67c-47ac-9ca4-c62333d4840f" class="toggle"><li><details open=""><summary><mark class="highlight-teal">calculations</mark></summary><ul id="ac7fc0e6-42ef-46f8-b111-50dbeca99e5f" class="toggle"><li><details open=""><summary>calculating pH</summary><figure id="b96b2068-af43-480c-9a15-b158555b29f3" class="image"><a href="Screen_Shot_2020-12-13_at_10.45.44_pm.png"><img style="width:528px" src="Screen_Shot_2020-12-13_at_10.45.44_pm.png"/></a></figure></details></li></ul><ul id="ebc8d4e1-5f21-4709-b7d7-3df44deae23c" class="toggle"><li><details open=""><summary>calculating [H+] or [H3O+]</summary><figure id="31a0d910-8a40-4467-b521-f8f0534d9906" class="image"><a href="Screen_Shot_2020-12-13_at_10.45.55_pm.png"><img style="width:528px" src="Screen_Shot_2020-12-13_at_10.45.55_pm.png"/></a></figure><p id="aa2c2641-4bb6-4bd3-818b-2532e3057245" class="">
+</p></details></li></ul><ul id="95849892-9928-42ae-a684-ab8eb1df1866" class="toggle"><li><details open=""><summary>calculating pOH</summary><figure id="00a3d2c3-dd33-42d0-a8e0-217a39093b2c" class="image"><a href="Screen_Shot_2020-12-13_at_10.46.18_pm.png"><img style="width:528px" src="Screen_Shot_2020-12-13_at_10.46.18_pm.png"/></a></figure></details></li></ul><ul id="656247ca-e3cb-42f0-a116-52c839c85ba5" class="toggle"><li><details open=""><summary>calculating [OH-]</summary><figure id="aefb9820-2801-4d71-ac69-03aa2aa51292" class="image"><a href="Screen_Shot_2020-12-13_at_10.47.30_pm.png"><img style="width:528px" src="Screen_Shot_2020-12-13_at_10.47.30_pm.png"/></a></figure></details></li></ul><ul id="3ea140c1-7dae-4d5a-afc6-2323204dab32" class="toggle"><li><details open=""><summary>ionic product of water (kw) used to link pH &amp; pOH</summary><p id="75c4d5d1-296b-4235-aaa7-92e5a6c24ac0" class="">pH + pOH = always 14</p><figure id="96692f8d-b11a-4aec-9b69-1f02439cc2c0" class="image"><a href="Screen_Shot_2020-12-13_at_10.49.41_pm.png"><img style="width:480px" src="Screen_Shot_2020-12-13_at_10.49.41_pm.png"/></a></figure></details></li></ul><ul id="b0ca7c9b-7fe4-40e5-86f2-3c718b51bdb4" class="toggle"><li><details open=""><summary>how much does H+ concentration differ from one pH level to the next</summary><p id="2023ba8a-8ac0-4791-971d-9575474925a5" class="">an decrease of 1 pH (becoming more acidic) leads to a 10 times increase in hydronium ion concentration </p><figure id="5ce48853-df02-4d08-9eca-b666c195c18c" class="image"><a href="Screen_Shot_2021-02-12_at_12.21.55_pm.png"><img style="width:1692px" src="Screen_Shot_2021-02-12_at_12.21.55_pm.png"/></a></figure></details></li></ul></details></li></ul><ul id="fd850868-1667-4858-a649-ddddb2cd34c8" class="toggle"><li><details open=""><summary>what are calcifying organisms?</summary><ul id="89db63a2-0f75-4eb9-89f5-acdabac68ac7" class="bulleted-list"><li style="list-style-type:disc">calcifying organisms that play a vital role in the oceanic ecosystem </li></ul><ul id="5278d9fb-cb1d-46fc-8bce-175ccf6e1320" class="bulleted-list"><li style="list-style-type:disc">calcareous plankton - photosynthetic micro-organisms that form the basis of the oceanic food web </li></ul><ul id="95849d62-4b67-40fe-bcf3-062448493916" class="bulleted-list"><li style="list-style-type:disc">a reduction in their population size will destabilise the food web, reducing the populations of higher organisms such as fish and other forms of seafood</li></ul></details></li></ul><ul id="e14e63dd-6f21-4ee8-8502-00752bea32dd" class="toggle"><li><details open=""><summary>chemical reactions related to calcifying organisms </summary><figure id="86357e5a-476c-4e07-be96-31f884564ec3" class="image"><a href="Screen_Shot_2020-12-13_at_10.34.32_pm.png"><img style="width:432px" src="Screen_Shot_2020-12-13_at_10.34.32_pm.png"/></a></figure><p id="42c1f3ec-85e2-4fd9-9938-d0f4e5e9dfe8" class="">
+</p></details></li></ul><ul id="727fbdc3-40d5-4d05-b9a7-de1465e55374" class="toggle"><li><details open=""><summary>negative effects of ocean acidification on calcifying organisms</summary><ul id="95729bf9-2ace-49c6-9dd1-d0dedc77d78a" class="bulleted-list"><li style="list-style-type:disc">the skeletons &amp; shells of many marine organisms are made of CaCO3 &amp; are vulnerable to dissolution at low pH </li></ul><ul id="730d44c6-4524-4706-b3a4-ee0c5c342176" class="bulleted-list"><li style="list-style-type:disc">limits an organisms ability to form shells </li></ul><ul id="189fded0-d1f5-42c2-a4cf-31f6e21786ec" class="bulleted-list"><li style="list-style-type:disc">organisms that rely on carbonate base structures for shelter are impacted as these structures dissolve </li></ul><ul id="e8f22f0b-1213-4d99-ae09-0282aa6e70a4" class="bulleted-list"><li style="list-style-type:disc">jobs and economies both depend on the life of shelled creatures </li></ul></details></li></ul><ul id="6963e03a-958b-497e-8d5b-858d77a418ec" class="toggle"><li><details open=""><summary>what are corals?</summary><ul id="cb42e349-977e-4d22-815b-3f3d2c7fbba9" class="bulleted-list"><li style="list-style-type:disc">corals are marine animals that build skeletons from calcium carbonate</li></ul><ul id="11445c44-bebf-4e8c-bea0-b2eabbe23ade" class="bulleted-list"><li style="list-style-type:disc">serve as habitat for 25% of all marine life on this planet</li></ul><ul id="17943b0d-cc87-481d-9e39-21429c3bc0d5" class="bulleted-list"><li style="list-style-type:disc">this marine life will be displaced and unprotected as more coral is dissolved due to the rising concentrations of acidity (H+ ions) in the oceans</li></ul></details></li></ul><ul id="b6065c2c-5152-4dee-8662-95dae6052d9c" class="toggle"><li><details open=""><summary>negative effects of ocean acidification on coral</summary><p id="e89c65ff-8304-4148-9d5a-bd4d7539e228" class="">ocean acidification causes coral to become stressed &amp; release the algae (their food source) → subsequently, they turn white and die because they have no food </p></details></li></ul><ul id="2099d507-d9e6-4e04-8d6e-9c9576fdd5ed" class="toggle"><li><details open=""><summary>negative effects of ocean acidification on pH sensitive organisms </summary><ul id="2ef59450-9732-4a21-83e7-19ceaf7b9fa5" class="bulleted-list"><li style="list-style-type:disc">some marine life are pH sensitive → they die if pH is too high or too low </li></ul><ul id="1a217d52-e11d-46f1-ba6e-85fb62551f37" class="bulleted-list"><li style="list-style-type:disc">doesn&#x27;t only kill the pH sensitive organisms, but other organisms which feed on them may also die due to lack of food → disrupted food chain</li></ul></details></li></ul><p id="61265d92-1333-449f-b8b1-4b5cfe2fa54d" class="">
+</p></div></div><hr id="d4693a04-8b1a-4511-a345-65568d4a1b81"/><h2 id="6bf0cf27-4788-4def-aa96-88d7a046d93a" class="block-color-pink_background">queue</h2></div></article></body></html>

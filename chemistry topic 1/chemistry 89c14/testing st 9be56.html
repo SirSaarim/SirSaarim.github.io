@@ -1,0 +1,665 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>testing station (1)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9be56ceb-06fb-4020-b31a-3a11dbf26100" class="page sans"><header><h1 class="page-title">testing station (1)</h1></header><div class="page-body"><div id="e8f249bf-7460-42d0-ab2f-1bbeb3c20828" class="column-list"><div id="b0dc1108-406f-4d66-9cb9-bd4d8662bec8" style="width:33.33333333333333%" class="column"><h2 id="b1489621-610e-448c-acdb-0a559a111926" class="block-color-teal_background">easy</h2><ul id="3e2adb3b-1dc0-42d0-b5e3-192619f095e3" class="toggle"><li><details open=""><summary>in AAS which unit can concentrations be determined in?</summary><p id="7caac3b4-d88f-47d8-a956-fc4d57d061a6" class="">ppm </p><p id="6a61b47b-b70b-4a2b-bf70-e02ba6f302c0" class="">ppb (using a granite furnace)</p></details></li></ul><ul id="0f194fc1-17b7-4b0d-a8c4-5f9c34decca4" class="toggle"><li><details open=""><summary>how can the emission spectra and absorption spectra be identified?</summary><figure id="ba31857a-5d6e-4a98-82ed-cf8e6dd73464" class="image"><a href="Screen_Shot_2021-01-05_at_3.42.13_pm.png"><img style="width:956px" src="Screen_Shot_2021-01-05_at_3.42.13_pm.png"/></a></figure><p id="2db600d9-559c-4f8d-9fc3-bf31132e1651" class="">
+</p></details></li></ul><ul id="bdc09c03-d46f-45c4-87b7-23590e0a4359" class="toggle"><li><details open=""><summary>what do the axes represent on a calibration graph?</summary><p id="63f68060-a3a5-48e1-a87b-77514e299284" class="">a graph of absorbance (vertical axis Y) against concentration (horizontal axis X) </p></details></li></ul><p id="fa0aed2d-f9e7-47b3-93ac-50b94dca7d9c" class="">
+</p><p id="f0c5d6a3-cdc6-4192-a46f-f614fb8bf988" class="">
+</p></div><div id="111312a8-2324-4c88-868a-20e0d4ca16b4" style="width:33.33333333333333%" class="column"><h2 id="d0ae829c-4aac-4110-b850-ae3e793e6b71" class="block-color-blue_background">good</h2><ul id="7cf8d578-39c7-4356-b7f1-c0ca6e2b7b80" class="toggle"><li><details open=""><summary>what is spdf subshell notation?</summary><figure id="84acf90a-955b-4c5a-9142-a027608db9da" class="image"><a href="Screen_Shot_2021-01-04_at_9.05.44_pm.png"><img style="width:298px" src="Screen_Shot_2021-01-04_at_9.05.44_pm.png"/></a></figure></details></li></ul><ul id="8cf00e35-35e6-4c6c-99b8-dbdbb012b9a1" class="toggle"><li><details open=""><summary>where are lower energy electrons located?</summary><p id="a54bda96-7f24-45db-8869-ccfc11f6ca08" class="">lower numbered shells <div class="indented"><ul id="88ea4a5f-c976-47f2-942b-0115a5234017" class="bulleted-list"><li style="list-style-type:disc">e.g. helium has two electrons <p id="8ac58a66-ca2c-4f96-ab51-a18d99ad75ba" class="">the two e- fill the lowest energy subshell (1s subshell)</p><p id="a52ed781-2ff5-44fd-bd5c-02b6a0a706c2" class="">→ <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1s^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p></li></ul></div></p></details></li></ul><ul id="e82d6b68-d94e-4023-a362-05d3f47589c9" class="toggle"><li><details open=""><summary>where are higher energy electrons located?</summary><p id="98dea12c-8af0-48e8-87bd-ebd3aa56b050" class="">higher numbered shells<div class="indented"><ul id="983053a9-6611-4bd6-a2ad-2ee2bbc62f26" class="bulleted-list"><li style="list-style-type:disc">e.g. lithium has 3 electrons<p id="6d6330e6-06ef-4657-87c6-bc3c3ffeb43b" class="">two e- fill the lowers energy 1s subshell </p><p id="ef70ebec-537f-4be7-9b17-9f0bfb9a364c" class="">third e- is positioned in higher energy 2s subshell</p><p id="6733e4db-e740-4419-88d1-ee4221a6519e" class="">→ <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mi>s</mi><mn>2</mn></msup><mn>2</mn><msup><mi>s</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">1s^22s^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p></li></ul></div></p></details></li></ul><ul id="10b15432-e07f-4436-b917-46fc97ba86e0" class="toggle"><li><details open=""><summary>when do electrons begin to fill a higher energy subshell?</summary><p id="4d8dd5e1-084e-4973-8f95-38a845681746" class="">once the lower energy subshell has been filled</p></details></li></ul><ul id="02f9d1cb-19a6-482b-a8a4-5cb615aa8872" class="toggle"><li><details open=""><summary>how do you write electron configuration using subshell notation?</summary><figure id="b96fb36c-2f11-4389-9973-39c54435899b" class="image"><a href="Screen_Shot_2021-01-04_at_8.53.12_pm.png"><img style="width:480px" src="Screen_Shot_2021-01-04_at_8.53.12_pm.png"/></a></figure></details></li></ul><ul id="2915f385-c3f0-4123-aae7-51225320c8fe" class="toggle"><li><details open=""><summary>how are cations formed?</summary><p id="dcdd2947-6946-4037-9ae3-2c6e9344180a" class="">positive ions (cations) of the main group (group 1,2,13,14,15,16,17,18)</p><ul id="f8cafb71-dba9-4cc3-b6dc-9a663ad645cc" class="bulleted-list"><li style="list-style-type:disc">formed when e- are removed from the highest energy shell in an atom </li></ul></details></li></ul><ul id="d7552ea5-a856-4497-910a-9e5290678b14" class="toggle"><li><details open=""><summary>write the electronic configuration for cations</summary><p id="351bd160-cdfb-4d05-8298-b59d4185ab4d" class="">positive ions (cations) of the main group (group 1,2,13,14,15,16,17,18)</p><ol type="1" id="d796097e-683d-4ef7-877a-6d959abd8f80" class="numbered-list" start="1"><li>determine the number of e-</li></ol><ol type="1" id="3149370e-d312-4bce-866a-c87d3f1c2228" class="numbered-list" start="2"><li>cations have less e than the atom of the element</li></ol><p id="05058adf-2fa2-4c00-91f7-e505bf998369" class=""><strong>ca</strong> (20 e-): 1s2 2s2 2p6 3s2 3p6 4s2</p><p id="97a343fc-b73e-42c7-933e-c10eeebe2d0c" class=""><strong>ca2+</strong> (18 e-): 1s2 2s2 2p6 3s2 3p6</p></details></li></ul><ul id="66e7ec3c-ba52-49ba-9bbb-620905e47dd6" class="toggle"><li><details open=""><summary>how are anions formed?</summary><p id="6d2f1b33-cc69-4b51-b7b3-19f874d989bf" class="">negative ions (anions) of the main group (group 1,2,13,14,15,16,17,18)</p><ul id="4f9fd8b0-f1da-42cc-939d-0406c2550c0a" class="bulleted-list"><li style="list-style-type:disc">formed when e- are added to the highest energy shell in an atom </li></ul></details></li></ul><ul id="f3d053a7-9551-44ba-8bab-fae5c9a27287" class="toggle"><li><details open=""><summary>write the electronic configuration for anions</summary><p id="3869dd14-3853-46e1-b69f-ae1e83bef230" class="">negative ions (anions) of the main group (group 1,2,13,14,15,16,17,18)</p><ol type="1" id="db391531-321d-439b-89c9-2458ae9f5a51" class="numbered-list" start="1"><li>determine the number of e</li></ol><ol type="1" id="31c6c8c2-a0d7-4b8b-993c-56d464960ffd" class="numbered-list" start="2"><li>anions have more e than the atom of the element</li></ol><p id="e75b61a2-096e-46a4-87cc-f7fcf6a05f83" class=""><strong>br</strong> (35 e-): 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p5</p><p id="584a6306-1886-4a41-824c-b6622af87e1c" class=""><strong>br-</strong> (36 e-): 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6</p></details></li></ul><ul id="4bf2075c-e429-4db5-a5fa-0f8b6c44f18d" class="toggle"><li><details open=""><summary>what happens to electrons during the absorption/emission of energy?</summary><p id="925e19da-0c00-45e3-a1d7-d0f082590241" class="">electrons transition between energy levels </p></details></li></ul><ul id="cf8801ab-5820-423c-bfc3-8dfec520f2c9" class="toggle"><li><details open=""><summary>what is the ground state?</summary><p id="19fe8fdd-ae3a-4ca2-b5bf-b35b109e6e2d" class="">lowest energy state of an atom </p><p id="08d8f3fa-41a1-4312-8d89-c6332bc61dba" class="">electrons occupy the lowest available energy level when an atom is in the ground state</p><p id="2cc016ef-dc69-4174-8130-cf3103b61a4b" class="">→ ground state electron configuration </p></details></li></ul><ul id="8f6419cb-c808-477b-9b5e-a116653c040f" class="toggle"><li><details open=""><summary>what is the excited state?</summary><p id="e6eb79a7-7955-4477-9ccc-dbd16d865047" class="">highest energy state of an atom</p><p id="627ac610-bb8b-4b39-84e7-fabcd14521ad" class="">an atom with one or more electrons in higher energy level </p><p id="35c3e5c0-fb0c-4f1d-be99-fcbfa8761a02" class="">→ excited state electron configuration </p></details></li></ul><ul id="9bab2d1b-78c5-4477-8875-04edc97ceb9e" class="toggle"><li><details open=""><summary>what happens when electrons absorb a photon?</summary><p id="06af5417-a9de-4c9a-85be-9742e89e703b" class="">photon = energy </p><p id="60147381-5241-4965-89e6-282119145460" class="">→ electrons transition to a higher energy level </p><p id="75ed03ce-a3f0-4515-9fdb-e4e8b572b071" class="">process called atomic absorption </p></details></li></ul><ul id="20259382-681b-4bf8-8602-f833474f3b0a" class="toggle"><li><details open=""><summary>what is required for an electron to absorb/emit a photon?</summary><p id="55551407-6698-48ed-a34b-6d2103d44e4c" class="">the photon energy must be equal to the difference in energy between two electron energy levels (^E)</p></details></li></ul><ul id="0cdd4c10-3a25-4d2a-8439-2980b9b747b9" class="toggle"><li><details open=""><summary>what happens when electrons emit a photon?</summary><p id="7909b20f-6246-4c7d-a88d-119b39e2a821" class="">photon = energy </p><p id="d2745345-9684-4efc-9639-0697d47a6b5b" class="">→ electrons transition to a lower energy level </p><p id="0904d2cb-7ea2-4082-865b-ca448f41212e" class="">process called atomic emission</p></details></li></ul><ul id="f38c8d6d-6a52-4377-9a24-75273a9d2717" class="toggle"><li><details open=""><summary>what is the wavelength of the emitted photon dependant on?</summary><p id="8cc5ca53-bca1-451e-b8d1-17ae9b53563a" class="">dependant on the photon energy which is equal to the difference in energy between two electron energy levels</p><p id="4752a918-e421-4987-a41c-f244d9e96d3a" class="">emitted photons have specific frequencies (f) and wavelengths (λ)</p><p id="f43d6dc8-555b-4786-9182-d5f0edf0f552" class="">f and λ of a photon is related to its energy</p><ul id="6aadc993-d8bc-440f-b514-6f8f23b68a5c" class="bulleted-list"><li style="list-style-type:disc">high energy = high frequency and short wavelength</li></ul><ul id="2bb7ab8d-bde0-425c-b516-5ecadfbee59e" class="bulleted-list"><li style="list-style-type:disc">low energy = low frequency and long wavelength</li></ul><ul id="0c80bbb5-1cc3-42cf-966a-632f65936b78" class="bulleted-list"><li style="list-style-type:disc">no two chemical elements have the same electron energy levels</li></ul></details></li></ul><ul id="6bd15f24-35cd-4e1d-b299-24cc5de9e3f4" class="toggle"><li><details open=""><summary>explain the production of the emission spectra </summary><ol type="1" id="959cd104-fdd7-4179-a6d0-115f4aee4886" class="numbered-list" start="1"><li>electrons get excited and full of energy. this allows them to move to higher energy levels</li></ol><ol type="1" id="8f5f089b-0376-423b-a216-5b65e220b4fa" class="numbered-list" start="2"><li>at a higher energy level, it is unstable. as such, it moves back down, releasing energy</li></ol><ol type="1" id="8894bcce-b388-4f84-a407-35e5c7311ad1" class="numbered-list" start="3"><li>this energy is passed through a prism, splitting it into individual frequencies</li></ol><figure id="62a9983e-7f0c-4d5a-8357-a43ecfa08ea4" class="image"><a href="Screen_Shot_2021-02-24_at_1.59.05_pm.png"><img style="width:1248px" src="Screen_Shot_2021-02-24_at_1.59.05_pm.png"/></a></figure></details></li></ul><ul id="6f72ffed-a6dc-4dc0-803b-4daf781d8a00" class="toggle"><li><details open=""><summary>explain the production of the absorption spectra</summary><ol type="1" id="cc9bbc3f-79c2-448f-9e7a-924768f30db5" class="numbered-list" start="1"><li>white light is passed through a vapour of material (the element)</li></ol><ol type="1" id="0aeacdce-176e-4537-9caa-3f9eef2c7970" class="numbered-list" start="2"><li>electrons absorb different frequencies and get excited</li></ol><ol type="1" id="7df916ad-e50d-4e13-a664-cafbda199794" class="numbered-list" start="3"><li>excited electrons jump an energy level, release energy and return to their ground state</li></ol><ol type="1" id="95cf735f-0d16-4a2e-b454-9738afe5c74c" class="numbered-list" start="4"><li>after passing through the vapour, the beam passes through a prism, producing an absorption spectrum </li></ol><figure id="7c1f754b-90b2-42db-871a-a4158589aa45" class="image"><a href="Screen_Shot_2021-02-24_at_1.59.22_pm.png"><img style="width:1256px" src="Screen_Shot_2021-02-24_at_1.59.22_pm.png"/></a></figure></details></li></ul><ul id="69966ba9-80cc-430e-a23d-eaa165c5d905" class="toggle"><li><details open=""><summary>what is atomic absorption spectroscopy?</summary><p id="a9f03180-d18e-437d-a124-67b160c524fe" class="">a highly sensitive and selective quantitative analytical technique used to determine the concentrations of elements.</p></details></li></ul><ul id="a8e22afa-0301-4e65-a8bf-d14d48105ecb" class="toggle"><li><details open=""><summary>link between transitions, photo wavelengths and region of EM spectrum</summary><figure id="0e69f817-9bd1-4be4-9492-f5b71324e653" class="image"><a href="Screen_Shot_2021-01-05_at_3.41.01_pm.png"><img style="width:1822px" src="Screen_Shot_2021-01-05_at_3.41.01_pm.png"/></a></figure></details></li></ul><ul id="fffd9649-52ab-4f17-9828-f96dba551585" class="toggle"><li><details open=""><summary>what is a hollow cathode lamp?</summary><p id="8de3489b-57a2-46b8-85a5-0bbcf7527c5d" class="">lamp selected for the analysis of the element under investigation <div class="indented"><p id="13f737e2-0488-4d96-91f3-6261f6eaf395" class="">contains...</p><ul id="ee7dbf6a-604b-4a6a-8740-a6db11921914" class="bulleted-list"><li style="list-style-type:disc">inert gas (such as argon)</li></ul><ul id="3651a584-33f4-4abe-a769-7f644091a6a7" class="bulleted-list"><li style="list-style-type:disc">the anode</li></ul><ul id="6575fbc1-abf4-47ab-8c9a-1e9b955e03c3" class="bulleted-list"><li style="list-style-type:disc">a hollow cathode in the element of interest </li></ul></div></p></details></li></ul><p id="fb67d4a9-1783-42f5-9d3a-ea83a0d45259" class="">
+</p></div><div id="ea3ff6c1-58a2-4c45-8c63-6fb84097e700" style="width:33.33333333333338%" class="column"><h2 id="92529883-c3a0-4470-9986-81530ee3c766" class="block-color-orange_background">again</h2><ul id="725d072d-fb1f-4fe0-bac6-d0738b865134" class="toggle"><li><details open=""><summary>what factor determines the positioning of electrons in shell?</summary><p id="e8a7704e-9db5-41a3-94be-29916f399be4" class="">electrons are positioned in shells and subshells in order of increasing energy </p></details></li></ul><ul id="5e56ef40-2b0f-4691-a54f-a47df673c32d" class="toggle"><li><details open=""><summary>what does the aufbrau principle propose?</summary><p id="5060a1fc-421a-4cb4-b8d0-ff07a9afcf79" class="">electrons in atoms fill lower energy subshells before filling in higher energy subshells</p><ul id="c9588afe-7fde-414c-9b2d-6abe38c4a28b" class="bulleted-list"><li style="list-style-type:disc">electrons in the first 38 elements fill subshells in a regular and predictable manner (except Cr and Cu)</li></ul><ul id="b626a012-142f-4fac-8bdf-3f346b153497" class="bulleted-list"><li style="list-style-type:disc">lowest energy → highest energy <p id="3ef374b0-c34e-40bf-bc41-048dcd891378" class="">
+</p><figure id="965d8e08-a8b4-49b5-b902-3d42636f7549" class="image"><a href="Screen_Shot_2021-01-04_at_9.01.21_pm.png"><img style="width:578px" src="Screen_Shot_2021-01-04_at_9.01.21_pm.png"/></a></figure></li></ul><p id="2f8a4547-4057-4e3e-92ad-0ff9320b5634" class="">
+</p></details></li></ul><ul id="7bab02e3-232f-4ba2-9a24-b712454edf41" class="toggle"><li><details open=""><summary>write the electronic configuration for transition metals </summary><p id="9fd27be3-d95b-4e9a-a0e5-cea331653dcf" class="">positive ions (cations) of the transition elements</p><ul id="84725e04-1f38-4478-be07-f9eb65b63065" class="bulleted-list"><li style="list-style-type:disc">remove the number of electrons equal to the charge on the ion by deleting the 4s electrons first, with any further deletions to be made from the 3d subshell</li></ul><p id="620dea36-d0ae-4cdc-aeb7-80bcd155dc92" class=""><strong>fe</strong> (26 e-): 1s2 2s2 2p6 3s2 3p6 4s2 3d6</p><p id="bb48fe48-ccbb-499f-ad59-393d93a9c65c" class=""><strong>fe2+</strong> (24 e-): 1s2 2s2 2p6 3s2 3p6 3d6</p><p id="061ba311-5ae0-401e-9146-f018bb9f2f8a" class=""><strong>fe3+ </strong>(23 e-): 1s2 2s2 2p6 3s2 3p6 3d5</p></details></li></ul><ul id="630ddbb2-b2b1-472b-af76-c8ad07ad7359" class="toggle"><li><details open=""><summary>what are electron energy levels?</summary><ul id="af10ca14-0017-4ee8-a6f4-6a939f4b0467" class="bulleted-list"><li style="list-style-type:disc">electrons in shells and subshells have a specific amount of energy </li></ul><ul id="285eed5e-f974-4f99-9d27-e019a0e94f3c" class="bulleted-list"><li style="list-style-type:disc">the energies of the electrons in an atom are called electron energy levels </li></ul></details></li></ul><ul id="07584d59-6fea-402e-9240-e815b44ce3e1" class="toggle"><li><details open=""><summary>what are photons?</summary><p id="e71b0dc7-6e18-485a-87f8-a92be79254ac" class="">discrete quantised amounts of energy</p><ul id="27d8f935-4599-4842-8b4c-112ca7fd10d9" class="bulleted-list"><li style="list-style-type:disc">electrons absorb and emit energy in the form of photons of electromagnetic radiation </li></ul></details></li></ul><ul id="7786936b-2f3f-433c-88b7-ab04d3203de4" class="toggle"><li><details open=""><summary>explain atomic absorption and emission with diagrams</summary><ul id="ea4c6bad-5225-4290-a3a0-86768754d912" class="bulleted-list"><li style="list-style-type:disc">e- are found naturally in the ground state (lowest energy level) of an atom or ion</li></ul><ul id="62b426c1-723e-4b59-b8df-006e7e39a701" class="bulleted-list"><li style="list-style-type:disc">e- can be promoted to a higher energy level (excited state) through the absorption of photons</li></ul><ul id="01f20bbb-5e70-4319-93b7-5731fcc915e5" class="bulleted-list"><li style="list-style-type:disc">photons<em> (discrete quantised amount of energy) </em>may be supplied as heat, light and electrical energy</li></ul><ul id="a08f99cf-1d3f-40ff-bb2e-80d0b1f3327b" class="bulleted-list"><li style="list-style-type:disc">e- in the excited state are unstable and return to the ground state, emitting energy as photons</li></ul><figure id="8f15f316-45ad-4d44-bf3c-668a1d6679bb" class="image"><a href="Screen_Shot_2021-01-04_at_9.15.34_pm.png"><img style="width:384px" src="Screen_Shot_2021-01-04_at_9.15.34_pm.png"/></a><figcaption>atomic absorption </figcaption></figure><figure id="ff9b61a1-7f40-4701-b675-0f4edfbc9470" class="image"><a href="Screen_Shot_2021-01-04_at_9.15.43_pm.png"><img style="width:384px" src="Screen_Shot_2021-01-04_at_9.15.43_pm.png"/></a><figcaption>atomic emission </figcaption></figure><p id="020739da-2181-4eca-94e7-4cc4cfd94103" class="">
+</p></details></li></ul><ul id="33bac256-24b3-4a9e-bf3a-dd8a51ea7ecf" class="toggle"><li><details open=""><summary>what are the applications of AAS?</summary><ul id="8df9156e-692e-4528-800e-142b6f4e4ca3" class="bulleted-list"><li style="list-style-type:disc">primarily used in the detection of individual metallic elements in a sample</li></ul></details></li></ul><ul id="b57bb80a-25a3-4658-ac67-5de849640fd1" class="toggle"><li><details open=""><summary>explain the process of AAS</summary><ol type="1" id="f2983d5f-f768-41fe-b07f-94f20c016f7a" class="numbered-list" start="1"><li>a voltage is applied across the electrodes<p id="0f446a4a-5c77-4191-a4c0-d676ae478c60" class="">this removes atoms from the surface of the cathode, allowing their outer-shell electrons to undergo excitation </p></li></ol><ol type="1" id="a6fa86ef-45f0-4aca-92cc-86b6e8e01648" class="numbered-list" start="2"><li>a pulsed beam of emitted radiation is directed through a window at the top of the lamp to pass directly through the long thin flame </li></ol><ol type="1" id="77a7761e-8a5e-44ee-a3d6-47c86c5cad71" class="numbered-list" start="3"><li>the original incident beam is also split into a secondary beam prior to passing through the flame</li></ol><ol type="1" id="c592bc6e-dd20-4e10-aeac-7fa37ba78bb8" class="numbered-list" start="4"><li>the alternative beam is directed to the detector to establish an <strong>incident</strong> (initial, prior to the flame) reading of the light intensity </li></ol><ol type="1" id="48f5b09a-4bec-4ec4-9050-72b0837cf3b4" class="numbered-list" start="5"><li>a <strong>nebuliser </strong>system draws up the sample through a capillary, aspirating (spraying) it into the oxy-acetylene fuel mixture entering the flame of the burner head</li></ol><ol type="1" id="3e12546b-09dc-4f27-aecb-317fa27c4ec4" class="numbered-list" start="6"><li>the heat energy from the flame quickly evaporates the solvent and breaks down the compounds in the sample into atoms in a free atomic state</li></ol><ol type="1" id="c7194478-283b-4c03-9473-9c54db0d929a" class="numbered-list" start="7"><li>outer shell electrons are promoted to higher energy levels in the atom. the electrons return to lower energy levels in the atom<p id="e634fb1d-3b68-45ba-957e-202360acf1dc" class="">this results in the emission of electromagnetic radiation. the specific wavelengths of radiation present in the emission correspond to the energy transitions undertake by electrons<div class="indented"><ul id="ec696346-59f0-41aa-b7de-8cb242d17a1f" class="bulleted-list"><li style="list-style-type:disc">high energy = high frequency and short wavelength</li></ul><ul id="a506f980-d111-4581-86b2-974c79c93320" class="bulleted-list"><li style="list-style-type:disc">low energy = low frequency and long wavelength<figure id="9b9513b6-bf95-4e71-8735-c3279090aa5f" class="image"><a href="Screen_Shot_2021-01-05_at_3.28.46_pm.png"><img style="width:960px" src="Screen_Shot_2021-01-05_at_3.28.46_pm.png"/></a></figure></li></ul></div></p></li></ol><p id="0e0402ec-ce46-449a-864c-230b9bc5a77c" class="">1. the light emitted from the source is absorbed by the sample</p><p id="c311d518-24a9-4568-ac77-fc26515307b7" class="">2. the absorbance is proportional to the concentration of the element in the sample.</p><p id="7087d14a-10b7-4472-a6c1-ecaa3b60185d" class="">3. the atomic spectrometer determines the absorbance of the sample by measuring the difference in intensity (number of photons) between the sample and reference beams of light</p></details></li></ul><ul id="ba895422-11b5-4cdd-82f9-5ba86481b58c" class="toggle"><li><details open=""><summary>what is a calibration graph?</summary><p id="3f6532c0-afca-4edf-a0c0-f85ac2ba0139" class="">method for determining the concentration of a substance in an unknown sample by comparing the unknown to a set of standard samples of known concentration<div class="indented"><ul id="5df2d84f-355d-4bc2-8a28-b4920128867d" class="bulleted-list"><li style="list-style-type:disc">typically, very dilute solutions are used with quantities in the ppm or ppb range</li></ul></div></p></details></li></ul><ul id="782baf58-b480-4bd4-bb4d-0f459fa6f63f" class="toggle"><li><details open=""><summary>what is the calibration graph constructed for?</summary><p id="b3992cc6-4c1b-4693-9911-5b14055431f4" class="">it is constructed for an element of interest from a set of prepared solutions</p></details></li></ul><ul id="c409155e-a7b6-4264-bffa-f59e9f58085a" class="toggle"><li><details open=""><summary>explain the process of constructing a calibration graph</summary><p id="bf322896-d64b-4877-9b2e-633d3dd10918" class="">the range of concentrations selected depends on the expected concentration of the element in the unknown sample</p><ol type="1" id="01d33644-0e7e-4cef-a01d-e6dc3b6b1724" class="numbered-list" start="1"><li>a set of standard solutions are prepared for the element under investigation (have increasing concentrations, like 0ppm, 1ppm, 2ppm, etc.)</li></ol><ol type="1" id="bedb42ed-83dc-4ec3-b54f-f72c607bbd20" class="numbered-list" start="2"><li>blank of distilled/deionised water is also included to serve as a reference for calibration</li></ol><ol type="1" id="298b6d19-6c39-4329-a003-baf0a246dd2e" class="numbered-list" start="3"><li>each solution is being prepared at desired concentration or created through a series of dilution of a stock solution</li></ol><ol type="1" id="32fff0eb-6178-41e5-96ac-02d865bdcacc" class="numbered-list" start="4"><li>a blank is introduced to the AAS to calibrate the apparatus and then the prepared solutions are added sequentially from lowest to highest concentrations</li></ol><ol type="1" id="d3e4280b-0131-44c7-901a-ae7d5e68e83c" class="numbered-list" start="5"><li>each solution including the blank will produce an absorbance reading which will plotted on a calibration graph</li></ol><ol type="1" id="8b5f6c28-0e9f-4725-91e9-b2d829ae5fa6" class="numbered-list" start="6"><li>graph is plotted absorbance (DV – y-axis) against concentration (IV – x-axis)</li></ol><ol type="1" id="53ec2577-feb2-4a2c-9d2e-d16afeb78510" class="numbered-list" start="7"><li>a line of best fit is applied to the data (typically a linear fit)</li></ol><ol type="1" id="4b1ad059-0250-434d-b3cb-927e709330e0" class="numbered-list" start="8"><li>unknown solution is introduced to the AAS and absorbance readings are recorded</li></ol><ol type="1" id="2b224ade-3e91-42ee-907a-f9bdd8c874ec" class="numbered-list" start="9"><li>unknown concentration can then be interpolated from the constructed calibration graph</li></ol></details></li></ul><p id="aec03b6f-002f-40d8-baa8-ecf2d3376f29" class="">
+</p></div></div><hr id="4b9cd108-141d-4b33-8d2e-79e16668640f"/><h2 id="a82a2a9e-a879-42ed-b140-0e34d9b29ed1" class="block-color-pink_background">queue</h2></div></article></body></html>
