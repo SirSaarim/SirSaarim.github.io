@@ -1,31 +1,49 @@
-  html {
-            font-family: sans-serif;
-            font-size: larger;
-        }
+html {
+	font-family: sans-serif;
+	font-size: larger;
+}
 
-        body {
-            background-color: #15202B;
-        }
+body {
+	background-color: #15202b;
+}
 
-        h2 {
-            text-align: center;
-            color: aliceblue;
-        }
+h2 {
+	text-align: center;
+	color: aliceblue;
+}
+button {
+	font-size: larger;
+}
 
-        button {
-            font-size: larger;
-        }
+img {
+	width: 100%;
+}
 
-        img {
-            width: 100%;
-        }
+p.para {
+	margin: 0;
+	padding: 0;
+	color: aqua;
+}
 
-        p.para {
-            margin: 0;
-            padding: 0;
-            color:aqua
-        }
-  p {
-            /*      top  right  bottom  left */
-            margin: 0 0 0 0;
-        }
+p {
+	/*      top  right  bottom  left */
+	margin: 0 0 0 0;
+    color: aqua;
+}
+
+html {
+	font-family: sans-serif;
+	font-size: larger;
+}
+
+button {
+	font-size: larger;
+}
+
+img {
+	width: 100%;
+}
+
+#myPage {
+	background-color: #15202b;
+}

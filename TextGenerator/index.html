@@ -1,157 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title> UT SirSaarim </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-    <div id="myPage">
-        <h2> TEXT GENERATOR </h2>
-        <hr>
-        <button id="button1" class="btn btn-light" autofocus onclick="forward()"> NUMBERED TEXT </button>
-        <br>
-        <br>
-        <button id="button2" class="btn btn-light" onclick="backwards()"> NUMBERED TEXT (Counting Backwards) </button>
-        <br>
-        <br>
-        <button id="button3" class="btn btn-light" onclick="downhill()"> NEGATIVE SlOPE TEXT </button>
-        <br>
-        <br>
-        <button id="button4" class="btn btn-light" onclick="vertical()"> VERTICAL TEXT </button>
-        <br>
-        <br>
-        <p id="instructions">Please choose from one of the options above</p>
-        <br>
-        <br>
-    </div>
-    <style>
-        html {
-            font-family: sans-serif;
-            font-size: larger;
-        }
+	<head>
+		<title>UT SirSaarim</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<div id="myPage">
+			<h2>TEXT GENERATOR</h2>
+			<hr />
+			<button
+				id="button1"
+				class="btn btn-light"
+				autofocus
+				onclick="forward()"
+			>
+				NUMBERED TEXT
+			</button>
+			<br />
+			<br />
+			<button id="button2" class="btn btn-light" onclick="backwards()">
+				NUMBERED TEXT (Counting Backwards)
+			</button>
+			<br />
+			<br />
+			<button id="button3" class="btn btn-light" onclick="downhill()">
+				NEGATIVE SLOPE TEXT
+			</button>
+			<br />
+			<br />
+			<button id="button4" class="btn btn-light" onclick="vertical()">
+				VERTICAL TEXT
+			</button>
+			<br />
+			<br />
+			<p id="instructions">Please choose from one of the options above</p>
+			<br />
+			<br />
+		</div>
 
-        body {
-            background-color: #15202B;
-        }
-
-        p {
-            color: aqua;
-        }
-
-        button {
-            font-size: larger;
-        }
-
-        img {
-            width: 100%;
-        }
-    </style>
-    <script>
-
-
-        function forward() {
-
-            var i;
-            var repeat;
-            var text;
-            text = prompt("Text to repeat: ");
-            repeat = prompt("How many times you want to repeat the text");
-            repeat = parseInt(repeat);
-            for (i = 1; i <= repeat; i++) {
-              //  document.write('<p style="margin:0 0 0 0;color:white;background:black;">' + i);
-               // document.write(". ");
-               // document.write(text + "</p>");
-                document.write(i);
-                document.write(". ");
-                document.write(text);
-                document.write("<BR>")
-            }
-
-        }
-
-        function backwards() {
-            var i;
-            var repeat;
-            var text;
-
-            text = prompt("Text to repeat: ");
-            repeat = prompt("How many times you want to repeat the text");
-            repeat = parseInt(repeat);
-
-            for (i = repeat; i >= 0; i--) {
-                document.write(i);
-                document.write(". ");
-                document.write(text);
-                document.write("<BR>")
-            }
-        }
-
-        function downhill() {
-            var i;
-            var repeat;
-            var text;
-            var newText;
-            var currentChar = 0;
-
-            text = prompt("Text to repeat: ");
-            newText = text.charAt(currentChar);
-            repeat = prompt("How many times you want to repeat the text");
-            repeat = parseInt(repeat);
-
-            for (i = 1; i <= repeat; i++) {
-                //document.write(i);
-                //document.write(". ");
-                document.write(newText);
-                currentChar++
-                newText = newText + text.charAt(currentChar);
-                if (currentChar == text.length) {
-                    currentChar = -1;
-                }
-                document.write("<BR>")
-            }
-        }
-
-        function vertical() {
-            var i;
-            var repeat;
-            var text;
-            var newText;
-            var currentChar = 0;
-
-            text = prompt("Text to repeat: ");
-            newText = text.charAt(currentChar);
-            repeat = prompt("How many times you want to repeat the text");
-            repeat = parseInt(repeat);
-
-            for (i = 1; i <= repeat; i++) {
-                //document.write(i);
-                //document.write(". ");
-                document.write(newText);
-                currentChar++
-                newText = text.charAt(currentChar);
-                if (currentChar == text.length) {
-                    currentChar = -1;
-                }
-                document.write("<BR>")
-            }
-        }
-
-        function goBack() {
-            document.getElementsByClassName("font-weight-bold").style.visibility = "hidden";
-            document.getElementById("buttonBack").style.visibility = "hidden";
-            document.getElementById("paraResult").style.visibility = "hidden";
-            document.getElementById("button1").style.visibility = "visible";
-            document.getElementById("button2").style.visibility = "visible";
-            document.getElementById("button3").style.visibility = "visible";
-            document.getElementById("button4").style.visibility = "visible";
-        }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-</body>
-
-
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
