@@ -59,9 +59,13 @@
             repeat = prompt("How many times you want to repeat the text");
             repeat = parseInt(repeat);
             for (i = 1; i <= repeat; i++) {
-                document.write('<p style="margin:0 0 0 0;color:white;background:black;">' + i);
+              //  document.write('<p style="margin:0 0 0 0;color:white;background:black;">' + i);
+               // document.write(". ");
+               // document.write(text + "</p>");
+                document.write(i);
                 document.write(". ");
-                document.write(text + "</p>");
+                document.write(text);
+                document.write("<BR>")
             }
 
         }
