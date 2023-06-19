@@ -87,7 +87,7 @@ function vertical() {
 
 
 function writeBackButton() {
-   document.write('<div style="margin-top: 100px; margin-bottom: 10px;"><button class="btn btn-light" onclick="goBack()">Go Back</button></div>');
+   document.write('<div style="margin-top: 50px; margin-bottom: 10px;"><button class="btn btn-light" onclick="goBack()">Go Back</button></div>');
 }
 
 function writeBootstrapStylesheet() {
