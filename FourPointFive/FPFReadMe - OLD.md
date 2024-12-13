@@ -8,7 +8,7 @@ Achievements:
 	
 
 
-
+ 
 
 
 
@@ -125,3 +125,12 @@ Social media-
 	Instagram: https://www.instagram.com/nooty_jutt/
 	Snapchat:
 	Twitter:
+
+	---
+
+## Tasks Left to Do
+
+- Remove the text: **"Click on the cover to download it in BEST Quality."** from the Covers page.
+- Fix the individual pictures slideshow on the Covers page.
+- Add `favi.ico` to `index.html`.
+- Optionally add Usman Jee's Snapchat.
