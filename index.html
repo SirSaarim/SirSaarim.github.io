@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiology Outpatient Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            padding-bottom: 500px;
+            line-height: 1.4;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 8px 0;
+            border-bottom: 1px solid #ddd;
+            background-color: lightblue;
+            /* Blue background */
+        }
+
+        .field {
+            margin: 5px 0;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 120px;
+            padding: 2px 4px;
+            margin-left: 4px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 60px;
+            margin: 3px 0;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .option {
+            display: inline-block;
+            margin-right: 8px;
+            color: #555;
+            cursor: pointer;
+            padding: 1px 3px;
+            border-radius: 2px;
+            opacity: 0.5;
+        }
+
+        .option.selected {
+            background-color: #4CAF50;
+            color: white;
+            opacity: 1;
+        }
+
+        /* New styles for medication options */
+        .medication-options {
+            display: none;
+            margin-left: 20px;
+            margin-top: 5px;
+            padding: 5px 0 5px 10px;
+            border-left: 2px solid #4CAF50;
+        }
+
+        .medication-options.visible {
+            display: block;
+        }
+
+        .medication-option {
+            display: inline-block;
+            margin-right: 8px;
+            color: #555;
+            cursor: pointer;
+            padding: 1px 3px;
+            border-radius: 2px;
+            opacity: 0.5;
+        }
+
+        .medication-option.selected {
+            background-color: #4CAF50;
+            color: white;
+            opacity: 1;
+        }
+
+        .toggle-options {
+            display: none;
+            margin-left: 20px;
+            margin-top: 5px;
+            padding: 5px 0 5px 10px;
+            border-left: 2px solid #4CAF50;
+        }
+
+        .toggle-options.visible {
+            display: block;
+        }
+
+        .toggle-option {
+            display: inline-block;
+            margin-right: 8px;
+            color: #555;
+            cursor: pointer;
+            padding: 1px 3px;
+            border-radius: 2px;
+            opacity: 0.5;
+        }
+
+        .toggle-option.selected {
+            background-color: #4CAF50;
+            color: white;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dr Hafeez Cardiology SMO OPD</h1>
+    <div class="toggle-options visible" id="consultationType">
+        <label>Consultation Type:</label>
+        <span class="toggle-option">First Consultation</span>
+        <span class="toggle-option">Follow up review</span>
+        <span class="toggle-option">Post admission review</span>
+        <br> <!-- Forces a line break -->
+        Patient Name: <input type="text" id="patientName" style="width:200px;">
+        GP: <input type="text" id="gp" style="width:200px;">
+    </div>
+    <!-- Issues -->
+    <h2>Issues</h2>
+    <span class="toggle-option">AF</span>
+    <span class="toggle-option">HF</span>
+    <span class="toggle-option">Angina</span>
+    <textarea></textarea>
+
+    <!-- Demographics -->
+    <div class="field">
+        <label>Age:</label> <input type="number" placeholder="yrs">
+    </div>
+
+    <div class="field">
+        <label>Lives with:</label>
+        <span class="option">Family</span>
+        <span class="option">Husband</span>
+        <span class="option">Wife</span>
+        <span class="option">Partner</span>
+        <span class="option">Parents</span>
+        <span class="option">Mum</span>
+        <span class="option">Dad</span>
+        <span class="option">Children</span>
+        <span class="option">Alone</span>
+    </div>
+
+    <div class="field">
+        <label>Independent in daily activities:</label>
+        <span class="option">Yes</span>
+        <span class="option">No</span>
+    </div>
+
+    <div class="field">
+        <label>Work:</label> <input type="text">
+    </div>
+
+    <!-- Clinical Profile -->
+    <h2>Clinical Profile</h2>
+
+    <div class="field">
+        <label>Diabetes Mellitus:</label>
+        <span class="option">No</span>
+        <span class="option">T1DM</span>
+        <span class="option">T2DM</span>
+        <span class="option">T2DM insulin-dependent</span>
+
+    </div>
+
+    <!-- Hypertension field modified to add medication options -->
+    <div class="field">
+        <label>Hypertension:</label>
+        <span class="option">No</span>
+        <span class="option" id="HTN" data-toggle="hypertensionMeds">Yes</span>
+
+    </div>
+
+    <!-- New section for hypertension medications -->
+    <div class="toggle-options" id="hypertensionMeds">
+        <label>Medications:</label>
+        <span class="toggle-option">ACE Inhibitors</span>
+        <span class="toggle-option">ARBs</span>
+        <span class="toggle-option">Beta Blockers</span>
+        <span class="toggle-option">CCBs</span>
+        <span class="toggle-option">Diuretics</span>
+        <span class="toggle-option">Other</span>
+    </div>
+
+    <div class="field">
+        <label>Hypercholesterolemia:</label>
+        <span class="option">No</span>
+        <span class="option">Yes</span>
+    </div>
+
+    <div class="field">
+        <label>Family history of premature CAD:</label>
+        <span class="option">No</span>
+        <span class="option">Yes</span>
+    </div>
+
+    <div class="field">
+        <label>Smoking:</label>
+        <span class="option">Never</span>
+        <span id="currentSmoker" class="option">Current</span>
+        Quit: <span class="option">Days ago</span>
+        <span class="option">Weeks ago</span>
+        <input type="text" style="width:60px;">yrs ago
+        Pack years: <input type="text" style="width:60px;">
+    </div>
+
+    <div class="field">
+        <label>Alcohol:</label>
+        <span class="option">No</span>
+        <span class="option">Rarely</span>
+        <span class="option">Occasionally</span>
+        <input id="alcoholPerDay" type="text" style="width:80px;">standards/day
+        <input id="alcoholPerWeek" type="text" style="width:80px;">standards/week
+    </div>
+    <span class="option">Explained implications of smoking and alcohol</span>
+    <div class="field">
+        <label>Thyroid:</label>
+        <span class="option">NAD</span>
+        <span class="option">Hypothyroidism</span>
+        <span class="option">Hyperthyroidism</span>
+    </div>
+
+    <div class="field">
+        <label>Stress/anxiety:</label>
+        <span class="option">No</span>
+        <span id="stress" class="option">Yes</span>
+    </div>
+
+    <div class="field">
+        <label>Diet:</label>
+        <span class="option">Reasonable</span>
+        <span id="poorDiet" class="option">Poor</span>
+        <span id="highSaltDiet" class="option">High Salt</span>
+        <span id="highSugarDiet" class="option">High Sugar</span>
+        <br> <!-- Forces a line break -->
+        <label>Caffeinated drinks:</label><input id="caffeinatedDrinks" type="text" style="width:40px;">/day
+    </div>
+    <div class="field">
+        <label>OSA:</label>
+        <span class="option" data-toggle="osaScreen">No</span>
+        <span id="osa" class="option" data-toggle="CPAP">Yes</span>
+    </div>
+    <!-- New section for Snoring details -->
+    <div class="toggle-options" id="osaScreen">
+        <span id="snores" class="toggle-option">Snores</span>
+        <span id="daytimeSomnolence" class="toggle-option">Daytime Somnolence</span>
+        <span class="toggle-option">Partner reports periods of apnoea</span>
+        <br> <!-- Forces a line break -->
+        <label>Sleep Study:</label>
+        <span class="toggle-option">Never</span>
+        <span class="toggle-option"> &lt;5yr ago </span>
+        <span id="overdueSleepStudy" class="toggle-option"> &gt;5yr ago </span>
+    </div>
+
+    <!-- New section for OSA details -->
+    <div class="toggle-options" id="CPAP">
+        <label>CPAP:</label>
+        <span class="toggle-option">Currently uses</span>
+        <span id="osaDidNotTolerate" class="toggle-option">Did not Tolerate</span>
+        <span id="osaNeverUsed" class="toggle-option">Never used</span>
+    </div>
+
+    <div class="field">
+        <label>Physically:</label>
+        <span class="option">Active</span>
+        <span class="option">Reasonably active</span>
+        <span class="option">Deconditioned</span>
+        <span id="sedentary" class="option">Sedentary</span>
+        <span id="gainedWeight" class="option">Has gained weight</span>
+        <span class="option">Has lost weight</span>
+        <span class="option">No Limitations</span>
+    </div>
+
+    <!-- Other Medical Conditions -->
+    <h2>Other Medical Conditions</h2>
+    <textarea></textarea>
+
+    <!-- Medications -->
+    <h2>Medications</h2>
+    <textarea></textarea>
+
+    <!-- Allergies -->
+    <h2>Allergy</h2>
+    <div class="field">
+        <span class="option">NKDA</span>
+        <input type="text" style="width:300px;">
+    </div>
+
+    <!-- History -->
+    <h2>History</h2>
+    <textarea></textarea>
+
+
+    <div class="field">
+        <label>Cardiovascular assessment:</label>
+        <span class="option">No significant symptoms</span>
+        <span class="option">Chest Pain</span>
+        <span class="option">Shortness of breath</span>
+        <span class="option">Palpitations</span>
+        <span class="option">Pre-syncope</span>
+        <span class="option">Syncope</span>
+        <span class="option">in daily activities</span>
+    </div>
+
+    <div class="field">
+        <span class="option">No previous cardiac issue</span>
+        <span class="option">No previous cardiac workup</span>
+        <input type="text">
+    </div>
+
+
+
+    <!-- Examination -->
+    <h2>Examination</h2>
+
+    <div class="field">
+        <label>Vitals:</label>
+        HR: <input id="hr" type="text" style="width:25px;">,
+        BP: <input id="bpSystolic" type="text" style="width:25px;">
+        <span>/</span>
+        <input id="bpDiastolic" type="text" style="width:25px;">,
+        RR: <input type="text" style="width:25px;">,
+        O2: <input type="text" style="width:25px;" placeholder="%">,
+        Temp: <input type="text" style="width:30px;" placeholder="°C">
+    </div>
+
+    <div class="field">
+        <label>Anthropometry:</label>
+        Height: <input type="text" style="width:50px;" placeholder="cm">
+        Weight: <input type="text" style="width:50px;" placeholder="kg">
+        <input type="text" id="bmi" style="width:40px;" placeholder="BMI">
+    </div>
+
+    <div class="field">
+        <label>Cardiovascular:</label>
+        Ankle Oedema: <span class="option">No</span>
+        <span id="ankleOedema" class="option">Yes</span>
+        JVP: <input id="jvp" type="text" style="width:40px;">cm
+    </div>
+
+    <div class="field">
+        <label>Heart sounds:</label>
+        <span class="option">x2</span>
+        <span class="option">x3</span>
+        <span class="option">x4</span>
+    </div>
+    <div class="field">
+        <label>Murmur:</label>
+        <span class="option">No</span>
+        <span class="option">Ejection-systolic</span>
+        <span class="option">Pan-systolic</span>
+        <span class="option">Crescendo-decrecendo</span>
+        <span class="option">Blowing</span>
+    </div>
+
+    <div class="field">
+        <label>Carotid bruits:</label>
+        <span class="option">No</span>
+        <span class="option">Yes</span>
+    </div>
+
+    <div class="field">
+        <label>Respiratory:</label>
+        <span class="option">Normal air entry</span>
+        <span class="option" data-toggle="creps">Creps</span>
+        <span class="option">Rhonchi</span>
+        <span class="option">Wheeze</span>
+    </div>
+
+    <!-- New section for Creps details -->
+    <div class="toggle-options" id="creps">
+        <span class="toggle-option">L</span>
+        <span class="toggle-option">R</span>
+        <span class="toggle-option">Lower</span>
+        <span class="toggle-option">Middle</span>
+        <span class="toggle-option">Upper</span>
+        <span class="toggle-option">Zone</span>
+        <span class="toggle-option">Sided</span>
+        <span id="bibasalCreps" class="toggle-option">Bibasal</span>
+    </div>
+
+    <!-- Investigations -->
+    <h2>Investigations</h2>
+
+    <div class="field">
+        <label>ECG:</label>
+        <span class="option">Sinus rhythm</span>
+        <span class="option">No significant abnormalities</span>
+        <span class="option" data-toggle="ecg">Abnormal</span>
+    </div>
+
+    <!-- New section for ecg details -->
+    <div class="toggle-options" id="ecg">
+        TWI: <span class="toggle-option">I</span>
+        <span class="toggle-option">II</span>
+        <span class="toggle-option">III</span>
+        <span class="toggle-option">aVF</span>
+        <span class="toggle-option">aVL</span>
+        <span class="toggle-option">aVR</span>
+        <span class="toggle-option">V1</span>
+        <span class="toggle-option">V2</span>
+        <span class="toggle-option">V3</span>
+        <span class="toggle-option">V4</span>
+        <span class="toggle-option">V5</span>
+        <span class="toggle-option">V6</span>
+        <br> <!-- Forces a line break -->
+        STE: <span class="toggle-option">I</span>
+        <span class="toggle-option">II</span>
+        <span class="toggle-option">III</span>
+        <span class="toggle-option">aVF</span>
+        <span class="toggle-option">aVL</span>
+        <span class="toggle-option">aVR</span>
+        <span class="toggle-option">V1</span>
+        <span class="toggle-option">V2</span>
+        <span class="toggle-option">V3</span>
+        <span class="toggle-option">V4</span>
+        <span class="toggle-option">V5</span>
+        <span class="toggle-option">V6</span>
+        <br> <!-- Forces a line break -->
+        STD: <span class="toggle-option">I</span>
+        <span class="toggle-option">II</span>
+        <span class="toggle-option">III</span>
+        <span class="toggle-option">aVF</span>
+        <span class="toggle-option">aVL</span>
+        <span class="toggle-option">aVR</span>
+        <span class="toggle-option">V1</span>
+        <span class="toggle-option">V2</span>
+        <span class="toggle-option">V3</span>
+        <span class="toggle-option">V4</span>
+        <span class="toggle-option">V5</span>
+        <span class="toggle-option">V6</span>
+        <br> <!-- Forces a line break -->
+        <span class="toggle-option">AF</span>
+        <span class="toggle-option">AFRVR</span>
+        <span class="toggle-option">Slow AF</span>
+        <span class="toggle-option">Flutter</span>
+        <span class="toggle-option">2:1</span>
+        <span class="toggle-option">3:1</span>
+        <span class="toggle-option">4:1</span>
+        <span class="toggle-option">Variable block</span>
+        <span class="toggle-option">RBBB</span>
+        <span class="toggle-option">LBBB</span>
+        <span class="toggle-option">Junctional Rhythm</span>
+        <span class="toggle-option">Wide QRS</span>
+        <span class="toggle-option">LAD</span>
+        <span class="toggle-option">RAD</span>
+        <span class="toggle-option">Isolated</span>
+        <span class="toggle-option">Frequent</span>
+        <span class="toggle-option">PAC</span>
+        <span class="toggle-option">Isolated</span>
+    </div>
+
+    <div class="field">
+        <label>Lipids:</label>
+        Total Cholesterol: <input type="text" style="width:40px;">
+        LDL: <input id="ldl" type="text" style="width:40px;">
+        HDL: <input type="text" style="width:40px;">
+        TG: <input type="text" style="width:40px;">
+        <span class="toggle-option">Explained genetic, lifestyle factors and implications of high lipids</span>
+    </div>
+    <div class="field">
+        <label>TFTs:</label>
+        T4: <input type="text" style="width:40px;">
+        TSH: <input id="tsh" type="text" style="width:40px;">
+    </div>
+
+    <div class="field">
+        <label>Glucose:</label>
+        <input type="text" style="width:40px;">
+        HbA1c: <input id="hba1c" type="text" style="width:40px;">
+    </div>
+    <div class="field">
+        <label>Echo:</label>
+        <span class="toggle-option">New</span>
+        <span class="toggle-option">Improved</span>
+        <span class="toggle-option">Worsened</span>
+        <span class="toggle-option">HFrEF</span>
+        <span class="toggle-option">HFmrEF</span>
+        <span class="toggle-option">HFpEF</span>
+        <textarea></textarea>
+    </div>
+    <div class="field">
+        <label>Holter:</label>
+        <span class="toggle-option">Infrequent</span>
+        <span class="toggle-option">Frequent</span>
+        <span class="toggle-option">Atrial</span>
+        <span class="toggle-option">Ventricular</span>
+        <span class="toggle-option">Ectopy</span>
+        <span class="toggle-option">AF</span>
+        <textarea></textarea>
+    </div>
+    <div class="field">
+        <label>CTCA:</label>
+        <textarea></textarea>
+    </div>
+    <div class="field">
+        <label>MPS:</label>
+        <textarea></textarea>
+    </div>
+    <div class="field">
+        <label>Coronary Angiogram:</label>
+        <textarea></textarea>
+    </div>
+
+    <!-- Assessment -->
+    <h2>Assessment</h2>
+    <textarea></textarea>
+
+    <!-- Status -->
+    <h2>Status</h2>
+    <div class="field">
+        <span class="option">Stable compensated cardiac status</span>
+        <span class="option">Fluid Overloaded</span>
+        <span class="option">Deconditioned</span>
+    </div>
+
+    <!-- Diagnosis -->
+    <h2>Diagnosis/Differential</h2>
+    <span class="option">Explained the whole clinical scenario.</span>
+    <br> <!-- Forces a line break -->
+    <span class="option">Overall underlying cardiac etiology/rhythm issues can not be ruled out, keeping in view the
+        profile</span>
+    <br> <!-- Forces a line break -->
+    <span class="option">Unlikely secondary to any significant cardiac etiology</span>
+    <br> <!-- Forces a line break -->
+    <span class="option">Multifactorial clinical scenario</span>
+    <br> <!-- Forces a line break -->
+    <span class="option">Reassuring no significant cardiovascular symptoms</span>
+    <br> <!-- Forces a line break -->
+    <span class="option"></span>
+    <textarea></textarea>
+
+    <!-- Plan -->
+    <h2>Plan</h2>
+    <div class="field">
+        Investigations Ordered: <span class="option">TTE</span>
+        <span class="option">TOE</span>
+        <span class="option">Holter</span>
+        <span class="option">CTCA</span>
+        <span class="option">Myocardial Perfusion Scan</span>
+        <span class="option">Exercise Stress Echo</span>
+        <span class="option">Exercise Stress Test</span>
+        <br> <!-- Forces a line break -->
+        <span class="toggle-option">Then Other work up, functional testing/CTCA, if required</span>
+        <br> <!-- Forces a line break -->
+        <span class="option">Cardiac risk factors to be monitored</span>
+        <br> <!-- Forces a line break -->
+        <span class="option">Heart healthy lifestyle including diet and exercise
+            to lose weight</span>
+        <br> <!-- Forces a line break -->
+        <span class="toggle-option">Urgent ECG/ED visit, in case of significant symptoms/concern</span>
+        <br> <!-- Forces a line break -->
+        <span class="toggle-option">Lot of counseling has been done</span>
+        <br> <!-- Forces a line break -->
+        Cardiology Follow Up: <span class="toggle-option">Next available appointment</span>
+        <span class="toggle-option">3 month</span>
+        <span class="toggle-option">6 month</span>
+        <span class="toggle-option">12 month</span>
+        <span class="toggle-option">in a few weeks</span>
+        <span class="toggle-option">in a few months</span>
+        <span class="toggle-option">Face to Face</span>
+        <span class="toggle-option">Phone Review</span>
+        <span class="toggle-option">Chart Review</span>
+        <br> <!-- Forces a line break -->
+        Prior to Follow up GP to kindly complete: <span class="toggle-option">FBC</span>
+        <span class="toggle-option">Chem20</span>
+        <span class="toggle-option">Fasting Lipid Profile</span>
+        <span class="toggle-option">HbA1c</span>
+        <span class="toggle-option">TFTs</span>
+        <span class="toggle-option">Lipoprotein (a) levels</span>
+        <span class="toggle-option">CXR</span>
+        <span class="toggle-option">OSA screening</span>
+        <span class="toggle-option">Monitor renal function/potassium</span>
+        <br> <!-- Forces a line break -->
+        Referral: <span class="toggle-option">HF nursing clinic referred for GDMT</span>
+        <span class="toggle-option">Electrophysiologist to consider Ablation</span>
+        <span class="option">DCCV/Cardioversion</span>
+        <textarea></textarea>
+        <br> <!-- Forces a line break -->
+        To Consider: <span class="toggle-option">Beta Blocker</span>
+        <span class="toggle-option">Metoprolol</span>
+        <span class="toggle-option">Atenolol</span>
+        <span class="toggle-option">Bisoprolol</span>
+        <span class="toggle-option">RAASi</span>
+        <span class="toggle-option">Entresto</span>
+        <span class="toggle-option">Ramipril</span>
+        <span class="toggle-option">SGLT2i</span>
+        <span class="toggle-option">Spironolactone</span>
+    </div>
+    <textarea></textarea>
+    <div class="field">
+        <label>To commence:</label>
+        <span class="option" data-toggle="betaBlocker">BB</span>
+        <span class="option" data-toggle="raasi">RAASi</span>
+        <span class="option" data-toggle="sglt2i">SGLT2i</span>
+        <span class="option" data-toggle="mra">MRA</span>
+        <span class="option" data-toggle="CCB">CCB</span>
+        <span class="option" data-toggle="digoxin">Digoxin</span>
+        <span class="option" data-toggle="diuretics">Diuretics</span>
+        <span class="option" data-toggle="lipidLowering">Lipid-Lowering</span>
+        <span class="option" data-toggle="antiAnginal">Anti-Anginal</span>
+        <span class="option" data-toggle="ivabradine">Ivabradine</span>
+        <span class="option" data-toggle="antiarrhythmic">Anti-Arrhythmic</span>
+    </div>
+    <!-- New section for betaBlocker -->
+    <div class="toggle-options" id="betaBlocker">
+        Metoprolol: <span class="toggle-option">12.5mg</span>
+        <span class="toggle-option">25mg</span>
+        <span class="toggle-option">50mg</span>
+        <span class="toggle-option">75mg</span>
+        <span class="toggle-option">100mg</span>
+        <span class="toggle-option">OD</span>
+        <span class="toggle-option">BD</span>
+        <br> <!-- Forces a line break -->
+        Atenolol: <span class="toggle-option">25mg</span>
+        <span class="toggle-option">50mg</span>
+        <span class="toggle-option">100mg</span>
+        <span class="toggle-option">OD</span>
+        <span class="toggle-option">BD</span>
+        <span class="toggle-option">Alternate Days</span>
+        <br> <!-- Forces a line break -->
+        Bisoprolol: <span class="toggle-option">1.25mg</span>
+        <span class="toggle-option">2.5mg</span>
+        <span class="toggle-option">3.75mg</span>
+        <span class="toggle-option">5mg</span>
+        <span class="toggle-option">7.5mg</span>
+        <span class="toggle-option">10mg</span>
+        <span class="toggle-option">OD</span>
+        <br>
+        <span class="toggle-option">PBS (Bisoprolol): Moderate-Severe HF (NYHA ≥ III) + Stable on RAASi</span>
+        <br> <!-- Forces a line break -->
+        Sotalol: <span class="toggle-option">40mg</span>
+        <span class="toggle-option">80mg</span>
+        <span class="toggle-option">120mg</span>
+        <span class="toggle-option">160mg</span>
+        <span class="toggle-option">BD</span>
+        <span class="toggle-option">(GP to kindly check QTc in 1wk)</span>
+        <br> <!-- Forces a line break -->
+    </div>
+
+    <!-- New section for acei -->
+    <div class="toggle-options" id="RAASi">
+        Entresto: <span class="toggle-option">24/26mg</span>
+        <span class="toggle-option">49/51mg</span>
+        <span class="toggle-option">97/103mg</span>
+        <span class="toggle-option">BD</span>
+        <br>
+        <span class="toggle-option">PBS (Entresto): symptomatic + NYHA ≥ II + on BB/ACEi or ARB + LVEF ≤ 40% </span>
+        <br> <!-- Forces a line break -->
+        Perindopril: <span class="toggle-option">2.5mg</span>
+        <span class="toggle-option">5mg</span>
+        <span class="toggle-option">10mg</span>
+        <span class="toggle-option">OD</span>
+        <br> <!-- Forces a line break -->
+        Ramipril: <span class="toggle-option">1.25mg</span>
+        <span class="toggle-option">2.5mg</span>
+        <span class="toggle-option">5mg</span>
+        <span class="toggle-option">10mg</span>
+        <span class="toggle-option">OD</span>
+        <span class="toggle-option">BD</span>
+    </div>
+
+    <!-- New section for sglt2i -->
+    <div class="toggle-options" id="sglt2i">
+        Dapagliflozin: <span class="toggle-option">10mg OD</span>
+        <br> <!-- Forces a line break -->
+        <span class="toggle-option">PBS: stable + NYHA ≥ II + on BB/RAASi + LVEF ≤ 40% </span>
+        <br> <!-- Forces a line break -->
+        <span class="toggle-option">PBS: stable + NYHA ≥ II + on BB/RAASi + LVEF > 40%
+            <br> <!-- Forces a line break -->
+            + Echo findings that would be expected to cause diastolic dysfunction (e.g. LV hypertrophy)
+            <br> <!-- Forces a line break -->
+            + one of:
+            <br> <!-- Forces a line break -->
+            (i) diastolic dysfunction with high filling pressure on echocardiography, stress echocardiography
+            or cardiac catheterisation;
+            <br> <!-- Forces a line break -->
+            (ii) hospitalisation for heart failure in the 12 months prior to initiating treatment with
+            this drug;
+            <br> <!-- Forces a line break -->
+            (iii) requirement for intravenous diuretic therapy in the 12 months prior to initiating treatment with this
+            drug;
+            <br> <!-- Forces a line break -->
+            (iv) elevated N-terminal pro brain natriuretic peptide (NT-proBNP) levels in the absence of another cause
+        </span>
+    </div>
+
+    <!-- New section for mra -->
+    <div class="toggle-options" id="mra">
+        Spironolactone: <span class="toggle-option">12.5mg</span>
+        <span class="toggle-option">25mg</span>
+        <span class="toggle-option">50mg</span>
+        <span class="toggle-option">100mg</span>
+        <span class="toggle-option">OD</span>
+    </div>
+    <!-- New section for CCB -->
+    <div class="toggle-options" id="CCB">
+        Amlodipine: <span class="toggle-option">2.5mg</span>
+        <span class="toggle-option">5mg</span>
+        <span class="toggle-option">10mg</span>
+        <span class="toggle-option">OD</span>
+        <br> <!-- Forces a line break -->
+        Diltiazem IR: <span class="toggle-option">30mg</span>
+        <span class="toggle-option">60mg</span>
+        <span class="toggle-option">90mg</span>
+        <span class="toggle-option">120mg</span>
+        <span class="toggle-option">180mg</span>
+        <span class="toggle-option">240mg</span>
+        <span class="toggle-option">OD</span>
+        <span class="toggle-option">BD</span>
+        <span class="toggle-option">TDS</span>
+        <span class="toggle-option">QID</span>
+        <br> <!-- Forces a line break -->
+        Verapamil IR: <span class="toggle-option">40mg</span>
+        <span class="toggle-option">80mg</span>
+        <span class="toggle-option">120mg</span>
+        <span class="toggle-option">160mg</span>
+        <span class="toggle-option">BD</span>
+        <span class="toggle-option">TDS</span>
+    </div>
+    <div class="toggle-options" id="digoxin">
+        Digoxin: <span class="toggle-option">62.5mcg</span>
+        <span class="toggle-option">125mcg</span>
+        <span class="toggle-option">250mcg</span>
+        <span class="toggle-option">500mcg</span>
+        <span class="toggle-option">OD</span>
+    </div>
+    <!-- Updated section for Diuretics to include Hydrochlorothiazide -->
+    <div class="toggle-options" id="diuretics">
+        Frusemide: <span class="toggle-option">20mg</span>
+        <span class="toggle-option">40mg</span>
+        <span class="toggle-option">80mg</span>
+        <span class="toggle-option">120mg</span>
+        <span class="toggle-option">OD</span>
+        <span class="toggle-option">BD</span>
+        <br> <!-- New line for HCTZ -->
+        Hydrochlorothiazide: <span class="toggle-option">12.5mg</span>
+        <span class="toggle-option">25mg</span>
+        <span class="toggle-option">50mg</span>
+        <span class="toggle-option">100mg</span>
+        <span class="toggle-option">OD</span>
+        <span class="toggle-option">BD</span>
+        <span class="toggle-option">3days/wk</span>
+        <span class="toggle-option">4days/wk</span>
+        <span class="toggle-option">5days/wk</span>
+    </div>
+
+    <!-- New section for Lipid-Lowering -->
+    <div class="toggle-options" id="lipidLowering">
+        Atorvastatin: <span class="toggle-option">10mg</span>
+        <span class="toggle-option">20mg</span>
+        <span class="toggle-option">40mg</span>
+        <span class="toggle-option">80mg</span>
+        <span class="toggle-option">OD</span>
+        <br>
+        Ezetimibe: <span class="toggle-option">10mg OD</span>
+        <br>
+        Evolocumab: <span class="toggle-option">140mg Q2W</span>
+        <span class="toggle-option">420mg Monthly</span>
+        <br>
+        <span class="toggle-option">PBS (Evolocumab): Combonation with Diet/Exercise + Genetic Test showing Familial
+            homozygous hypercholesterolaemia (or Dutch Lipid Clinic Network Score ≥ 7) + LDL > 1.8 mmol/L + completed
+            12wk trial of max dose Statin</span>
+        Fish Oil: <span class="toggle-option">1g</span>
+        <span class="toggle-option">2g</span>
+        <span class="toggle-option">3g</span>
+        <span class="toggle-option">OD</span>
+        <br>
+        Fenofibrate: <span class="toggle-option">48mg</span>
+        <span class="toggle-option">96mg</span>
+        <span class="toggle-option">145mg</span>
+        <span class="toggle-option">OD</span>
+        <br>
+        Niacin (Nicotonic Acid): <span class="toggle-option">125mg</span>
+        <span class="toggle-option">250mg</span>
+        <span class="toggle-option">500mg</span>
+        <span class="toggle-option">750mg</span>
+        <span class="toggle-option">1g</span>
+        <span class="toggle-option">TDS</span>
+        <br>
+        Inclisiran: <span class="toggle-option">SC 284mg, repeat at 3months, then 6monthly</span>
+        <br>
+        <span class="toggle-option">PBS (Inclisiran) Familial heterozygous hypercholesterolaemia: Combination with
+            Diet/Exercise + Genetic Test (or Dutch Lipid Clinic Network Score ≥ 6) + LDL > 5 mmol/L (or >1.8 +
+            symptomatic atherosclerotic CVD) + completed 12wk trial of max dose Statin + completed 12wk combination
+            Statin/Ezetimibe + not on PCSK9i</span>
+        <br>
+        <span class="toggle-option">PBS (Inclisiran) Non-familial hypercholesterolaemia: Combination with Diet/Exercise
+            + Symptomatic atherosclerotic CVD + LDL > 1.8mmol/L + completed 12wk trial of max dose Statin + completed
+            12wk combination Statin/Ezetimibe + not on PCSK9i <br>
+            + 1 of: <br>
+            Atherosclerotic disease in ≥ 2 vascular territories (coronary, cerebrovascular, peripheral)
+            <br>
+            Severe multi-vessel CAD (≥ 50% stenosis in ≥ 2 large vessels) <br>
+            ≥ 2 major cardiovascular events (i.e. myocardial infarction, unstable angina, stroke or unplanned
+            revascularisation) in the last 5 years <br>
+            DM + microalbuminuria/≥ 60yr old/Aboriginal or Torres Strait Islander <br>
+            Thrombolysis in MI (TIMI) risk score for secondary prevention of ≥4
+        </span>
+    </div>
+
+    <!-- New section for Anti-Anginal -->
+    <div class="toggle-options" id="antiAnginal">
+        ISMN: <span class="toggle-option">30mg</span>
+        <span class="toggle-option">60mg</span>
+        <span class="toggle-option">90mg</span>
+        <span class="toggle-option">120mg</span>
+        <span class="toggle-option">OD</span>
+        <br>
+        Sublingual GTN Spray: <span class="toggle-option">400mcg/spray</span>
+        <span class="toggle-option">as needed</span>
+        <br>
+        Sublingual GTN Tablet: <span class="toggle-option">300mcg</span>
+        <span class="toggle-option">as needed</span>
+    </div>
+
+    <!-- New section for Ivabradine -->
+    <div class="toggle-options" id="ivabradine">
+        Ivabradine: <span class="toggle-option">2.5mg</span>
+        <span class="toggle-option">5mg</span>
+        <span class="toggle-option">7.5mg</span>
+        <span class="toggle-option">BD</span>
+        <br>
+        <span class="toggle-option">PBS (Ivabradine): symptomatic + NYHA II/III + sinus + HR ≥ 77bpm (after 5min rest
+            and documented) + on maximal HF meds (incl. BB) + LVEF ≤ 35% </span>
+    </div>
+
+
+    <!-- Clinical Summary -->
+    <h2>Brief Clinical Summary</h2>
+    <span class="option">Monitoring, work up and optimal conservative management</span>
+    <button id="generateReport"
+        style="margin-top: 20px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Generate
+        Report</button>
+    <button id="generateGPLetter"
+        style="margin-top: 20px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Generate
+        GP Letter</button>
+    <div id="reportOutput"
+        style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; display: none; white-space: pre-wrap;"></div>
+
+
+  <script>
+    // Polyfill for querySelector to support :contains()
+    document.querySelector = (function (original) {
+        return function (selector) {
+            if (selector.includes(':contains(')) {
+                const match = selector.match(/:contains\((["'])(.*?)\1\)/);
+                if (match) {
+                    const text = match[2];
+                    const cleanSelector = selector.replace(/:contains\(["'].*?["']\)/, '');
+                    const elements = document.querySelectorAll(cleanSelector || '*');
+                    for (const element of elements) {
+                        if (element.textContent.includes(text)) {
+                            return element;
+                        }
+                    }
+                    return null;
+                }
+            }
+            return original.call(document, selector);
+        };
+    })(document.querySelector);
+
+    // Polyfill for querySelectorAll to support :contains()
+    document.querySelectorAll = (function (original) {
+        return function (selector) {
+            if (selector.includes(':contains(')) {
+                const match = selector.match(/:contains\((["'])(.*?)\1\)/);
+                if (match) {
+                    const text = match[2];
+                    const cleanSelector = selector.replace(/:contains\(["'].*?["']\)/, '');
+                    const elements = Array.from(document.querySelectorAll(cleanSelector || '*'));
+                    return elements.filter(element => element.textContent.includes(text));
+                }
+            }
+            return original.call(document, selector);
+        };
+    })(document.querySelectorAll);
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Make all options clickable
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function () {
+                const parent = this.parentElement;
+                const labelText = parent.querySelector('label')?.textContent || '';
+
+                // Check if this is a Yes/No option group
+                const isYesNoGroup =
+                    (this.textContent === 'Yes' || this.textContent === 'No') &&
+                    parent.querySelectorAll('.option').length === 2 &&
+                    Array.from(parent.querySelectorAll('.option')).every(opt =>
+                        opt.textContent === 'Yes' || opt.textContent === 'No');
+
+                if (isYesNoGroup) {
+                    // For Yes/No groups, only one option can be selected
+                    parent.querySelectorAll('.option').forEach(sibling => sibling.classList.remove('selected'));
+                    this.classList.add('selected');
+                } else {
+                    // For other groups, toggle the selection
+                    this.classList.toggle('selected');
+                }
+
+                // Handle associated toggle elements (if any)
+                const toggleId = this.getAttribute('data-toggle');
+                const toggleElement = document.getElementById(toggleId);
+                if (toggleElement?.classList) {
+                    // Show this toggle section if the option is selected
+                    if (this.classList.contains('selected')) {
+                        toggleElement.classList.add('visible');
+                    } else {
+                        toggleElement.classList.remove('visible');
+                        // Clear selections inside the toggle if we're hiding it
+                        toggleElement.querySelectorAll('.toggle-option').forEach(child =>
+                            child.classList.remove('selected'));
+                    }
+                }
+
+                // For Yes/No groups, hide other toggle sections
+                if (isYesNoGroup) {
+                    parent.querySelectorAll('.option[data-toggle]').forEach(sibling => {
+                        if (sibling !== this) {
+                            const sibToggleId = sibling.getAttribute('data-toggle');
+                            const sibToggleElement = document.getElementById(sibToggleId);
+                            if (sibToggleElement?.classList) {
+                                sibToggleElement.classList.remove('visible');
+                                sibToggleElement.querySelectorAll('.toggle-option').forEach(child =>
+                                    child.classList.remove('selected'));
+                            }
+                        }
+                    });
+                }
+            });
+        });
+
+        // Make toggle options clickable (these are always multi-selectable)
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('toggle-option')) {
+                event.target.classList.toggle('selected');
+            }
+        });
+
+        // Auto-calculate BMI
+        const heightInput = document.querySelector('input[placeholder="cm"]');
+        const weightInput = document.querySelector('input[placeholder="kg"]');
+        const bmiInput = document.getElementById('bmi');
+
+        function calculateBMI() {
+            const height = parseFloat(heightInput.value);
+            const weight = parseFloat(weightInput.value);
+
+            if (height && weight) {
+                const heightInMeters = height / 100;
+                const bmi = weight / (heightInMeters * heightInMeters);
+                bmiInput.value = bmi.toFixed(1);
+            }
+        }
+
+        heightInput.addEventListener('input', calculateBMI);
+        weightInput.addEventListener('input', calculateBMI);
+
+        // Function to update the Clinical Summary dynamically
+        function updateClinicalSummary() {
+            // Get the Brief Clinical Summary section
+            const summarySection = document.querySelector('h2:contains("Brief Clinical Summary")');
+            if (!summarySection) return;
+
+            // Create or get container for dynamic summary text
+            let dynamicSummary = document.getElementById('dynamicSummary');
+            if (!dynamicSummary) {
+                dynamicSummary = document.createElement('div');
+                dynamicSummary.id = 'dynamicSummary';
+                dynamicSummary.style.marginTop = '10px';
+                summarySection.after(dynamicSummary);
+            }
+            // Clear previous dynamic summary
+            dynamicSummary.innerHTML = '';
+
+            // Array to store conditional text
+            const conditionTexts = [];
+
+            // Get the input elements by Id
+            const systolicInput = document.getElementById('bpSystolic');
+            const diastolicInput = document.getElementById('bpDiastolic');
+            const jvpInput = document.getElementById('jvp');
+            const ldlInput = document.getElementById('ldl');
+            const hba1cInput = document.getElementById('hba1c');
+            const tshInput = document.getElementById('tsh');
+            const ankleOedemaInput = document.getElementById('ankleOedema');
+            const hrInput = document.getElementById('hr');
+            const bibasalCrepsInput = document.getElementById('bibasalCreps');
+            const osaDidNotTolerateInput = document.getElementById('osaDidNotTolerate');
+            const osaNeverUsedInput = document.getElementById('osaNeverUsed');
+            const sedentaryInput = document.getElementById('sedentary');
+            const gainedWeightInput = document.getElementById('gainedWeight');
+            const daytimeSomnolenceInput = document.getElementById('daytimeSomnolence');
+            const snoresInput = document.getElementById('snores');
+            const overdueSleepStudyInput = document.getElementById('overdueSleepStudy');
+            const caffeinatedDrinksInput = document.getElementById('caffeinatedDrinks');
+            const poorDietInput = document.getElementById('poorDiet');
+            const highSaltDietInput = document.getElementById('highSaltDiet');
+            const highSugarDietInput = document.getElementById('highSugarDiet');
+            const currentSmokerInput = document.getElementById('currentSmoker');
+            const alcoholPerDayInput = document.getElementById('alcoholPerDay');
+            const alcoholPerWeekInput = document.getElementById('alcoholPerWeek');
+            const stressInput = document.getElementById('stress');
+
+            try {
+                // Vitals
+                const systolic = parseInt(systolicInput?.value) || 0;
+                const diastolic = parseInt(diastolicInput?.value) || 0;
+                if (systolic && diastolic) {
+                    if (systolic < 100 || diastolic < 70) {
+                        conditionTexts.push("Hypotensive ATOR");
+                    } else if (systolic > 140 || diastolic > 90) {
+                        conditionTexts.push("Hypertensive ATOR");
+                    }
+                }
+
+                // JVP and fluid overload
+                const jvpInteger = parseInt(jvpInput?.value) || 0;
+                const hasAnkleOedema = ankleOedemaInput?.classList.contains("selected") || false;
+                const hasBibasalCreps = bibasalCrepsInput?.classList.contains("selected") || false;
+
+                if ((jvpInteger > 4) || hasAnkleOedema || hasBibasalCreps) {
+                    conditionTexts.push("Fluid Overloaded ATOR");
+                }
+
+                // Smoking
+                if (currentSmokerInput?.classList.contains("selected")) {
+                    conditionTexts.push("Active Smoker");
+                }
+
+                // Alcohol
+                const alcoholPerDayInteger = parseInt(alcoholPerDayInput?.value) || 0;
+                const alcoholPerWeekInteger = parseInt(alcoholPerWeekInput?.value) || 0;
+                if ((alcoholPerDayInteger > 1) || (alcoholPerWeekInteger > 7)) {
+                    conditionTexts.push("Excess Alcohol Intake");
+                }
+
+                // Thyroid
+                const tshInteger = parseFloat(tshInput?.value) || 0;
+                if (tshInteger && tshInteger < 0.38) {
+                    conditionTexts.push("Hyperthyroid on most recent bloods");
+                }
+                if (tshInteger && tshInteger > 5.33) {
+                    conditionTexts.push("Hypothyroid on most recent bloods");
+                }
+
+                // [other conditions follow the same pattern] ...
+
+                // Create and add the dynamic summary text elements
+                conditionTexts.forEach(text => {
+                    const option = document.createElement('span');
+                    option.className = 'option selected';
+                    option.textContent = text;
+                    option.style.display = 'block';
+                    option.style.marginTop = '5px';
+                    dynamicSummary.appendChild(option);
+                });
+
+            } catch (error) {
+                console.error("Error in updateClinicalSummary:", error);
+            }
+        }
+
+        // 1) "Generate Report" button
+        document.getElementById('generateReport').addEventListener('click', function () {
+            // First: update the clinical summary before building the report
+            updateClinicalSummary();
+        });
+
+        document.getElementById('generateReport').addEventListener('click', function () {
+            // Then: actually build the report text and copy it
+            const reportOutput = document.getElementById('reportOutput');
+            let reportText = '';
+
+            const headings = document.querySelectorAll('h2');
+            headings.forEach(heading => {
+                let sectionTitle = heading.textContent.trim();
+                let currentElement = heading.nextElementSibling;
+                let sectionContent = "";
+                let hasContent = false;
+
+                while (currentElement && currentElement.tagName !== 'H2') {
+                    // Handle medication toggle sections
+                    if (currentElement.classList.contains('field')) {
+                        const selectedMedClasses = currentElement.querySelectorAll('.option.selected[data-toggle]');
+                        selectedMedClasses.forEach(medClass => {
+                            const toggleId = medClass.getAttribute('data-toggle');
+                            const medSection = document.getElementById(toggleId);
+                            if (medSection && medSection.classList.contains('visible')) {
+                                const selectedMeds = medSection.querySelectorAll('.toggle-option.selected');
+                                if (selectedMeds.length > 0) {
+                                    const medClassName = medClass.textContent.trim();
+                                    let medDetails = '';
+
+                                    // Create a map to group selections by medication
+                                    const medGroups = new Map();
+
+                                    selectedMeds.forEach(med => {
+                                        const medText = med.textContent.trim();
+                                        let foundLabel = false;
+                                        let currentNode = med;
+
+                                        // Search backwards for medication label
+                                        while (currentNode && !foundLabel) {
+                                            if (currentNode.nodeType === Node.TEXT_NODE &&
+                                                currentNode.textContent.trim().endsWith(':')) {
+                                                foundLabel = true;
+                                                const medName = currentNode.textContent.trim().slice(0, -1);
+                                                if (!medGroups.has(medName)) {
+                                                    medGroups.set(medName, []);
+                                                }
+                                                medGroups.get(medName).push(medText);
+                                                break;
+                                            }
+                                            currentNode = currentNode.previousSibling ||
+                                                (currentNode.parentNode && currentNode.parentNode.previousSibling);
+                                        }
+
+                                        // If no label found, add to last group
+                                        if (!foundLabel) {
+                                            const lastGroup = Array.from(medGroups.keys()).pop();
+                                            if (lastGroup) {
+                                                medGroups.get(lastGroup).push(medText);
+                                            }
+                                        }
+                                    });
+
+                                    // Build medication details string
+                                    medDetails = Array.from(medGroups.entries())
+                                        .map(([name, options]) => `${name} ${options.join(' ')}`)
+                                        .join(', ');
+
+                                    if (medDetails) {
+                                        sectionContent += `${medClassName}: ${medDetails.trim()}\n`;
+                                        hasContent = true;
+                                    }
+                                }
+                            }
+                        });
+                    }
+
+                    // Existing content handling for textarea
+                    if (currentElement.tagName === 'TEXTAREA' && currentElement.value.trim()) {
+                        sectionContent += currentElement.value.trim() + '\n';
+                        hasContent = true;
+                    }
+
+                    // Handling standard fields with selected options
+                    if (currentElement.classList.contains('field')) {
+                        let fieldText = "";
+                        let fieldHasContent = false;
+                        const label = currentElement.querySelector('label');
+                        const labelText = label ? label.textContent.trim() + ' ' : '';
+
+                        const selectedOptions = currentElement.querySelectorAll('.option.selected:not([data-toggle]), .toggle-option.selected');
+                        if (selectedOptions.length > 0) {
+                            fieldText += Array.from(selectedOptions)
+                                .map(option => option.textContent.trim())
+                                .join(', ');
+                            fieldHasContent = true;
+                        }
+
+                        if (fieldHasContent) {
+                            sectionContent += labelText + fieldText.trim() + '\n';
+                            hasContent = true;
+                        }
+                    }
+
+                    currentElement = currentElement.nextElementSibling;
+                }
+
+                // For "Brief Clinical Summary," bullet each .option.selected span
+                if (sectionTitle === "Brief Clinical Summary") {
+                    const dynamicSummary = document.getElementById('dynamicSummary');
+                    if (dynamicSummary) {
+                        const summarySpans = dynamicSummary.querySelectorAll('.option.selected');
+                        if (summarySpans.length > 0) {
+                            summarySpans.forEach(span => {
+                                sectionContent += "- " + span.textContent.trim() + "\n";
+                            });
+                            hasContent = true;
+                        } else {
+                            sectionContent += "- None\n";
+                            hasContent = true;
+                        }
+                    }
+                }
+
+                // Add the section to the report text
+                reportText += sectionTitle + '\n';
+                reportText += hasContent ? sectionContent + '\n' : "None\n\n";
+            });
+
+            // Display and copy the report
+            reportOutput.textContent = reportText;
+            reportOutput.style.display = 'block';
+
+            const textarea = document.createElement('textarea');
+            textarea.value = reportText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            alert('Report generated and copied to clipboard!');
+        });
+
+        // 2) "Generate GP Letter" button
+        document.getElementById('generateGPLetter').addEventListener('click', function () {
+            let gpLetterText = "";
+
+            // 1. Patient details
+            const patientName = document.getElementById('patientName')?.value || "Unknown";
+            const gpName = document.getElementById('gp')?.value || "Unknown";
+            gpLetterText += "Patient Name: " + patientName + "\n";
+            gpLetterText += "Dear " + gpName + ",\n\n";
+            gpLetterText += "I had the pleasure of seeing " + patientName + "in clinic today for the following:\n";
+            const issuesHeader = Array.from(document.querySelectorAll('h2'))
+                .find(h2 => h2.textContent.trim() === "Issues");
+            if (issuesHeader) {
+                let issuesTextarea = issuesHeader.nextElementSibling;
+                while (issuesTextarea && issuesTextarea.tagName !== "TEXTAREA") {
+                    issuesTextarea = issuesTextarea.nextElementSibling;
+                }
+                if (issuesTextarea && issuesTextarea.value.trim() !== "") {
+                    const issueLines = issuesTextarea.value
+                        .split('\n')
+                        .filter(line => line.trim() !== "");
+                    issueLines.forEach(line => {
+                        gpLetterText += "- " + line.trim() + "\n";
+                    });
+                } else {
+                    gpLetterText += "- None\n";
+                }
+            } else {
+                gpLetterText += "- None\n";
+            }
+            gpLetterText += "\n";
+
+            // 2. Brief Clinical Summary (bullet points)
+            gpLetterText += "Brief Clinical Summary:\n";
+            const dynamicSummary = document.getElementById('dynamicSummary');
+            if (dynamicSummary) {
+                const summarySpans = dynamicSummary.querySelectorAll('.option.selected');
+                if (summarySpans.length > 0) {
+                    summarySpans.forEach(span => {
+                        gpLetterText += "- " + span.textContent.trim() + "\n";
+                    });
+                } else {
+                    gpLetterText += "- None\n";
+                }
+            } else {
+                gpLetterText += "- None\n";
+            }
+            gpLetterText += "\n";
+
+            // 4. Plan
+            gpLetterText += "Plan:\n";
+            const planHeader = Array.from(document.querySelectorAll('h2'))
+                .find(h2 => h2.textContent.trim() === "Plan");
+            if (planHeader) {
+                let currentElement = planHeader.nextElementSibling;
+                let planContent = "";
+                while (currentElement && currentElement.tagName !== "H2") {
+                    if (currentElement.tagName === "TEXTAREA" && currentElement.value.trim() !== "") {
+                        const planLines = currentElement.value
+                            .split('\n')
+                            .filter(line => line.trim() !== "");
+                        planLines.forEach(line => {
+                            planContent += "- " + line.trim() + "\n";
+                        });
+                    }
+                    if (currentElement.classList && currentElement.classList.contains('field')) {
+                        const selectedOptions = currentElement.querySelectorAll('.option.selected, .toggle-option.selected');
+                        selectedOptions.forEach(option => {
+                            const text = option.textContent.trim();
+                            if (text !== "") {
+                                planContent += "- " + text + "\n";
+                            }
+                        });
+                    }
+                    currentElement = currentElement.nextElementSibling;
+                }
+                gpLetterText += planContent ? planContent : "- None\n";
+            } else {
+                gpLetterText += "- None\n";
+            }
+
+            gpLetterText += "\nKind regards,\nDr Shahid Hafeez\nCardiology SMO";
+
+            // Display the GP Letter
+            const reportOutput = document.getElementById('reportOutput');
+            reportOutput.textContent = gpLetterText;
+            reportOutput.style.display = 'block';
+
+            // Copy letter text to the clipboard
+            const textarea = document.createElement('textarea');
+            textarea.value = gpLetterText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            alert('GP Letter generated and copied to clipboard!');
+        });
+        // Update summary immediately on page load.
+        updateClinicalSummary();
+
+        // Update summary when any input changes.
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', updateClinicalSummary);
+        });
+
+        // Update summary when any option (or toggle option) is clicked.
+        document.querySelectorAll('.option, .toggle-option').forEach(el => {
+            el.addEventListener('click', () => {
+                // Use a short timeout to ensure any class changes are applied.
+                setTimeout(updateClinicalSummary, 100);
+            });
+        });
+
+    });  <!-- IMPORTANT: Close the DOMContentLoaded listener here! -->
+</script>
+
+
+
+</body>
+
+</html>
