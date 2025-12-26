@@ -1,0 +1,13 @@
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-au.xml https://iptv-epg.org/files/epg-gb.xml"
+
+#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="Sports",Fox Sports 501 - 698956
+http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
+
+#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="Sports",Fox Sports 501 - 700001
+https://a1xs.vip/700001
+
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="Sports",TNT Sports 1 - 2000021
+https://a1xs.vip/2000021
+
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="Sports",Sky Sports Cricket - 2000006
+https://a1xs.vip/2000006
