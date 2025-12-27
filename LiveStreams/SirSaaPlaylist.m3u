@@ -33,7 +33,7 @@ https://a1xs.vip/ppv7
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Live Event" tvg-logo="https://i.ibb.co/jpdQCJL/live-event.png" group-title="Live Event | PPV",Live Event 8
 https://a1xs.vip/ppv8
 
---- 📺 UHD | 4K Channels
+# --- 📺 UHD | 4K Channels
 #EXTINF:-1 tvg-id="SkySpMainEvHD.uk" tvg-name="UK: Sky Sports Main Event UHD" tvg-logo="https://i.ibb.co/gwCk7Bc/sky-m-event-uhd.png" group-title="UHD | 4K",UK: Sky Sports Main Event UHD
 https://a1xs.vip/2000015
 #EXTINF:-1 tvg-id="SkySp.F1.uk" tvg-name="UK: Sky Sports F1 UHD" tvg-logo="https://i.ibb.co/1tmrNyj9/Sky-Sport-F1-UHD.png" group-title="UHD | 4K",UK: Sky Sports F1 UHD
@@ -72,7 +72,7 @@ https://a1xs.vip/myzen4k
 #EXTINF:-1 tvg-id="MyZen.4K.ro" tvg-name="IRIB UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/IRIB_FARATAR_UHD.png/960px-IRIB_FARATAR_UHD.png" group-title="UHD | 4K",IRIB UHD
 https://a1xs.vip/iribuhd
 
---- ⚽️ EPL
+# --- ⚽️ EPL
 #EXTINF:-1 tvg-id="Now.Sports.Premier.League.1.hk" tvg-name="Now Sports PL 1 FHD" tvg-logo="https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/img/NowPL1.png" group-title="EPL",Now Sports PL 1 FHD
 https://a1xs.vip/1100001
 #EXTINF:-1 tvg-id="Now.Sports.Premier.League.2.hk" tvg-name="Now Sports PL 2 FHD" tvg-logo="https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/img/NowPL2.png" group-title="EPL",Now Sports PL 2 FHD
@@ -102,7 +102,7 @@ https://a1xs.vip/1100043
 https://a1xs.vip/1100044
 
 
---- 📺 UK Sports
+# --- 📺 UK Sports
 #EXTINF:-1 tvg-id="SkySpMainEvHD.uk" tvg-name="Sky Sports Main Event UHD" tvg-logo="https://i.ibb.co/gwCk7Bc/sky-m-event-uhd.png" group-title="UK Sports",Sky Sports Main Event UHD
 https://a1xs.vip/2000015
 #EXTINF:-1 tvg-id="SkySp.F1.uk" tvg-name="Sky Sports F1 UHD" tvg-logo="https://i.ibb.co/1tmrNyj9/Sky-Sport-F1-UHD.png" group-title="UK Sports",Sky Sports F1 UHD
@@ -144,7 +144,7 @@ https://a1xs.vip/2000023
 https://a1xs.vip/2000024
 
 
---- 📺 UK Channels
+# --- 📺 UK Channels
 #EXTINF:-1 tvg-id="BBC.NEWS.HD.uk" tvg-name="BBC News FHD" tvg-logo="https://i.ibb.co/zTrX98R6/BBC-News.png" group-title="UK Channels",BBC News FHD
 https://a1xs.vip/1000015
 #EXTINF:-1 tvg-id="CNN.HD.uk" tvg-name="CNN News FHD" tvg-logo="https://i.ibb.co/ccS7pQBs/CNN.png" group-title="UK Channels",CNN UK FHD
@@ -211,7 +211,7 @@ https://a1xs.vip/1000052
 https://a1xs.vip/100054
 
 
---- 📺 US Sports
+# --- 📺 US Sports
 #EXTINF:-1 tvg-id="New.England.Sports.Network.HD.us2" tvg-name="NESN UHD" tvg-logo="https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/img/nesn.png" group-title="US Sports",NESN UHD
 https://a1xs.vip/4000080
 #EXTINF:-1 tvg-id="MSG.National.us2" tvg-name="MSG" tvg-logo="https://i.postimg.cc/W1jFdzt4/MSG-Network-logo.png" group-title="US Sports",MSG FHD
@@ -305,7 +305,7 @@ https://a1xs.vip/400050
 https://a1xs.vip/400051
 
 
---- 📺 US Channels
+# --- 📺 US Channels
 #EXTINF:-1 tvg-id="ABC.National.Feed.Pacific.us2" tvg-name="ABC" tvg-logo="https://i.ibb.co/1Jj28D3T/abc.png" group-title="US Channels",ABC
 https://a1xs.vip/300003
 #EXTINF:-1 tvg-id="ABC.News.Live.us2" tvg-name="NBC News NOW" tvg-logo="https://i.ibb.co/XZWNb5d1/ABC-News-Live.png" group-title="US Channels",ABC News Live
@@ -366,7 +366,7 @@ https://a1xs.vip/300036
 
 
 
---- 📺 CA Sports
+# --- 📺 CA Sports
 #EXTINF:-1 tvg-id="TSN.1.ca2" tvg-name="TSN1" tvg-logo="https://i.ibb.co/MyTbNgYX/TSN1.png" group-title="CA Sports",TSN1
 https://a1xs.vip/6000001
 #EXTINF:-1 tvg-id="TSN.2.ca2" tvg-name="TSN2" tvg-logo="https://i.ibb.co/fzHfwF5j/TSN2.png" group-title="CA Sports",TSN2
@@ -388,7 +388,7 @@ https://a1xs.vip/6000014
 #EXTINF:-1 tvg-id="Sportsnet.West.HD.ca2" tvg-name="Sportsnet West" tvg-logo="https://i.ibb.co/gZZP5wVK/Sportsnet-W.png" group-title="CA Sports",Sportsnet West
 https://a1xs.vip/6000015
 
---- 📺 CA Channels
+# --- 📺 CA Channels
 #EXTINF:-1 tvg-id="Cable.Pulse.24.(CP24).HD.ca2" tvg-name="CP24" tvg-logo="https://broadcasting-history.ca/wp-content/uploads/2021/03/CP24-Logo.jpg" group-title="CA Channels",CP24
 https://a1xs.vip/610001
 #EXTINF:-1 tvg-id="CTV.News.Channel.ca2" tvg-name="CTV News tvg-logo="https://i.ibb.co/sp4C3bbY/CTV-News.png" group-title="CA Channels",CTV News
@@ -400,7 +400,7 @@ https://a1xs.vip/610004
 #EXTINF:-1 tvg-id="Global.BC.ca2" tvg-name="Global News" tvg-logo="https://i.ibb.co/1GSRMzh1/GLB-News.png" group-title="CA Channels",Global News
 https://a1xs.vip/610005
 
---- 📺 AU Sports
+# --- 📺 AU Sports
 #EXTINF:-1 tvg-id="FoxCricket.au" tvg-name="Fox Sports 501 FHD" tvg-logo="https://i.ibb.co/hvxssSM/Fox-Cricket-501.png" group-title="AU Sports",Fox Sports 501 FHD
 https://a1xs.vip/700001
 #EXTINF:-1 tvg-id="FoxLeague.au" tvg-name="Fox Sports 502 FHD" tvg-logo="https://i.ibb.co/XZpHFsBh/Fox502HD.png" group-title="AU Sports",Fox Sports 502 FHD
@@ -417,7 +417,7 @@ https://a1xs.vip/700006
 https://a1xs.vip/700007
 
 
---- 📺 NZ Sports
+# --- 📺 NZ Sports
 #EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="NZ Sports",SKY Sport 1 NZ
 https://a1xs.vip/700031
 #EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="NZ Sports",SKY Sport 2 NZ
@@ -436,7 +436,7 @@ https://a1xs.vip/700037
 https://a1xs.vip/700008
 
 
---- 📺 EU Sports
+# --- 📺 EU Sports
 #EXTINF:-1 tvg-id="Premier.Sports.1.HD.ie" tvg-name="Premier Sports 1 FHD" tvg-logo="https://i.ibb.co/Nd49Cwvc/Premier-Sports-1.png" group-title="EU Sports",IRE: Premier Sports 1 FHD
 https://a1xs.vip/8000021
 #EXTINF:-1 tvg-id="Premier.Sports.2.HD.ie" tvg-name="Premier Sports 2 FHD" tvg-logo="https://i.ibb.co/5hfMsrXv/Premier-Sports-2.png" group-title="EU Sports",IRE: Premier Sports 2 FHD
@@ -467,7 +467,7 @@ https://a1xs.vip/140003
 #EXTINF:-1 tvg-id="Ziggo.Sport.4.nl" tvg-name="NL: Ziggo Sport 4 FHD" tvg-logo="https://i.ibb.co/tPJpwzqL/Ziggo-Sport4.png" group-title="EU Sports",NL: Ziggo Sport 4 FHD
 https://a1xs.vip/140004
 
---- 📺 World Sports
+# --- 📺 World Sports
 #EXTINF:-1 tvg-id="Star.Sports.Select.1.in" tvg-name="Star Sports Select 1 FHD" tvg-logo="https://i.ibb.co/zWqXTsyn/Star-select1.png" group-title="World Sports", Star Sports Select 1 FHD
 https://a1xs.vip/8000011
 #EXTINF:-1 tvg-id="STAR.SPORTS.SELECT.2.HD.in" tvg-name="Star Sports Select 2 FHD" tvg-logo="https://i.ibb.co/M597crs8/Star-select2.png" group-title="World Sports", Star Sports Select 2 FHD
