@@ -1,3 +1,5 @@
+#EXTM3U
+
 # \/\/\/🟢🟢🟢 Sir Saa Sports 
 #EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 - 698956
 http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
@@ -9,7 +11,6 @@ https://a1xs.vip/2000021
 https://a1xs.vip/2000006
 
 # \/\/\/🟢🟢🟢 Public TV Channels by country - Australia | M3u: https://iptv-org.github.io/iptv/countries/au.m3u, found from: https://github.com/m3u8-xtream/m3u8-xtream-playlist?tab=readme-ov-file#public-tv-channels
-#EXTM3U
 #EXTINF:-1 tvg-id="2GB.au@SD" tvg-logo="https://i.ibb.co/jwM8DFG/2GB-1.png" group-title="News",2GB Sydney (1080p)
 https://2gblive.akamaized.net/hls/live/2033805/2GB/index.m3u8
 #EXTINF:-1 tvg-id="3AW.au@SD" tvg-logo="https://i.imgur.com/Z4MdB0S.png" group-title="News",3AW Melbourne (1080p)
@@ -150,7 +151,6 @@ https://jukin-weatherspy-2-au.samsung.wurl.tv/playlist.m3u8
 https://amg17931-zee-amg17931c8-samsung-au-8871.playouts.now.amagi.tv/playlist.m3u8
 
 # \/\/\/🟢🟢🟢 Public TV Channels by category - Sports | m3u: https://iptv-org.github.io/iptv/categories/sports.m3u, found from: https://github.com/m3u8-xtream/m3u8-xtream-playlist?tab=readme-ov-file#public-tv-channels
-#EXTM3U
 #EXTINF:-1 tvg-id="30AGolfKingdom.us@SD" tvg-logo="https://golfkingdom.net/wp-content/uploads/2022/04/golf-kingdom-st.jpg" group-title="Sports",30A Golf Kingdom
 https://30a-tv.com/feeds/vidaa/golf.m3u8
 #EXTINF:-1 tvg-id="Sport.sk@SD" tvg-logo="https://i.imgur.com/oAtcxNZ.png" group-title="Sports",:Šport (1080p)
@@ -773,7 +773,7 @@ http://183.207.248.71/gitv/live1/G_JSTY/G_JSTY
 
 
 # \/\/\/🟢🟢🟢 Top IMDB Movies 2024-2025 | Ref: m3u: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/top-movies.m3u, found from: https://github.com/m3u8-xtream/m3u8-xtream-playlist?tab=readme-ov-file#top-imdb-movies-2024-2025 
-#EXTM3U
+
 #EXTINF:-1 tvg-id="23631" tvg-logo="https://image.tmdb.org/t/p/w342/dcPSm1rGEFdiEc7DaKz0t5kb66b.jpg" group-title="Action;Comedy;Thriller",Machete (2010)
 http://zplaypro.lat:2095/movie/lhv0gwmkw/60279zplayer/364388.mp4
 #EXTINF:-1 tvg-id="924482" tvg-logo="https://image.tmdb.org/t/p/w342/S99eCSnRFfeZJmDaIGIZF58H7w.jpg" group-title="Thriller;Adventure",The Ledge (2022)
@@ -8778,10 +8778,6 @@ http://zplaypro.lat:2095/movie/ypc1uuxdw/76591zplayer/919856.mp4
 
 
 # \/\/\/🟢🟢🟢 A1X Media Sports | m3u: https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/a1x.m3u found from: https://bit.ly/a1xstream, discord: https://a1xs.vip/discord 
-#EXTM3U x-tvg-url="https://bit.ly/a1xepg" tvg-shift=0
-#EXTM3U M3U Short link: https://bit.ly/a1xstream - Recommend apps: TiviMate, iMPlayer, Televizio, UHF...
-#EXTM3U Join our discord server: https://a1xs.vip/discord
-#EXTM3U Disclaimer: Links were collected by the bot on the internet by search engine like Google. For legal issues, please contact appropriate media file owners/hosters.
 
 
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Live Event" tvg-logo="https://i.ibb.co/jpdQCJL/live-event.png" group-title="Live Event | PPV",Live Event 1
