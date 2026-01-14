@@ -4,14 +4,22 @@
 
 
 # \/\/\/🟢🟢🟢 Sir Saa Sports 
+
+# Fox Sports AU Channels - TV Guide: https://www.foxtel.com.au/tv-guide/grid/2026/01/14/2254
 #EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU 6
 http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
 #EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU 7
 https://a1xs.vip/700001
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="NZ Sports",SKY Sport 1 NZ
+
+# Sky Sport NZ - TV Guide: https://tvguide.sky.co.nz/
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",SKY Sport 1 NZ
 https://a1xs.vip/700031
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ 0" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ Raw
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ 0" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ 
 https://addon3.gstream.stream/spk/m3u8?u=https%3A%2F%2Fgg.poocloud.in%2Fashes%2Ftracks-v1a1%2Fmono.ts.m3u8
+#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="SirSaaSports",SKY Sport 2 NZ
+https://a1xs.vip/700032
+
+# Sports Channels UK - TNT Guide: https://www.fanzo.com/en/tvguide/tnt-sports/7863
 #EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK
 https://a1xs.vip/2000006
 #EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
