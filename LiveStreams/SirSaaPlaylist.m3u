@@ -10,7 +10,6 @@
 http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
 #EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU 7
 https://a1xs.vip/700001
-
 # Sky Sport NZ - TV Guide: https://tvguide.sky.co.nz/
 #EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",SKY Sport 1 NZ
 https://a1xs.vip/700031
@@ -18,12 +17,52 @@ https://a1xs.vip/700031
 https://addon3.gstream.stream/spk/m3u8?u=https%3A%2F%2Fgg.poocloud.in%2Fashes%2Ftracks-v1a1%2Fmono.ts.m3u8
 #EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="SirSaaSports",SKY Sport 2 NZ
 https://a1xs.vip/700032
-
-# Sports Channels UK - TNT Guide: https://www.fanzo.com/en/tvguide/tnt-sports/7863
+# Sky Sports UK - Tv Guide: https://www.skysports.com/watch/sport-on-sky
 #EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK
 https://a1xs.vip/2000006
+# TNT Sports UK - Tv Guide: https://www.fanzo.com/en/tvguide/tnt-sports/7863
 #EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
 https://a1xs.vip/2000021
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
+http://lucidhosting.xyz:82/seanr/anything1357/2679
+# Aussie Free
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Channel 9 
+https://i.mjh.nz/.r/channel-9-qld.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Channel 9 (Gold Coast)
+https://i.mjh.nz/.r/channel-9-gold-coast.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",60 Minutes Australia 
+https://i.mjh.nz/.r/60-minutes-australia-fast.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Channel 7mate   
+https://i.mjh.nz/.r/7mate-bri.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Channel 10 QLD
+https://i.mjh.nz/.r/10-qld.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Channel 10 Comedy 
+https://i.mjh.nz/.r/10peach-qld.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",92.7 Mix FM (QLD)
+https://i.mjh.nz/.r/radio-ih-6333.m3u8
+# News
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",ABC News
+https://c.mjh.nz/abc-news.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",ABC Australia
+https://l.hilay.tv/abcaustralia
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Al Jazeera TV 
+https://i.mjh.nz/.r/al-jazeera.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Al Jazeera TV 
+https://l.hilay.tv/aljazeeraenaws
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",NDTV 24x7 India
+https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
+# Kids
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Cartoon Network
+https://a1xs.vip/300032
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Cartoon Network USA 
+http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Cartoon Network East
+https://tvpass.org/live/CartoonNetworkEast/sd
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Nick
+https://a1xs.vip/300030
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",5 Minutes Craft
+https://l.hilay.tv/5minutecraft
+
 
 # \/\/\/🟢🟢🟢 Public TV Channels grouped by country - Pakistan | M3u: https://iptv-org.github.io/iptv/countries/pk.m3u / https://iptv-org.github.io/iptv/subdivisions/pk-is.m3u, found from: https://github.com/TVKaista/iptv-1
 
