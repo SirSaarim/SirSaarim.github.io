@@ -5,6 +5,8 @@
 
 # \/\/\/🟢🟢🟢 Sir Saa Sports 
 
+
+
 # Fox Sports AU Channels - TV Guide: https://www.foxtel.com.au/tv-guide/grid/2026/01/14/2254
 #EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU 6
 http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
@@ -93,6 +95,9 @@ https://tvpass.org/live/CartoonNetworkEast/sd
 https://a1xs.vip/300030
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/9/96/5-Minute_Crafts_logo.jpg" group-title="SirSaaStremio",5 Minutes Craft
 https://l.hilay.tv/5minutecraft
+# Religious 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Makkah TV
+https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8?checkedby:alliptvlinks.com
 
 
 # \/\/\/🟢🟢🟢 Public TV Channels grouped by country - Pakistan | M3u: https://iptv-org.github.io/iptv/countries/pk.m3u / https://iptv-org.github.io/iptv/subdivisions/pk-is.m3u, found from: https://github.com/TVKaista/iptv-1
