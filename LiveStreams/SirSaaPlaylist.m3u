@@ -26,6 +26,11 @@ https://a1xs.vip/2000021
 #EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
 http://lucidhosting.xyz:82/seanr/anything1357/2679
 # Aussie Free
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="",Channel 7
+https://i.mjh.nz/.r/seven-bri.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="",Channel 9 Gem
+https://i.mjh.nz/.r/gem-qld.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.nineforbrands.com.au/wp-content/uploads/2025/06/9_BLUE.png" group-title="SirSaaStremio",Channel 9 
 https://i.mjh.nz/.r/channel-9-qld.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.nineforbrands.com.au/wp-content/uploads/2025/06/9_BLUE.png" group-title="SirSaaStremio",Channel 9 (Gold Coast)
@@ -34,23 +39,33 @@ https://i.mjh.nz/.r/channel-9-gold-coast.m3u8
 https://i.mjh.nz/.r/60-minutes-australia-fast.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/7mate_logo_2020.svg" group-title="SirSaaStremio",Channel 7mate   
 https://i.mjh.nz/.r/7mate-bri.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://pbs.twimg.com/profile_images/1939324539025883136/fhbkUyJS_400x400.jpg" group-title="SirSaaStremio",Channel 10 QLD
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://pbs.twimg.com/profile_images/1939324539025883136/fhbkUyJS_400x400.jpg" group-title="SirSaaStremio",Channel 10
 https://i.mjh.nz/.r/10-qld.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/10_Comedy_2025_logo.svg/960px-10_Comedy_2025_logo.svg.png" group-title="SirSaaStremio",Channel 10 Comedy 
 https://i.mjh.nz/.r/10peach-qld.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.mixfm.com.au/wp-content/uploads/2025/03/cropped-MixFM_LOGO_-TRANS-grey.png" group-title="SirSaaStremio",92.7 Mix FM (QLD)
 https://i.mjh.nz/.r/radio-ih-6333.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="",Travel Australia
+https://i.mjh.nz/.r/travelaus-fast.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="",7 Now
+https://i.mjh.nz/.r/7now-fast.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="",7 AFL 
+https://i.mjh.nz/.r/7afl-fast.m3u8
 # News
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News
 https://c.mjh.nz/abc-news.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC Australia
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQhttps://i.mjh.nz/.r/al-jazeera.m3u8bxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC Australia
 https://l.hilay.tv/abcaustralia
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV 
-https://i.mjh.nz/.r/al-jazeera.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV 
 https://l.hilay.tv/aljazeeraenaws
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://india.mom-gmr.org/uploads/tx_lfrogmom/media/16537-1592_import.png" group-title="SirSaaStremio",NDTV 24x7 India
 https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="",Sky News Now    
+https://i.mjh.nz/.r/sky-news-now.m3u8
 # Kids
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg" group-title="SirSaaStremio",Cartoon Network
 https://a1xs.vip/300032
