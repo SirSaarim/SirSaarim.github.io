@@ -8,56 +8,62 @@
 
 
 # Fox Sports AU Channels - TV Guide: https://www.foxtel.com.au/tv-guide/grid/2026/01/14/2254
-#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU 6
+#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU -1
 http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
-#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU 7
+#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU -2
 https://a1xs.vip/700001
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://pixvid.org/images/2025/01/31/Fox501.png", Fox Sports 501 AU 3
+https://7pal.short.gy/fox501au
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Cricket Gold
 https://d382r3rgbxdixq.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/STIRR-MuxIP-CricketGold/418.m3u8?checkedby:alliptvlinks.com
 # Sky Sport NZ - TV Guide: https://tvguide.sky.co.nz/
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",SKY Sport 1 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",SKY Sport 1 NZ -1
 https://a1xs.vip/700031
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ 0" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ 
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ 0" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ -2 
 https://addon3.gstream.stream/spk/m3u8?u=https%3A%2F%2Fgg.poocloud.in%2Fashes%2Ftracks-v1a1%2Fmono.ts.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="SirSaaSports",SKY Sport 2 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ -3
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmok2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports", Sky Sport 1 NZ -4
+https://7pal.short.gy/skyspt1nz
+#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="SirSaaSports",SKY Sport 2 NZ 1
 https://a1xs.vip/700032
 # Sky Sports UK - Tv Guide: https://www.skysports.com/watch/sport-on-sky
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -1
 https://a1xs.vip/2000006
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -2
 http://saveukraine.only4.tv/5596/video.m3u8?token=saveUkrain&checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -3
 http://cord-cutter.net:8080/bn80NG/909467/45940
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -4
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe6ynetgghi3twob73c3t2kjgj5a2ztjhgcxcplnsu6uk6s5uvwtkzjvoeyx2vwf5xo3dzzcaxixq/index.m3u8
 
 # TNT Sports UK - Tv Guide: https://www.fanzo.com/en/tvguide/tnt-sports/7863
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -1
 https://a1xs.vip/2000021
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -2
 http://lucidhosting.xyz:82/seanr/anything1357/2679
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -3
 http://cord-cutter.net:8080/k4Svp2/645504/53708?checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -4
 http://tv14s.xyz:8080/A1Jay5/362586/53708?checkedby:alliptvlinks.com
 # Willow Cricket US - Tv Guide: 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -1
 http://cord-cutter.net:8080/k4Svp2/645504/58847?checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -2
 http://tv14s.xyz:8080/A1Jay5/362586/58847?checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="Willow.Cricket.HDTV.(WILLOWHD).us" tvg-name="US Willow Cricket (S)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US
+#EXTINF:-1 tvg-id="Willow.Cricket.HDTV.(WILLOWHD).us" tvg-name="US Willow Cricket (S)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -3
 http://cord-cutter.net:8080/bn80NG/909467/58847
-#EXTINF:-1 tvg-id="Willow.Xtra.us" tvg-name="US Willow Cricket (X)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US
+#EXTINF:-1 tvg-id="Willow.Xtra.us" tvg-name="US Willow Cricket (X)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -4
 http://cord-cutter.net:8080/bn80NG/909467/41979
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -5
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2snbsyyz27urgu2v24sgqx7mlopjxxbsealogwm52um2lgcs2psnjwqusrrvggetfdsshe3de5pheic5d3/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -6
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2snbsyyz27uspkmuklr6nxm4d7wfxhu33qvfogrrdemvpgffcqurtgaydgvfhfos3aj2tzmvuoo5whtsebor5q/index.m3u8
 # Astro Cricket US - Tv Guide: 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Astro Cricket US
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Astro Cricket US -1
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh24kjg2uz4tlrpgiulesojlc3t2n5ymrad6sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 # Super Sport Cricket SA - Tv Guide: | Ref: https://gitgud.io/Cobra4x2/stuff/-/blob/master/pigzillaaaaa.m3u8?ref_type=heads
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Super Sport Cricket SA
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Super Sport Cricket SA -1
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2ojrizgtc3jvmu2xfetgghi3twob73c3t2kjgj44cytjhgcxcplnsu6uk6s5uvwtkzjvoeyx2vwf5xo3dzzcaxixq/index.m3u8
 
 
