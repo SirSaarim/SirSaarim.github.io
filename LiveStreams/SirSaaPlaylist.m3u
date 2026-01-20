@@ -10,60 +10,60 @@
 # Fox Sports AU Channels - TV Guide: https://www.foxtel.com.au/tv-guide/grid/2026/01/14/2254
 #EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU -1
 http://websafety101.net:5050/feltonsmith1961@icloud.com/VSq8gmsgkR/698956
-#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU -2
+#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports",Fox Sports 501 AU -2 a1xs
 https://a1xs.vip/700001
-#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports", Fox Sports 501 AU -3
+#EXTINF:-1 tvg-id="NSW-SydneyFOXCRICKET.au" tvg-name="AU - FOX CRICKET" tvg-logo="https://iptv-epg.org/logos/Australia/NSW-SydneyFOXCRICKET.au.png" group-title="SirSaaSports", Fox Sports 501 AU -3 pal.short
 https://7pal.short.gy/fox501au
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Cricket Gold
 https://d382r3rgbxdixq.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/STIRR-MuxIP-CricketGold/418.m3u8?checkedby:alliptvlinks.com
 # Sky Sport NZ - TV Guide: https://tvguide.sky.co.nz/
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",SKY Sport 1 NZ -1
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",SKY Sport 1 NZ -1 a1xs
 https://a1xs.vip/700031
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ 0" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ -2 
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ 0" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ -2 gstream
 https://addon3.gstream.stream/spk/m3u8?u=https%3A%2F%2Fgg.poocloud.in%2Fashes%2Ftracks-v1a1%2Fmono.ts.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ -3
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports",Sky Sport 1 NZ -3 shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmok2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports", Sky Sport 1 NZ -4
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="SirSaaSports", Sky Sport 1 NZ -4 pal.short
 https://7pal.short.gy/skyspt1nz
-#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="SirSaaSports",SKY Sport 2 NZ 1
+#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="SirSaaSports",SKY Sport 2 NZ -1 a1xs
 https://a1xs.vip/700032
 # Sky Sports UK - Tv Guide: https://www.skysports.com/watch/sport-on-sky
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -1
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -1 a1xs
 https://a1xs.vip/2000006
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -2
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -2 saveukraine
 http://saveukraine.only4.tv/5596/video.m3u8?token=saveUkrain&checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -3
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -3 cord-cutter
 http://cord-cutter.net:8080/bn80NG/909467/45940
-#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -4
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK - Sky Sports Cricket" tvg-logo="https://iptv-epg.org/logos/UK/SkySportsCricket.uk.png" group-title="SirSaaSports",Sky Sports Cricket UK -4 shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe6ynetgghi3twob73c3t2kjgj5a2ztjhgcxcplnsu6uk6s5uvwtkzjvoeyx2vwf5xo3dzzcaxixq/index.m3u8
 
 # TNT Sports UK - Tv Guide: https://www.fanzo.com/en/tvguide/tnt-sports/7863
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -1
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -1 a1xs
 https://a1xs.vip/2000021
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -2
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -2 lucidhosting
 http://lucidhosting.xyz:82/seanr/anything1357/2679
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -3
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -3 cord-cutter
 http://cord-cutter.net:8080/k4Svp2/645504/53708?checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -4
+#EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -4 tv14s
 http://tv14s.xyz:8080/A1Jay5/362586/53708?checkedby:alliptvlinks.com
 # Willow Cricket US - Tv Guide: 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -1 cord-cutter
 http://cord-cutter.net:8080/k4Svp2/645504/58847?checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -2
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -2 tv14s
 http://tv14s.xyz:8080/A1Jay5/362586/58847?checkedby:alliptvlinks.com
-#EXTINF:-1 tvg-id="Willow.Cricket.HDTV.(WILLOWHD).us" tvg-name="US Willow Cricket (S)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -3
+#EXTINF:-1 tvg-id="Willow.Cricket.HDTV.(WILLOWHD).us" tvg-name="US Willow Cricket (S)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -3 cord-cutter
 http://cord-cutter.net:8080/bn80NG/909467/58847
-#EXTINF:-1 tvg-id="Willow.Xtra.us" tvg-name="US Willow Cricket (X)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -4
+#EXTINF:-1 tvg-id="Willow.Xtra.us" tvg-name="US Willow Cricket (X)" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -4 cord-cutter
 http://cord-cutter.net:8080/bn80NG/909467/41979
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -5
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -5 shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2snbsyyz27urgu2v24sgqx7mlopjxxbsealogwm52um2lgcs2psnjwqusrrvggetfdsshe3de5pheic5d3/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -6
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -6 shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2snbsyyz27uspkmuklr6nxm4d7wfxhu33qvfogrrdemvpgffcqurtgaydgvfhfos3aj2tzmvuoo5whtsebor5q/index.m3u8
 # Astro Cricket US - Tv Guide: 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Astro Cricket US -1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Astro Cricket US -1 shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh24kjg2uz4tlrpgiulesojlc3t2n5ymrad6sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 # Super Sport Cricket SA - Tv Guide: | Ref: https://gitgud.io/Cobra4x2/stuff/-/blob/master/pigzillaaaaa.m3u8?ref_type=heads
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Super Sport Cricket SA -1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Super Sport Cricket SA -1 shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2ojrizgtc3jvmu2xfetgghi3twob73c3t2kjgj44cytjhgcxcplnsu6uk6s5uvwtkzjvoeyx2vwf5xo3dzzcaxixq/index.m3u8
 
 
@@ -112,7 +112,7 @@ https://i.mjh.nz/.r/sky-news-now.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",BBC News (Asia Pacific)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15&checkedby:alliptvlinks.com
 # Kids
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg" group-title="SirSaaStremio",Cartoon Network
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg" group-title="SirSaaStremio",Cartoon Network a1xs
 https://a1xs.vip/300032
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg" group-title="SirSaaStremio",Cartoon Network 
 http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
@@ -2569,90 +2569,90 @@ https://a1xs.vip/610004
 https://a1xs.vip/610005
 
 # --- 📺 AU Sports
-#EXTINF:-1 tvg-id="FoxCricket.au" tvg-name="Fox Sports 501 FHD" tvg-logo="https://i.ibb.co/hvxssSM/Fox-Cricket-501.png" group-title="AU Sports",Fox Sports 501 FHD
+#EXTINF:-1 tvg-id="FoxCricket.au" tvg-name="Fox Sports 501 FHD" tvg-logo="https://i.ibb.co/hvxssSM/Fox-Cricket-501.png" group-title="AU Sports",Fox Sports 501 a1xs
 https://a1xs.vip/700001
-#EXTINF:-1 tvg-id="FoxLeague.au" tvg-name="Fox Sports 502 FHD" tvg-logo="https://i.ibb.co/XZpHFsBh/Fox502HD.png" group-title="AU Sports",Fox Sports 502 FHD
+#EXTINF:-1 tvg-id="FoxLeague.au" tvg-name="Fox Sports 502 FHD" tvg-logo="https://i.ibb.co/XZpHFsBh/Fox502HD.png" group-title="AU Sports",Fox Sports 502 a1xs
 https://a1xs.vip/700002
-#EXTINF:-1 tvg-id="FoxSports503.au" tvg-name="Fox Sports 503 FHD" tvg-logo="https://i.ibb.co/Z60SQPG9/Fox-503.png" group-title="AU Sports",Fox Sports 503 FHD
+#EXTINF:-1 tvg-id="FoxSports503.au" tvg-name="Fox Sports 503 FHD" tvg-logo="https://i.ibb.co/Z60SQPG9/Fox-503.png" group-title="AU Sports",Fox Sports 503 a1xs
 https://a1xs.vip/700003
-#EXTINF:-1 tvg-id="FoxFooty.au" tvg-name="Fox Sports 504 FHD" tvg-logo="https://i.ibb.co/RpxSzY1R/Fox-Footy504.png" group-title="AU Sports",Fox Sports 504 FHD
+#EXTINF:-1 tvg-id="FoxFooty.au" tvg-name="Fox Sports 504 FHD" tvg-logo="https://i.ibb.co/RpxSzY1R/Fox-Footy504.png" group-title="AU Sports",Fox Sports 504 a1xs
 https://a1xs.vip/700004
-#EXTINF:-1 tvg-id="FoxSports505.au" tvg-name="Fox Sports 505 FHD" tvg-logo="https://i.ibb.co/RpxSzY1R/Fox-Footy504.png" group-title="AU Sports",Fox Sports 505 FHD
+#EXTINF:-1 tvg-id="FoxSports505.au" tvg-name="Fox Sports 505 FHD" tvg-logo="https://i.ibb.co/RpxSzY1R/Fox-Footy504.png" group-title="AU Sports",Fox Sports 505 a1xs
 https://a1xs.vip/700005
-#EXTINF:-1 tvg-id="FoxSports506.au" tvg-name="Fox Sports 506 FHD" tvg-logo="https://i.ibb.co/Y65j4s1/Fox505.png" group-title="AU Sports",Fox Sports 506 FHD
+#EXTINF:-1 tvg-id="FoxSports506.au" tvg-name="Fox Sports 506 FHD" tvg-logo="https://i.ibb.co/Y65j4s1/Fox505.png" group-title="AU Sports",Fox Sports 506 a1xs
 https://a1xs.vip/700006
-#EXTINF:-1 tvg-id="FoxSportsMore.au" tvg-name="Fox Sports 507 FHD" tvg-logo="https://i.ibb.co/CK1F69ht/Fox507.png" group-title="AU Sports",Fox Sports 507 FHD
+#EXTINF:-1 tvg-id="FoxSportsMore.au" tvg-name="Fox Sports 507 FHD" tvg-logo="https://i.ibb.co/CK1F69ht/Fox507.png" group-title="AU Sports",Fox Sports 507 a1xs
 https://a1xs.vip/700007
 # --- ⚽ Sports | AU - Source: https://gitgud.io/Cobra4x2/stuff/-/blob/master/sports-channels-4k.m3u?ref_type=heads
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://pixvid.org/images/2025/01/31/Fox501.png", Fox Sports 501
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://pixvid.org/images/2025/01/31/Fox501.png", Fox Sports 501 pal.short
 https://7pal.short.gy/fox501au
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/7G0lOta.png", Fox Sports 502
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/7G0lOta.png", Fox Sports 502 pal.short
 https://7pal.short.gy/fox502au
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/fndl6gs.png", Fox Sports 503
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/fndl6gs.png", Fox Sports 503 pal.short
 https://7pal.short.gy/fox503au
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/0tZxstM.png", Fox Sports 504
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/0tZxstM.png", Fox Sports 504 pal.short
 https://7pal.short.gy/fox504au
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/pnrLdcb.png", Fox Sports 505
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/pnrLdcb.png", Fox Sports 505 pal.short
 https://7pal.short.gy/fox505au
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/XkOpNPe.png", Fox Sports 506
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/XkOpNPe.png", Fox Sports 506 pal.short
 https://7pal.short.gy/fox506au
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/PeDP6zC.png", Fox Sports 507
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.imgur.com/PeDP6zC.png", Fox Sports 507 pal.short
 https://7pal.short.gy/fox507au
 
 
 
 # --- 📺 NZ Sports
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="NZ Sports",SKY Sport 1 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="NZ Sports",SKY Sport 1 NZ a1xs
 https://a1xs.vip/700031
-#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="NZ Sports",SKY Sport 2 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="NZ Sports",SKY Sport 2 NZ a1xs
 https://a1xs.vip/700032
-#EXTINF:-1 tvg-id="SKY.Sport.3.nz" tvg-name="SKY Sport 3 NZ" tvg-logo="https://i.ibb.co/Fq4FLn9m/SSNZ3.png" group-title="NZ Sports",SKY Sport 3 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.3.nz" tvg-name="SKY Sport 3 NZ" tvg-logo="https://i.ibb.co/Fq4FLn9m/SSNZ3.png" group-title="NZ Sports",SKY Sport 3 NZ a1xs
 https://a1xs.vip/700033
-#EXTINF:-1 tvg-id="SKY.Sport.4.nz" tvg-name="SKY Sport 4 NZ" tvg-logo="https://i.ibb.co/qY3cr3zG/SSNZ4.png" group-title="NZ Sports",SKY Sport 4 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.4.nz" tvg-name="SKY Sport 4 NZ" tvg-logo="https://i.ibb.co/qY3cr3zG/SSNZ4.png" group-title="NZ Sports",SKY Sport 4 NZ a1xs
 https://a1xs.vip/700034
-#EXTINF:-1 tvg-id="SKY.Sport.5.nz" tvg-name="SKY Sport 5 NZ" tvg-logo="https://i.ibb.co/WNhhmNN3/SSNZ5.png" group-title="NZ Sports",SKY Sport 5 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.5.nz" tvg-name="SKY Sport 5 NZ" tvg-logo="https://i.ibb.co/WNhhmNN3/SSNZ5.png" group-title="NZ Sports",SKY Sport 5 NZ a1xs
 https://a1xs.vip/700035
-#EXTINF:-1 tvg-id="SKY.Sport.6.nz" tvg-name="SKY Sport 6 NZ" tvg-logo="https://i.ibb.co/4Z68jKjy/SSNZ6.png" group-title="NZ Sports",SKY Sport 6 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.6.nz" tvg-name="SKY Sport 6 NZ" tvg-logo="https://i.ibb.co/4Z68jKjy/SSNZ6.png" group-title="NZ Sports",SKY Sport 6 NZ a1xs
 https://a1xs.vip/700036
-#EXTINF:-1 tvg-id="SKY.Sport.7.nz" tvg-name="SKY Sport 7 NZ" tvg-logo="https://i.ibb.co/d4hjNjmz/SSNZ7.png" group-title="NZ Sports",SKY Sport 7 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.7.nz" tvg-name="SKY Sport 7 NZ" tvg-logo="https://i.ibb.co/d4hjNjmz/SSNZ7.png" group-title="NZ Sports",SKY Sport 7 NZ a1xs
 https://a1xs.vip/700037
-#EXTINF:-1 tvg-id="SKY.Sport.8.nz" tvg-name="Sky Sport PL NZ" tvg-logo="https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/img/Sky_Sport_PL_NZ.webp" group-title="NZ Sports",Sky Sport 8 - Premier League NZ
+#EXTINF:-1 tvg-id="SKY.Sport.8.nz" tvg-name="Sky Sport PL NZ" tvg-logo="https://raw.githubusercontent.com/a1xmedia/m3u/refs/heads/main/img/Sky_Sport_PL_NZ.webp" group-title="NZ Sports",Sky Sport 8 - Premier League NZ a1xs
 https://a1xs.vip/700008
 # --- 📺 NZ Sports | NZ - Source: https://gitgud.io/Cobra4x2/stuff/-/blob/master/pigzillaaaaa.m3u8?ref_type=heads
-#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="NZ Sports",Sky Sport 1 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-name="SKY Sport 1 NZ" tvg-logo="https://i.ibb.co/TqkBV40v/SSNZ1.png" group-title="NZ Sports",Sky Sport 1 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmok2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="NZ Sports",Sky Sport 2 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-name="SKY Sport 2 NZ" tvg-logo="https://i.ibb.co/Gvn46BMS/SSNZ2.png" group-title="NZ Sports",Sky Sport 2 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.3.nz" tvg-name="SKY Sport 3 NZ" tvg-logo="https://i.ibb.co/Fq4FLn9m/SSNZ3.png" group-title="NZ Sports",Sky Sport 3 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.3.nz" tvg-name="SKY Sport 3 NZ" tvg-logo="https://i.ibb.co/Fq4FLn9m/SSNZ3.png" group-title="NZ Sports",Sky Sport 3 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmmk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.4.nz" tvg-name="SKY Sport 4 NZ" tvg-logo="https://i.ibb.co/qY3cr3zG/SSNZ4.png" group-title="NZ Sports",Sky Sport 4 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.4.nz" tvg-name="SKY Sport 4 NZ" tvg-logo="https://i.ibb.co/qY3cr3zG/SSNZ4.png" group-title="NZ Sports",Sky Sport 4 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmrk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.5.nz" tvg-name="SKY Sport 5 NZ" tvg-logo="https://i.ibb.co/WNhhmNN3/SSNZ5.png" group-title="NZ Sports",Sky Sport 5 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.5.nz" tvg-name="SKY Sport 5 NZ" tvg-logo="https://i.ibb.co/WNhhmNN3/SSNZ5.png" group-title="NZ Sports",Sky Sport 5 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmsk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.6.nz" tvg-name="SKY Sport 6 NZ" tvg-logo="https://i.ibb.co/4Z68jKjy/SSNZ6.png" group-title="NZ Sports",Sky Sport 6 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.6.nz" tvg-name="SKY Sport 6 NZ" tvg-logo="https://i.ibb.co/4Z68jKjy/SSNZ6.png" group-title="NZ Sports",Sky Sport 6 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmpk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.7.nz" tvg-name="SKY Sport 7 NZ" tvg-logo="https://i.ibb.co/d4hjNjmz/SSNZ7.png" group-title="NZ Sports",Sky Sport 7 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.7.nz" tvg-name="SKY Sport 7 NZ" tvg-logo="https://i.ibb.co/d4hjNjmz/SSNZ7.png" group-title="NZ Sports",Sky Sport 7 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmqk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.8.nz" tvg-name="SKY Sport 8 NZ" tvg-logo="" group-title="NZ Sports",Sky Sport 8 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.8.nz" tvg-name="SKY Sport 8 NZ" tvg-logo="" group-title="NZ Sports",Sky Sport 8 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmvk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-id="SKY.Sport.9.nz" tvg-name="SKY Sport 9 NZ" tvg-logo="" group-title="NZ Sports",Sky Sport 9 NZ
+#EXTINF:-1 tvg-id="SKY.Sport.9.nz" tvg-name="SKY Sport 9 NZ" tvg-logo="" group-title="NZ Sports",Sky Sport 9 NZ shinzillaaaaa
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmwk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 # --- 📺 NZ Sports | NZ - Source: https://gitgud.io/Cobra4x2/stuff/-/blob/master/sports-channels-4k.m3u?ref_type=heads
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/wxDNzRcQ/sky-sport-1.png", Sky Sport1 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/wxDNzRcQ/sky-sport-1.png", Sky Sport1 NZ pal.short
 https://7pal.short.gy/skyspt1nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/KvFM8c0S/sky_sport_2.png", Sky Sport2 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/KvFM8c0S/sky_sport_2.png", Sky Sport2 NZ pal.short
 https://7pal.short.gy/skyspt2nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/L88gjCdx/sky_sport_3.png", Sky Sport3 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/L88gjCdx/sky_sport_3.png", Sky Sport3 NZ pal.short
 https://7pal.short.gy/skyspt3nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/52KYgBbb/sky-sport-4.png", Sky Sport4 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/52KYgBbb/sky-sport-4.png", Sky Sport4 NZ pal.short
 https://7pal.short.gy/skyspt4nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/3wyyckxp/sky_sport_5.png", Sky Sport5 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/3wyyckxp/sky_sport_5.png", Sky Sport5 NZ pal.short
 https://7pal.short.gy/skyspt5nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/LsrqKmJW/sky_sport_6.png", Sky Sport6 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/LsrqKmJW/sky_sport_6.png", Sky Sport6 NZ pal.short
 https://7pal.short.gy/skyspt6nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/G2G4b6Ym/sky_sport_7.png", Sky Sport7 NZ FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="NZ Sports" tvg-logo="https://i.postimg.cc/G2G4b6Ym/sky_sport_7.png", Sky Sport7 NZ pal.short
 https://7pal.short.gy/skyspt7nz
-#EXTINF:-1 tvg-id="24.7.Dummy.us" group-title="Sports" tvg-logo="https://i.postimg.cc/PJMNwZSG/Sky-Sport-PL.png", Sky Sport Premier League FHD
+#EXTINF:-1 tvg-id="24.7.Dummy.us"group-title="NZ Sports" tvg-logo="https://i.postimg.cc/PJMNwZSG/Sky-Sport-PL.png", Sky Sport Premier League pal.short
 https://7pal.short.gy/skyspt8nz
 
 
