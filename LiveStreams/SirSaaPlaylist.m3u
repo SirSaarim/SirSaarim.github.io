@@ -49,9 +49,9 @@ http://lucidhosting.xyz:82/seanr/anything1357/2679
 http://cord-cutter.net:8080/k4Svp2/645504/53708?checkedby:alliptvlinks.com
 #EXTINF:-1 tvg-id="TNTSports1.uk" tvg-name="UK - TNT Sports 1" tvg-logo="https://iptv-epg.org/logos/UK/TNTSports1.uk.png" group-title="SirSaaSports",TNT Sports 1 UK -4 tv14s
 http://tv14s.xyz:8080/A1Jay5/362586/53708?checkedby:alliptvlinks.com
-#EXTINF:-1  tvg-id="Local.Programming.Dummy.us" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/DrewLiveTV2.png" ,TNT Sports 1 UK -5 lucidhosting
+#EXTINF:-1  tvg-id="Local.Programming.Dummy.us" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/DrewLiveTV2.png group-title="SirSaaSports"" ,TNT Sports 1 UK -5 lucidhosting
 http://lucidhosting.xyz:82/derekwinford@gmail.com/Q8HKO7JwzL/2679
-#EXTINF:-1  tvg-id="Local.Programming.Dummy.us" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/DrewLiveTV2.png" ,TNT Sports 1 UK -6 lucidhosting
+#EXTINF:-1  tvg-id="Local.Programming.Dummy.us" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/DrewLiveTV2.png group-title="SirSaaSports"" ,TNT Sports 1 UK -6 lucidhosting
 http://lucidhosting.xyz:82/derekwinford@gmail.com/Q8HKO7JwzL/69018
 # Willow Cricket US - Tv Guide: 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaSports",Willow Cricket US -1 cord-cutter
@@ -104,7 +104,7 @@ https://i.mjh.nz/.r/7afl-fast.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Channel 44
 https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8?checkedby:alliptvlinks.com
 # News
-#EXTINF:-1 tvg-id="DunyaNews.pk@SD" tvg-logo="https://i.postimg.cc/htHtP9VP/dunyanews.png" group-title="News",Dunya News PK
+#EXTINF:-1 tvg-id="DunyaNews.pk@SD" tvg-logo="https://i.postimg.cc/htHtP9VP/dunyanews.png" group-title="SirSaaStremio",Dunya News PK
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh27jrrz6xmtm5hveym7tgtw64gipn3ldad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News
 https://c.mjh.nz/abc-news.m3u8
@@ -130,7 +130,7 @@ https://tvpass.org/live/CartoonNetworkEast/sd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nick_Logo_%282009%E2%80%932017%29.svg/2560px-Nick_Logo_%282009%E2%80%932017%29.svg.png" group-title="SirSaaStremio",Nick
 https://a1xs.vip/300030
 # https://gist.github.com/Sickhead01/26b84fbccf493a27b9b7dd448d5f9c48 
-#EXTINF:-1 group-title="Kids" tvg-id="Nickelodeon.USA.-.East.Feed.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11006_dark_360w_270h.png" tvg-name="Nickelodeon",Nickelodeon
+#EXTINF:-1 group-title="Kids" tvg-id="Nickelodeon.USA.-.East.Feed.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11006_dark_360w_270h.png" tvg-name="Nickelodeon" group-title="SirSaaStremio",Nickelodeon
 http://fl1.moveonjoy.com/NICKELODEON/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/9/96/5-Minute_Crafts_logo.jpg" group-title="SirSaaStremio",5 Minutes Craft
 https://l.hilay.tv/5minutecraft
