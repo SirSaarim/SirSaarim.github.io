@@ -104,20 +104,32 @@ https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8?checkedby:alliptvlinks.c
 # News
 #EXTINF:-1 tvg-id="DunyaNews.pk@SD" tvg-logo="https://i.postimg.cc/htHtP9VP/dunyanews.png" group-title="SirSaaStremio",Dunya News PK
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh27jrrz6xmtm5hveym7tgtw64gipn3ldad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News -1
 https://c.mjh.nz/abc-news.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News -2 
 https://l.hilay.tv/abcaustralia
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDQbxBv0W_1AdLcBKA6Pe9yKsY8vquxZxlg&s" group-title="SirSaaStremio",ABC News -3 
+https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Sky News Australia
+https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV -1 
 https://i.mjh.nz/.r/al-jazeera.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV -2 
 https://l.hilay.tv/aljazeeraenaws
+# https://www.livehdtv.com/al-jazeera-english/
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f2/Aljazeera_eng.svg" group-title="SirSaaStremio",Al Jazeera TV -3
+https://live-hls-apps-aje-fa.getaj.net/AJE/01.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",France 24
+https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://india.mom-gmr.org/uploads/tx_lfrogmom/media/16537-1592_import.png" group-title="SirSaaStremio",NDTV 24x7 India
 https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",Sky News Now    
 https://i.mjh.nz/.r/sky-news-now.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",BBC News (Asia Pacific)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15&checkedby:alliptvlinks.com
+# Music 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SirSaaStremio",7x Music 
+https://stream.e2is.in/hls/7xMusic.m3u8
 # Kids
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg" group-title="SirSaaStremio",Cartoon Network a1xs
 https://a1xs.vip/300032
