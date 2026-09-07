@@ -1,0 +1,9 @@
+{% if page.og_image %}
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="{{ page.url | absolute_url }}" />
+<meta property="og:title"       content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:image"       content="{{ page.og_image }}" />
+<meta name="twitter:card"       content="summary_large_image" />
+<meta name="twitter:image"      content="{{ page.og_image }}" />
+{% endif %}
