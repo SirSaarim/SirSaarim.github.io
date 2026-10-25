@@ -1,0 +1,81 @@
+{
+  "global": {
+    "name": "Global",
+    "audio": "",
+    "image": "",
+    "video": "",
+    "volume": 0.35,
+    "title": "{{ current.name }} Adhan",
+    "artist": "by Sir.Saarim for SFam+",
+    "album_name": "{{ now().strftime('%I:%M %p - %a, %d %b %Y') }}",
+    "metadata_type": 3
+  },
+  "prayers": {
+    "fajr": {
+      "name": "Fajr",
+      "audio": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/audio/Fajr/Fajr.mp3",
+      "image": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/images/Fajr/Fajr.png",
+      "video": "",
+      "volume": "global",
+      "title": "global",
+      "artist": "global",
+      "album_name": "global",
+      "metadata_type": "global"
+    },
+    "dhuhr": {
+      "name": "Dhuhr",
+      "audio": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/audio/Dhuhr/Dhuhr.mp3",
+      "image": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/images/Dhuhr/Dhuhr.png",
+      "video": "",
+      "volume": "global",
+      "title": "global",
+      "artist": "global",
+      "album_name": "global",
+      "metadata_type": "global"
+    },
+    "asr": {
+      "name": "Asr",
+      "audio": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/audio/Asr/Asr.mp3",
+      "image": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/images/Asr/Asr.png",
+      "video": "",
+      "volume": "global",
+      "title": "global",
+      "artist": "global",
+      "album_name": "global",
+      "metadata_type": "global"
+    },
+    "maghrib": {
+      "name": "Maghrib",
+      "audio": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/audio/Maghrib/Maghrib.mp3",
+      "image": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/images/Maghrib/Maghrib.png",
+      "video": "",
+      "volume": "global",
+      "title": "global",
+      "artist": "global",
+      "album_name": "global",
+      "metadata_type": "global"
+    },
+    "isha": {
+      "name": "Isha",
+      "audio": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/audio/Isha/Isha.mp3",
+      "image": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/images/Isha/Isha.png",
+      "video": "",
+      "volume": "global",
+      "title": "global",
+      "artist": "global",
+      "album_name": "global",
+      "metadata_type": "global"
+    },
+    "demo": {
+      "name": "Demo",
+      "audio": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/audio/Demo/Demo.mp3",
+      "image": "https://pub-bf016cdd543b4f1b8b3fc2ec4c79d3f3.r2.dev/images/Demo/Demo.png",
+      "video": "",
+      "volume": "global",
+      "title": "global",
+      "artist": "global",
+      "album_name": "global",
+      "metadata_type": "global"
+    }
+  }
+}
